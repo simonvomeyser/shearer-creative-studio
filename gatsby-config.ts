@@ -1,5 +1,6 @@
 import type {GatsbyConfig} from "gatsby";
 import path from "path";
+require("dotenv").config()
 
 const config: GatsbyConfig = {
     siteMetadata: {
@@ -27,12 +28,20 @@ const config: GatsbyConfig = {
         },
         // @ts-ignore
         __key: "pages"
-    },{
+    }, {
         resolve: `gatsby-plugin-layout`,
         options: {
             component: path.resolve(`src/components/Layout.tsx`),
         },
     },
+        {
+            resolve: "gatsby-plugin-web-font-loader",
+            options: {
+                typekit: {
+                    id: process.env.TYPEKIT_ID,
+                },
+            },
+        },
     ]
 };
 
