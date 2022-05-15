@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import {Link} from "gatsby";
+import {StaticImage} from "gatsby-plugin-image";
 import React, {useEffect, useState} from "react";
 import {ArrowLinkStyles} from "../components/ArrowLinkStyles";
 import {BraveText} from "../components/BraveText";
@@ -47,20 +48,19 @@ const IndexPage = () => {
                 className="min-h-[95vh] md:min-h-screen flex flex-col justify-center ">
 
                 {/* BG-Image */}
-                <LazyImg
-                    src="/bg-index.jpg"
+                <StaticImage
+                    src="../../static/bg-index.jpg"
                     alt="Bild des Salons"
-                    className={clsx('w-full h-full object-cover absolute inset-0 transition duration-1000',
+                    objectFit="cover"
+                    className={clsx('absolute w-full h-full inset-0 transition duration-1000',
                         {
                             'opacity-30':
                                 !videoStarted,
                             'opacity-0':
                             videoStarted,
                         }
-                    )
-                    }
+                        )}
                 />
-
                 {/* BG-Video */}
                 <video muted loop ref={bgVideo}
                        preload="none"
