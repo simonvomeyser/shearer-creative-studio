@@ -1,4 +1,5 @@
 import type {GatsbyConfig} from "gatsby";
+import path from "path";
 
 const config: GatsbyConfig = {
     siteMetadata: {
@@ -26,7 +27,13 @@ const config: GatsbyConfig = {
         },
         // @ts-ignore
         __key: "pages"
-    }]
+    },{
+        resolve: `gatsby-plugin-layout`,
+        options: {
+            component: path.resolve(`src/components/Layout.tsx`),
+        },
+    },
+    ]
 };
 
 export default config;
