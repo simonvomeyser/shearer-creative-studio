@@ -128,3 +128,7 @@ body > iframe {
   color: var(--primary);
 }
 
+/*Fix issue with build version overwriting tw styles*/
+.gatsby-image-wrapper.absolute {
+  position: absolute;
+}
