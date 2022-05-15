@@ -52,8 +52,9 @@ const IndexPage = () => {
                     src="../../static/bg-index.jpg"
                     alt="Bild des Salons"
                     objectFit="cover"
+                    layout="fullWidth"
                     className={clsx('absolute w-full h-full inset-0 transition duration-1000',
-                        {
+                    {
                             'opacity-30':
                                 !videoStarted,
                             'opacity-0':
