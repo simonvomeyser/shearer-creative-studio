@@ -11,9 +11,8 @@ import {FaqAccordion} from "../components/FaqAccordion";
 import {FaqHeading} from "../components/FaqHeading";
 import {SmoothScrollPageAnchor} from "../components/Header/components/SmoothScrollPageAnchor";
 import {Arrow} from "../components/icons/Arrow";
-import { DiarySection } from '../components/IndexPage/DiarySection';
+import {DiarySection} from '../components/IndexPage/DiarySection';
 import {SarahSection} from "../components/IndexPage/SarahSection";
-import {LazyImg} from "../components/LazyImg";
 import {PriceAccordion} from "../components/PriceAccordion/PriceAccordion";
 import {PriceHeading} from "../components/PriceHeading";
 import {Section} from "../components/Section";
@@ -33,7 +32,6 @@ const IndexPage = () => {
                 bgVideo.current?.play().then(() => {
                     setVideoStarted(true);
                 }).catch(() => {});
-
             }
 
         }, 4000)
@@ -49,18 +47,19 @@ const IndexPage = () => {
 
                 {/* BG-Image */}
                 <StaticImage
-                    src="../../static/bg-index.jpg"
+                    src="../images/bg-index.jpg"
                     alt="Bild des Salons"
                     objectFit="cover"
                     layout="fullWidth"
+                    placeholder="blurred"
                     className={clsx('absolute w-full h-full inset-0 transition duration-1000',
-                    {
+                        {
                             'opacity-30':
                                 !videoStarted,
                             'opacity-0':
                             videoStarted,
                         }
-                        )}
+                    )}
                 />
                 {/* BG-Video */}
                 <video muted loop ref={bgVideo}
@@ -128,9 +127,9 @@ const IndexPage = () => {
 
                         </h1>
                         <Link to="/termin">
-                                <ButtonStyles>
-                                    Termin buchen
-                                </ButtonStyles>
+                            <ButtonStyles>
+                                Termin buchen
+                            </ButtonStyles>
                         </Link>
                     </div>
                 </Container>
@@ -163,38 +162,52 @@ const IndexPage = () => {
                     <div className="pl-8 2xl:pl-0 2xl:ml-[8.3333%] flex gap-4 overflow-x-auto  no-scrollbar">
                         <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
                             <div className="pt-[75%] relative">
-                                <LazyImg
-                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full object-cover"
-                                    src="/index-salon-01.jpg"
-                                    alt=""/>
+                                <StaticImage
+                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full"
+                                    objectFit="cover"
+                                    width={534}
+                                    height={400}
+                                    placeholder="blurred"
+                                    src="../images/index-salon-01.jpg"
+                                    alt="Innenansicht des Salons 1"/>
 
                             </div>
                         </div>
                         <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
                             <div className="pt-[75%] relative">
-                                <LazyImg
-                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full object-cover"
-                                    src="/index-salon-02.jpg"
-                                    alt=""/>
+                                <StaticImage
+                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full"
+                                    objectFit="cover"
+                                    width={534}
+                                    height={400}
+                                    placeholder="blurred"
+                                    src="../images/index-salon-02.jpg"
+                                    alt="Innenansicht des Salons 2"/>
 
                             </div>
                         </div>
                         <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
                             <div className="pt-[75%] relative">
-                                <LazyImg
-                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full object-cover"
-                                    src="/index-salon-03.jpg"
-                                    alt=""/>
-
+                                <StaticImage
+                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full"
+                                    objectFit="cover"
+                                    width={534}
+                                    height={400}
+                                    placeholder="blurred"
+                                    src="../images/index-salon-03.jpg"
+                                    alt="Innenansicht des Salons 3"/>
                             </div>
                         </div>
                         <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
                             <div className="pt-[75%] relative">
-                                <LazyImg
-                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full object-cover"
-                                    src="/index-salon-04.jpg"
-                                    alt=""/>
-
+                                <StaticImage
+                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full"
+                                    objectFit="cover"
+                                    width={534}
+                                    height={400}
+                                    placeholder="blurred"
+                                    src="../images/index-salon-04.jpg"
+                                    alt="Innenansicht des Salons 4"/>
                             </div>
                         </div>
                     </div>

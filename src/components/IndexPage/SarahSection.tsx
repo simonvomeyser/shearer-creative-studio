@@ -1,12 +1,11 @@
 import clsx from 'clsx';
 import {Link} from "gatsby";
-
+import {StaticImage} from "gatsby-plugin-image";
 import React, {useRef, useState} from 'react';
 import {usePercentageInView} from '../../hooks/usePercentageInView';
 import {ArrowLinkStyles} from '../ArrowLinkStyles';
 import {Container} from '../Container';
 import {CopyText} from '../CopyText';
-import {LazyImg} from '../LazyImg';
 import {SarahHeading} from '../SarahHeading';
 import {Section} from '../Section';
 import {Watercolor} from '../Watercolor';
@@ -42,10 +41,15 @@ export const SarahSection: React.FC = () => {
                 <div className='relative flex flex-wrap items-start justify-end md:flex-nowrap '>
                     <div
                         className=' relative h-[500px] w-[350px] bg-white bg-opacity-10 xs:mr-[10%] sm:mr-[30%] md:mr-0 md:h-[550px] md:w-[400px] xl:h-[600px] xl:w-[450px] '>
-                        <LazyImg
-                            src='/sarah-about-me-image.jpg'
+                        <StaticImage
+                            src='../../images/sarah-about-me-image.jpg'
+                            width={450}
+                            height={600}
+                            placeholder="blurred"
                             onLoad={() => setImageLoaded(true)}
-                            className='absolute inset-0 h-full w-full object-cover object-top md:mr-10'
+                            className='absolute inset-0 h-full w-full md:mr-10'
+                            objectFit="cover"
+                            objectPosition="top"
                             alt='Freundliches Bild von Sarah'
                         />
                         <div
