@@ -1,5 +1,6 @@
 import type {GatsbyConfig} from "gatsby";
 import path from "path";
+
 require("dotenv").config()
 
 const config: GatsbyConfig = {
@@ -7,12 +8,12 @@ const config: GatsbyConfig = {
         title: `Shearer Creative Studio`,
         siteUrl: `https://shearer.studio`
     },
-    plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", 'gatsby-plugin-postcss', {
+    plugins: [ {
         resolve: 'gatsby-plugin-manifest',
         options: {
             "icon": "src/images/icon.png"
         }
-    }, "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    }, {
         resolve: 'gatsby-source-filesystem',
         options: {
             "name": "images",
@@ -29,19 +30,34 @@ const config: GatsbyConfig = {
         // @ts-ignore
         __key: "pages"
     }, {
+        resolve: 'gatsby-source-filesystem',
+        options: {
+            "name": "diaryEntries",
+            "path": "./src/data/diaryEntries"
+        },
+        // @ts-ignore
+        __key: "pages"
+    }, {
         resolve: `gatsby-plugin-layout`,
         options: {
             component: path.resolve(`src/components/Layout.tsx`),
         },
     },
-        {
-            resolve: "gatsby-plugin-web-font-loader",
-            options: {
-                typekit: {
-                    id: process.env.TYPEKIT_ID,
-                },
+    {
+        resolve: "gatsby-plugin-web-font-loader",
+        options: {
+            typekit: {
+                id: process.env.TYPEKIT_ID,
             },
         },
+    },
+        "gatsby-transformer-remark",
+        "gatsby-plugin-sharp",
+        "gatsby-transformer-sharp",
+        "gatsby-plugin-image",
+        "gatsby-plugin-react-helmet",
+        "gatsby-plugin-sitemap",
+        'gatsby-plugin-postcss',
     ]
 };
 

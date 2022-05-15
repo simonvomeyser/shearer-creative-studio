@@ -7,7 +7,6 @@ import {Container} from '../Container';
 import {CopyText} from '../CopyText';
 import {Section} from '../Section';
 import {DiaryTeaser} from './components/DiaryTeaser';
-import {featuredDiaryEntries} from '../../data/diaryEntries';
 
 export const DiarySection: React.FC = () => {
 
@@ -38,10 +37,10 @@ export const DiarySection: React.FC = () => {
 
             <Container fluid>
                 <div className='pl-8 2xl:pl-0 2xl:ml-[8.3333%] flex gap-4 overflow-x-auto  no-scrollbar pr-8'>
-                    {featuredDiaryEntries.map((diaryEntry, index) => (
-                        <DiaryTeaser diaryEntry={diaryEntry} key={diaryEntry.id}
-                                     aspect={isOdd(index) ? 'square' : 'portrait'}/>
-                    ))}
+                    {/*{featuredDiaryEntries.map((diaryEntry, index) => (*/}
+                    {/*    <DiaryTeaser diaryEntry={diaryEntry} key={diaryEntry.id}*/}
+                    {/*                 aspect={isOdd(index) ? 'square' : 'portrait'}/>*/}
+                    {/*))}*/}
                 </div>
             </Container>
         </Section>
