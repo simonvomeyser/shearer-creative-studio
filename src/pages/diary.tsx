@@ -73,12 +73,6 @@ const Diary = (props: DiaryPagePropsType) => {
                         </h1>
                     </BraveText>
 
-                    <CopyText>
-                        Egal ob Awards, tolle Kundengeschichten, Arbeit für den Zentralverband oder Hilfe für deinen
-                        Haarnotfall, hier bist du absolut richtig.
-                    </CopyText>
-
-
                 </Container>
             </Section>
             <Section className='py-10 md:py-16'>
