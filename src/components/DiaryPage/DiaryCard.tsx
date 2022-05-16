@@ -33,7 +33,7 @@ export const DiaryCard: React.FC<DiaryCardProps> = ({diaryEntry, size, className
                 <Link to={url} className='absolute cursor-pointer w-full inset-0 h-full object-cover'>
                     <GatsbyImage
                         image={gatsbyImageData}
-                        className=" w-full h-full  hover:scale-110 transition"
+                        className=" w-full h-full  hover:scale-105 transition duration-1000"
                         objectFit="cover"
                         objectPosition="top"
                         alt={`Titelbild für den Diary Eintrag ${diaryEntry.title}`}/>

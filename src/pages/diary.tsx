@@ -119,7 +119,7 @@ query MyQuery {
         full: childImageSharp {
             gatsbyImageData(
                 placeholder: BLURRED,
-                width: 1300
+                width: 1400
             )
         }
         half: childImageSharp {
@@ -130,7 +130,7 @@ query MyQuery {
             }
             gatsbyImageData(
                 placeholder: BLURRED
-                width: 600
+                width: 768
             )
         }
       }
