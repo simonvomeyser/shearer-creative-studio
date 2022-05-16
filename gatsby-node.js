@@ -22,7 +22,7 @@ exports.createPages = async function ({ actions, graphql }) {
     const diaryFolderGlob = 'diary/' + data.folder + '/**'
     const slug = data.slug
     actions.createPage({
-      path: 'diary/' + data.slug, component: path.resolve(`src/components/DiaryPage/DiaryPage.tsx`),
+      path: 'diary/' + data.slug, component: path.resolve(`src/components/DiaryDetailPage/DiaryDetailPage.tsx`),
       context: { slug, diaryFolderGlob },
     })
   })
