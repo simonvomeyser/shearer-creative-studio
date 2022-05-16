@@ -1,17 +1,15 @@
 import {graphql} from "gatsby";
-import {IGatsbyImageData} from "gatsby-plugin-image";
 import React from 'react';
-import {DiaryPagePropsType, ImageType} from "../components/DiaryPage/types";
-import {MetaTitle} from "../components/MetaTitle";
 
 import {BraveText} from '../components/BraveText';
 import {Container} from '../components/Container';
-import {CopyText} from '../components/CopyText';
 import {DiaryCard, DiaryCardSize} from '../components/DiaryPage/DiaryCard';
+import {DiaryPagePropsType, ImageType} from "../components/DiaryPage/types";
+import {MetaTitle} from "../components/MetaTitle";
 import {Quote} from '../components/Quote';
 import {Section} from '../components/Section';
-import {diaryEntries, DiaryEntryType} from '../data/diaryEntries';
-import {getRandomQuote, QuoteDataType} from '../data/quotes';
+import {DiaryEntryType} from '../data/diaryEntries';
+import {getRandomQuote} from '../data/quotes';
 
 
 const Diary = (props: DiaryPagePropsType) => {
@@ -50,7 +48,7 @@ const Diary = (props: DiaryPagePropsType) => {
         return (
             <>
                 {prependQuote ? <div className='md:col-span-2 py-10 md:py-0'>
-                    {/*<Quote quoteData={quote} />*/}
+                    <Quote quoteData={getRandomQuote()} />
                 </div> : null}
                 <DiaryCard size={width} diaryEntry={diaryEntry} gatsbyImageData={gatsbyImageData} />
             </>
