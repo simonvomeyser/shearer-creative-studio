@@ -86,7 +86,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
             </Container>
             <Container className='!max-w-screen-lg '>
                 <div className='flex -m-4 flex-wrap justify-center'>
-                    {diaryEntry.imageUrls.map((url) => {
+                    {diaryEntry.imageUrls.map((url, index) => {
 
                         const metaData = getImageMetaData(url);
                         const isLandscape = metaData.full.original.width > metaData.full.original.height;
@@ -95,7 +95,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                             <div className={clsx('p-4', {
                                 'w-full md:w-[90%] ' : isLandscape,
                                 'w-full sm:w-1/2 p-4' : !isLandscape,
-                            })} key={url}>
+                            })} key={index}>
                                 <GatsbyImage alt="Titelbild"
                                              image={getGatsbyImageData(url, 'full')}
                                              className="w-full"
