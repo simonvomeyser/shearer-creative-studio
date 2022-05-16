@@ -8,6 +8,8 @@ exports.createPages = async function ({ actions, graphql }) {
           node {
             frontmatter {
               slug
+              folder
+              titleImageUrl
             }
           }
         }
@@ -17,10 +19,11 @@ exports.createPages = async function ({ actions, graphql }) {
 
   data.allMarkdownRemark.edges.forEach(edge => {
     const data = edge.node.frontmatter
+    const diaryFolderGlob = 'diary/' + data.folder + '/**'
+    const slug = data.slug
     actions.createPage({
-      path: 'diary/' + slug,
-      component: path.resolve(`src/components/DiaryPage/DiaryPage.tsx`),
-      context: { slug: data.slug, titleImageRelativePath : 'diary/' + data.folder + '/' +data.titleImageUrl },
+      path: 'diary/' + data.slug, component: path.resolve(`src/components/DiaryPage/DiaryPage.tsx`),
+      context: { slug, diaryFolderGlob },
     })
   })
 }

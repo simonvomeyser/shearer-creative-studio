@@ -1,17 +1,36 @@
+import clsx from "clsx";
 import {graphql, Link} from "gatsby";
+import {GatsbyImage, IGatsbyImageData} from "gatsby-plugin-image";
 import React from 'react';
 import {DiaryEntryType} from "../../data/diaryEntries";
 import {Container} from '../Container';
 import {CopyText} from '../CopyText';
-import {LazyImg} from '../LazyImg';
 import {Section} from '../Section';
-import {TitleImage} from "./components/TitleImage";
+
+type ChildrenImageSharpType = {
+    gatsbyImageData: IGatsbyImageData
+    original: {
+        height: number,
+        width: number,
+        src: string
+    }
+}
+
+type ImageType = {
+    relativePath: string;
+    base: string
+    full: ChildrenImageSharpType
+    half: ChildrenImageSharpType
+}
 
 type DataPropsType = {
     data: {
-        markdownRemark : {
+        markdownRemark: {
             frontmatter: DiaryEntryType
             html: string
+        }
+        allFile: {
+            nodes: Array<ImageType>
         }
     }
 }
@@ -19,12 +38,34 @@ type DataPropsType = {
 const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
 
     const diaryEntry = data.markdownRemark.frontmatter;
-    const folderUrl = `/diary/${diaryEntry.folder}/`;
 
-    console.log(data)
+    function getImageMetaData(imageBaseName: String): ImageType {
+        const value = data.allFile.nodes.find((file) => file.base === imageBaseName);
+
+        if (!value) {
+            throw new Error(imageBaseName + ' not found in folder ' + diaryEntry.folder);
+        }
+
+        return value;
+    }
+
+    function getGatsbyImageData(imageBaseName: String, size: 'full' | 'half') {
+        return getImageMetaData(imageBaseName)[size].gatsbyImageData;
+    }
+
 
     return (
         <Section headerPaddingTop={true}>
+            <Container fluid className='max-w-[1400px] mb-8'>
+                <div className='relative pt-[50%] md:pt-[40%] 2xl:pt-[35%]'>
+                    <GatsbyImage alt="Titelbild"
+                                 image={getGatsbyImageData(diaryEntry.titleImageUrl, 'full')}
+                                 className="object-cover object-top absolute inset-0 w-full h-full"
+                                 objectFit="cover"
+                                 objectPosition="top"
+                    />
+                </div>
+            </Container>
             <Container fluid className='max-w-[1400px] mb-8'>
             </Container>
             <Container className='!max-w-screen-md '>
@@ -44,10 +85,27 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                 </CopyText>
             </Container>
             <Container className='!max-w-screen-lg '>
-                <div className='grid md:grid-cols-2 gap-4'>
-                    {diaryEntry.imageUrls.map((url) =>
-                        <img src={folderUrl + url} alt='' loading="lazy" key={url}/>
-                    )}
+                <div className='flex -m-4 flex-wrap justify-center'>
+                    {diaryEntry.imageUrls.map((url) => {
+
+                        const metaData = getImageMetaData(url);
+                        const isLandscape = metaData.full.original.width > metaData.full.original.height;
+
+                        return (
+                            <div className={clsx('p-4', {
+                                'w-full md:w-[90%] ' : isLandscape,
+                                'w-full sm:w-1/2 p-4' : !isLandscape,
+                            })} key={url}>
+                                <GatsbyImage alt="Titelbild"
+                                             image={getGatsbyImageData(url, 'full')}
+                                             className="w-full"
+                                             objectFit="cover"
+                                             objectPosition="top"
+                                />
+                            </div>
+                        )
+                    })}
+
                 </div>
             </Container>
         </Section>
@@ -57,7 +115,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
 };
 
 export const query = graphql`
-  query($slug: String!, $titleImageUrl: String) {
+  query($slug: String!, $diaryFolderGlob: String) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -72,10 +130,33 @@ export const query = graphql`
         imageUrls
       }
     }
-    file(relativePath: { eq: $titleImageRelativePath }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
+    allFile(
+      filter: {relativePath: {glob: $diaryFolderGlob}, ext: {regex: "/^.(jpg|png|jpeg)/i"}}
+    ) {
+      nodes {
+        relativePath
+        base,
+        full: childImageSharp {
+            original {
+              width
+              height
+              src
+            }
+            gatsbyImageData(
+                placeholder: BLURRED,
+                width: 1400
+            )
+        }
+        half: childImageSharp {
+            original {
+              width
+              height
+              src
+            }
+            gatsbyImageData(
+                placeholder: BLURRED
+                width: 500
+            )
         }
       }
     }
