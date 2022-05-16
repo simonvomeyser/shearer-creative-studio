@@ -6,7 +6,6 @@ export type DiaryEntryType = {
     title: string,
     category: string,
     excerpt: string,
-    body: string,
     featured?: number,
     date?: string,
     listImageUrl: string,

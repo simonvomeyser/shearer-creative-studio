@@ -1,26 +1,24 @@
 import clsx from 'clsx';
 import {Link} from "gatsby";
+import {GatsbyImage, IGatsbyImageData} from "gatsby-plugin-image";
 import React from 'react';
 import {DiaryEntryType} from '../../data/diaryEntries';
 import {ArrowLinkStyles} from '../ArrowLinkStyles';
 import {CopyText} from '../CopyText';
-import {LazyImg} from '../LazyImg';
 
-export type DiaryEntryCardSize = 'full' | 'small' | 'big'
+export type DiaryCardSize = 'full' | 'small' | 'big'
 
 export type DiaryCardProps = {
     className?: string;
-    size: DiaryEntryCardSize;
+    size: DiaryCardSize;
     diaryEntry: DiaryEntryType
-
+    gatsbyImageData: IGatsbyImageData
 };
 
-export const DiaryCard: React.FC<DiaryCardProps> = ({diaryEntry, size, className,}) => {
+export const DiaryCard: React.FC<DiaryCardProps> = ({diaryEntry, size, className, gatsbyImageData}) => {
 
     const url = '/diary/' + diaryEntry.slug;
-    const imageUrl = '/diary/' + diaryEntry.folder + '/' + (size === 'full' ? diaryEntry.titleImageUrl : diaryEntry.listImageUrl);
     const showExcerpt = size === 'full' && diaryEntry.excerpt;
-
 
     return (
         <div className={clsx('', {
@@ -33,9 +31,11 @@ export const DiaryCard: React.FC<DiaryCardProps> = ({diaryEntry, size, className
                 'sm:mx-[calc(var(--container-padding--xs)*-1)]  md:mx-[calc(var(--container-padding--md)*-1)] pt-[56.6666%] md:pt-[42.85%]': size === 'full',
             })}>
                 <Link to={url} className='absolute cursor-pointer w-full inset-0 h-full object-cover'>
-                    <LazyImg
-                        className=' w-full h-full object-cover object-top hover:scale-110 transition'
-                        src={imageUrl}
+                    <GatsbyImage
+                        image={gatsbyImageData}
+                        className=" w-full h-full  hover:scale-110 transition"
+                        objectFit="cover"
+                        objectPosition="top"
                         alt={`Titelbild für den Diary Eintrag ${diaryEntry.title}`}/>
                 </Link>
             </div>
