@@ -117,7 +117,7 @@ body > iframe {
 
 .rich-text strong {
   color: black;
-  background: var(--sage-700);
+  background: var(--sage-500);
 }
 
 .rich-text a {
@@ -126,6 +126,9 @@ body > iframe {
 }
 .rich-text a:hover {
   color: var(--primary);
+}
+.rich-text p + p {
+  margin-top: 1.5em;
 }
 
 /*Fix issue with build version overwriting tw styles*/
