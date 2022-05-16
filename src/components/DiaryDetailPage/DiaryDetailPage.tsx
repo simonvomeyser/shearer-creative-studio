@@ -144,7 +144,7 @@ export const query = graphql`
             }
             gatsbyImageData(
                 placeholder: BLURRED,
-                width: 1400
+                width: 1500
             )
         }
         half: childImageSharp {
@@ -155,7 +155,7 @@ export const query = graphql`
             }
             gatsbyImageData(
                 placeholder: BLURRED
-                width: 500
+                width: 768
             )
         }
       }
