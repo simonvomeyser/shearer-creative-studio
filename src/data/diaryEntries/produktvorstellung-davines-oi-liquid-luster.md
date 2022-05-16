@@ -6,7 +6,7 @@ title: 'Produkt im Fokus: Davines OI Liquid Luster'
 excerpt: 'Dürfen wir vorstellen: das neue Starprodukt OI LIQUID LUSTER für einen perfekten, schwerelose Glanz, um die Haare im Handumdrehen zum Strahlen zu bringen.'
 date: 'Mai 2022'
 category: 'Produktvorstellung'
-listImageUrl: '1.jpeg'
+listImageUrl: 'list.jpeg'
 titleImageUrl: '1.jpeg'
 imageUrls: [
     '1.jpeg',

@@ -7,7 +7,7 @@ date: 'Oktober 2020'
 category: 'Produktion'
 featured: 2
 excerpt: 'Mitarbeit an der Trendkollektionen des Zentralverbandes des Deutschen Friseurhandwerks'
-listImageUrl: 'list.jpeg'
+listImageUrl: '1.jpg'
 titleImageUrl: 'title.jpg'
 imageUrls: [
     '1.jpg',
