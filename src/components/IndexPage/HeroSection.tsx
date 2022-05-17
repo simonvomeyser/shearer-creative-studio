@@ -35,7 +35,7 @@ export const HeroSection: React.FC = () => {
 
             {/* BG-Image */}
             <StaticImage
-                src="../images/bg-index.jpg"
+                src="../../images/bg-index.jpg"
                 alt="Bild des Salons"
                 objectFit="cover"
                 layout="fullWidth"

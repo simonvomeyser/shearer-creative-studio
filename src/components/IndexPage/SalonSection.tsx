@@ -47,7 +47,7 @@ export const COMPONENT: React.FC = ({
                                     width={534}
                                     height={400}
                                     placeholder="blurred"
-                                    src="../images/index-salon-01.jpg"
+                                    src="../../images/index-salon-01.jpg"
                                     alt="Innenansicht des Salons 1"/>
 
                             </div>
@@ -60,7 +60,7 @@ export const COMPONENT: React.FC = ({
                                     width={534}
                                     height={400}
                                     placeholder="blurred"
-                                    src="../images/index-salon-02.jpg"
+                                    src="../../images/index-salon-02.jpg"
                                     alt="Innenansicht des Salons 2"/>
 
                             </div>
@@ -73,7 +73,7 @@ export const COMPONENT: React.FC = ({
                                     width={534}
                                     height={400}
                                     placeholder="blurred"
-                                    src="../images/index-salon-03.jpg"
+                                    src="../../images/index-salon-03.jpg"
                                     alt="Innenansicht des Salons 3"/>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ export const COMPONENT: React.FC = ({
                                     width={534}
                                     height={400}
                                     placeholder="blurred"
-                                    src="../images/index-salon-04.jpg"
+                                    src="../../images/index-salon-04.jpg"
                                     alt="Innenansicht des Salons 4"/>
                             </div>
                         </div>
