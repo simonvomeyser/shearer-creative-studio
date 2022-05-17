@@ -21,7 +21,10 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({className}) => {
 
     useEffect(() => {
         return globalHistory.listen(({action}) => {
-            if (action === 'PUSH') setIsMobileMenuOpen(false)
+            if (action === 'PUSH') {
+                setIsMobileMenuOpen(false)
+                scrollLock.enablePageScroll();
+            }
         })
     }, [setIsMobileMenuOpen])
 
