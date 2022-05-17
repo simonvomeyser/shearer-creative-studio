@@ -39,6 +39,7 @@ export const HeroSection: React.FC = () => {
                 alt="Bild des Salons"
                 objectFit="cover"
                 layout="fullWidth"
+                loading="eager"
                 placeholder="blurred"
                 className={clsx('absolute w-full h-full inset-0 transition duration-1000',
                     {
