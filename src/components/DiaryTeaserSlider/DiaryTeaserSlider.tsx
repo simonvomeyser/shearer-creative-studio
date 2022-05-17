@@ -106,7 +106,7 @@ query IndexPageQuery {
         childImageSharp {
             gatsbyImageData(
                 placeholder: BLURRED,
-                width: 600
+                width: 550
             )
         }
       }
