@@ -13,8 +13,8 @@ export const PriceSection: React.FC = ({}) => {
         <Section id="preise" className="mb-36 md:mb-48">
             <h2 className="sr-only">Preise</h2>
             <Watercolor
-                blendMode="color-dodge"
-                className={clsx('top-[-15%] right-[-600px] w-[900px] h-[1000px] opacity-30 ')}
+                color="green"
+                className={clsx('hidden md:block top-[-15%] right-[-600px] w-[900px] h-[1000px] opacity-30 ')}
             />
             <Container className="fluid pt-[40%] md:pt-[28%] " fluid>
                 <PriceHeading

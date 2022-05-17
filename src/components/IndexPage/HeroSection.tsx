@@ -68,8 +68,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Watercolor Drops */}
             <Watercolor
-                blendMode="color-dodge"
-                blendColor="black"
+                color="black"
                 className={clsx('top-[-400px] left-[-200px] w-[555px] h-[725px] opacity-50 !duration-[3s]',
                     {
                         'scale-50 !opacity-0': !mountedTick,
@@ -78,8 +77,7 @@ export const HeroSection: React.FC = () => {
                 )}
             />
             <Watercolor
-                blendMode="color-dodge"
-                blendColor="black"
+                color="black"
                 className={clsx('top-[45vh] right-[-300px] w-[600px] h-[800px] opacity-50 !duration-[3s]',
                     {
                         'scale-75 !opacity-0': !mountedTick,

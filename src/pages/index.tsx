@@ -3,8 +3,8 @@ import {DiarySection} from '../components/IndexPage/DiarySection';
 import {FaqSection} from "../components/IndexPage/FaqSection";
 import {HeroSection} from "../components/IndexPage/HeroSection";
 import {PriceSection} from "../components/IndexPage/PriceSection";
+import {SalonSection} from "../components/IndexPage/SalonSection";
 import {SarahSection} from "../components/IndexPage/SarahSection";
-
 
 const IndexPage = () => {
 
@@ -13,6 +13,8 @@ const IndexPage = () => {
         <div>
 
             <HeroSection/>
+
+            <SalonSection/>
 
             <PriceSection/>
 

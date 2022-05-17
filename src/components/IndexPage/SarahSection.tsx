@@ -23,9 +23,8 @@ export const SarahSection: React.FC = () => {
         >
             <h2 className='sr-only'>Über Sarah</h2>
             <Watercolor
-                blendMode='screen'
-                blendColor='white'
-                className='top-[-20%] left-[-20vw] h-[80vw] w-[40vw] opacity-20 '
+                color='white'
+                className='top-[-20%] left-[-400px] h-[900px] w-[700px] opacity-10 2xl:opacity-20'
             />
             <div className='transition-opacity'>
                 <SarahHeading

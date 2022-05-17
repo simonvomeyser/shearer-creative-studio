@@ -1,57 +1,60 @@
 import clsx from 'clsx';
-import lozad from 'lozad';
-import React, { useEffect, useRef } from 'react';
+import {StaticImage} from "gatsby-plugin-image";
+import React from 'react';
 
 export type WatercolorProps = {
     className?: string;
-    blendMode: 'color-burn' | 'color-dodge' | 'screen';
-    blendColor?: 'black' | 'white';
+    color?: 'black' | 'white' | 'green' | 'gray';
 };
 
-export const Watercolor: React.FC<WatercolorProps> = ({
-                                                          blendColor,
-                                                          blendMode,
-                                                          className,
-                                                      }) => {
+export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
 
-    const styles = {
-        'maskRepeat': 'no-repeat',
-        'WebkitMaskRepeat': 'no-repeat',
-        'maskSize': 'contain',
-        'WebkitMaskSize': 'contain',
-        'backgroundBlendMode': blendMode,
-        backgroundColor: blendColor,
-    };
+    const defaultClasses = 'pointer-events-none absolute rotate-[-19deg] transition-all !duration-[4s] z-watercolor';
 
-    const elementRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const observer = lozad('null', {
-            loaded(element: HTMLDivElement) {
-                element.style['webkitMaskImage'] = 'url(watercolor.png)';
-                // @ts-ignore
-                element.style['maskImage'] = 'url(watercolor.png)';
-            },
-        });
-
-        if (elementRef.current) {
-            observer.observer.observe(elementRef.current);
-        }
-
-        return () => {
-            observer.observer.disconnect();
-        };
-    }, []);
-
-
-    return (
-        <div className={clsx(
-            'lozad pointer-events-none absolute inline-block bg-no-repeat bg-contain rotate-[-19deg] transition-all !duration-[4s] z-watercolor',
-            className,
-        )}
-             data-background-image={'watercolor.png'}
-             ref={elementRef}
-             style={styles}
+    if (color === 'white') {
+        return <StaticImage
+            src="../images/watercolor/white.png"
+            objectFit="contain"
+            alt=''
+            role='presentation'
+            className={clsx(defaultClasses, className)}
+            placeholder="blurred"
         />
-    );
+    }
+
+    if (color === 'black') {
+        return <StaticImage
+            src="../images/watercolor/black.png"
+            objectFit="contain"
+            alt=''
+            role='presentation'
+            className={clsx(defaultClasses, className)}
+            placeholder="blurred"
+        />
+    }
+
+    if (color === 'gray') {
+        return <StaticImage
+            src="../images/watercolor/gray.png"
+            objectFit="contain"
+            alt=''
+            role='presentation'
+            className={clsx(defaultClasses, className)}
+            placeholder="blurred"
+        />
+    }
+
+    if (color === 'green') {
+        return <StaticImage
+            src="../images/watercolor/green.png"
+            objectFit="contain"
+            alt=''
+            role='presentation'
+            className={clsx(defaultClasses, className)}
+            placeholder="blurred"
+        />
+    }
+
+
+    return null;
 };

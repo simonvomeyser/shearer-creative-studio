@@ -10,16 +10,14 @@ import {Section} from "../Section";
 import {Watercolor} from "../Watercolor";
 
 
-export const COMPONENT: React.FC = ({
-}) => {
+export const SalonSection: React.FC = () => {
 
   return (
             <Section className="pt-20 lg:pt-32 mb-16 md:mb-24" id="salon">
                 <h2 className="sr-only">Salon</h2>
                 <Watercolor
-                    blendMode="color-dodge"
-                    blendColor="black"
-                    className={clsx('top-[5%] left-[-300px] w-[900px] h-[1000px] opacity-50 ')}
+                    color="black"
+                    className={clsx('top-[5%] left-[-300px] w-[900px] h-[1000px] opacity-30 md:opacity-40 ')}
                 />
                 <Container className="mb-8 lg:mb-12">
                     <div className="sm:ml-[20%] md:ml-[50%] mb-10 lg:mb-16">
