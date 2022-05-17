@@ -18,7 +18,7 @@ export const FaqSection: React.FC = ({}) => {
             />
             <Container className="mt-[-250px] sm:mt-[-300px] md:mt-[-450px]">
 
-                <FaqHeading className="w-[80%] text-secondary"/>
+                <FaqHeading className="w-[80%] text-secondary -translate-y-4 md:translate-y-0"/>
 
             </Container>
             <Container>

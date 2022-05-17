@@ -40,7 +40,7 @@ export const SalonSection: React.FC = () => {
                         <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
                             <div className="pt-[75%] relative">
                                 <StaticImage
-                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full"
+                                    className="absolute inset-0 w-full h-full"
                                     objectFit="cover"
                                     width={534}
                                     height={400}
@@ -53,7 +53,7 @@ export const SalonSection: React.FC = () => {
                         <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
                             <div className="pt-[75%] relative">
                                 <StaticImage
-                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full"
+                                    className="absolute inset-0 w-full h-full"
                                     objectFit="cover"
                                     width={534}
                                     height={400}
@@ -66,7 +66,7 @@ export const SalonSection: React.FC = () => {
                         <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
                             <div className="pt-[75%] relative">
                                 <StaticImage
-                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full"
+                                    className="absolute inset-0 w-full h-full"
                                     objectFit="cover"
                                     width={534}
                                     height={400}
@@ -78,7 +78,7 @@ export const SalonSection: React.FC = () => {
                         <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
                             <div className="pt-[75%] relative">
                                 <StaticImage
-                                    className="hover:scale-110 duration-700 cursor-pointer absolute inset-0 w-full h-full"
+                                    className="absolute inset-0 w-full h-full"
                                     objectFit="cover"
                                     width={534}
                                     height={400}

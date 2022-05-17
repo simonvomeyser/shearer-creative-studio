@@ -53,7 +53,7 @@ export const SarahSection: React.FC = () => {
                         />
                         <div
                             className={clsx(
-                                'absolute -right-3 top-0 font-roma text-3xl font-bold uppercase !leading-none text-s-black transition delay-500 duration-1000 xs:text-5xl sm:-right-16 md:-right-32  xl:-right-56 md:text-[72px] xl:text-[100px] 2xl:-left-56',
+                                'absolute right-0 xs:-right-12 top-0 font-roma text-3xl font-bold uppercase !leading-none text-s-black transition delay-500 duration-1000 xs:text-5xl sm:-right-16 md:-right-40 md:top-16 xl:-right-56 md:text-[72px] xl:text-[100px] 2xl:-left-56',
                                 {
                                     'opacity-0': !imageLoaded,
                                 },
