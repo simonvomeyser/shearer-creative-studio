@@ -2,7 +2,7 @@
 id: 4
 slug: 'vortrag-stylecom-messe-2019'
 folder: '4-vortrag-stylecom-messe-2019'
-title: 'Vortrag Stylecom Messe 2019'
+title: 'Vortrag auf der Stylecom Messe'
 excerpt: 'Auf der Stylecom Messe in Erfurt durfte Sarah einen Vortrag über Make-Up halten'
 featured: 4
 date: 'Oktober 2019'
