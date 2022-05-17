@@ -3,7 +3,7 @@ id: 2
 slug: 'ghda-nominierte-kollektion-2019-maniac'
 folder: '2-ghda-nominierte-kollektion-2019-maniac'
 title: 'GHDA Nominierte Kollektion 2019 "Maniac"'
-featured: 3
+featured: 2
 date: 'Juni 2019'
 category: 'Award'
 excerpt: 'Die für den German Hair Dressing Award nominierte Strecke "Maniac"'
