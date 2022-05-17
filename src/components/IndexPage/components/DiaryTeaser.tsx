@@ -1,23 +1,21 @@
 import clsx from 'clsx';
 import {Link} from "gatsby";
-import {StaticImage} from "gatsby-plugin-image";
+import {GatsbyImage, IGatsbyImageData} from "gatsby-plugin-image";
 import React from 'react';
 import {DiaryEntryType} from '../../../data/diaryEntries';
 import {ArrowLinkStyles} from '../../ArrowLinkStyles';
 import {CopyText} from '../../CopyText';
-import {LazyImg} from '../../LazyImg';
 
 export type DiaryTeaserProps = {
     diaryEntry: DiaryEntryType,
+    gatsbyImage: IGatsbyImageData;
     className?: string,
     aspect?: 'portrait' | 'square',
 };
 
-export const DiaryTeaser: React.FC<DiaryTeaserProps> = ({diaryEntry, className, aspect = 'portrait'}) => {
+export const DiaryTeaser: React.FC<DiaryTeaserProps> = ({diaryEntry, className, aspect = 'portrait', gatsbyImage}) => {
 
     const url = '/diary/' + diaryEntry.slug;
-    const folder = '/diary/' + diaryEntry.slug;
-    const imageUrl = '../../../static/diary/' + diaryEntry.folder + '/' + diaryEntry.listImageUrl;
 
     return (
         <div className={clsx('relative flex-shrink-0 w-[85%] md:w-[45%] xl:w-[40%] overflow-hidden', className)}>
@@ -26,7 +24,12 @@ export const DiaryTeaser: React.FC<DiaryTeaserProps> = ({diaryEntry, className, 
                     'pt-[140%]': aspect === 'portrait',
                     'pt-[120%]': aspect === 'square',
                 })}>
-                    <Link to={url} className='absolute cursor-pointer w-full inset-0 h-full'>
+                    <Link to={url} className='absolute cursor-pointer w-full inset-0 h-full transition duration-700 hover:scale-105'>
+                        <GatsbyImage alt={'Titelbild für ' + diaryEntry.title} image={gatsbyImage}
+                                     className="w-full h-full"
+                                     objectFit="cover"
+                                     objectPosition="top"
+                        />
                     </Link>
                 </div>
                 <div className='pr-2 md:pr-8 space-y-3  md:space-y-4'>
