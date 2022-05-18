@@ -43,13 +43,15 @@ const Salon = () => {
                                 möchtest. Hier kansnt du es dir gut gehen lassen und bekommst <span
                                 className="underline decoration-primary">die perfekte Frisur, um dich mehr nach dir
                                 selbst zu fühlen.</span>
+                                <div className="xs:hidden my-8">
+
                                 <StaticImage src="../images/salon/1.png"
                                              width={580}
                                              height={750}
                                              objectFit="cover"
                                              alt="Bild des Salons 1, organisches Interieur mit vielen Pflanzen"
-                                             className="xs:hidden my-8"
                                 />
+                                </div>
                                 <span className="hidden xs:inline"><br/><br/></span>
                                 Unser Anspruch ist es, dir zu zu hören und dich ehrlich und ausführlich zu beraten. Das
                                 heißt aber auch dir transparent zu sagen was möglich ist, ohne dir das Unmögliche zu
@@ -158,24 +160,25 @@ const Salon = () => {
 
                             <div className="space-y-8">
 
-                            <CopyText className="mr-auto md:max-w-[35ch]">
-                                Sarah Scherer (Sie/Ihre) - Das multifunktionale Chamäleon.
-                                irgendwo zwischen Pippi Langstrumpf und Rapunzel, macht gerne Dinge die ihr schwer
-                                fallen,
-                                um an ihnen zu wachsen.
-                            </CopyText>
-                            <StaticImage src="../images/salon/sarah-1.jpg"
-                                         width={580}
-                                         height={750}
-                                         objectFit="cover"
-                                         alt="Bild des Salons 1, organisches Interieur mit vielen Pflanzen"
-                                         className="sm:hidden block ml-auto max-w-[450px]"
-                            />
-                            <CopyText className="mr-auto md:max-w-[35ch]">
-                                Dabei ist es egal, ob es sich um das Perfektionieren der neuesten Haartrends handelt
-                                oder
-                                der Einsatz dafür, unsere Welt ein kleines bisschen offener zu gestalten.
-                            </CopyText>
+                                <CopyText className="mr-auto md:max-w-[35ch]">
+                                    Sarah Scherer (Sie/Ihre) - Das multifunktionale Chamäleon.
+                                    irgendwo zwischen Pippi Langstrumpf und Rapunzel, macht gerne Dinge die ihr schwer
+                                    fallen,
+                                    um an ihnen zu wachsen.
+                                </CopyText>
+                                <div className="sm:hidden block ml-auto max-w-[450px]">
+                                    <StaticImage src="../images/salon/sarah-1.jpg"
+                                                 width={580}
+                                                 height={750}
+                                                 objectFit="cover"
+                                                 alt="Bild des Salons 1, organisches Interieur mit vielen Pflanzen"
+                                    />
+                                </div>
+                                <CopyText className="mr-auto md:max-w-[35ch]">
+                                    Dabei ist es egal, ob es sich um das Perfektionieren der neuesten Haartrends handelt
+                                    oder
+                                    der Einsatz dafür, unsere Welt ein kleines bisschen offener zu gestalten.
+                                </CopyText>
                             </div>
 
                         </div>
@@ -222,7 +225,8 @@ const Salon = () => {
                             <CopyText className=" max-w-[35ch]">
                                 Seit nun fast 10 Jahren fühlt sich die German Hairdressing Award Gewinnerin nicht nur
                                 hinter dem Friseurstuhl wohl, sondern begleitet erfolgreich Kampagnen und Kunden quer
-                                durch Europa als <span className="bg-mango-500">etablierte Hair & Make-up Artistin</span>.
+                                durch Europa als <span className="bg-mango-500">etablierte Hair & Make-up
+                                Artistin</span>.
                                 <br/><br/>
                                 Auch wenn die Meister Stipendiatin eher zufällig in die Branche stolperte, liebt sie
                                 ihren Beruf. Er ist eins der mächtigsten Tools einem Menschen zu mehr Selbstwert zu
