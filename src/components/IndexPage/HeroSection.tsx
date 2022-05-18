@@ -40,7 +40,6 @@ export const HeroSection: React.FC = () => {
                 objectFit="cover"
                 layout="fullWidth"
                 loading="eager"
-                placeholder="blurred"
                 className={clsx('absolute w-full h-full inset-0 transition duration-1000',
                     {
                         'opacity-30':

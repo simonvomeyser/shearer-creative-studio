@@ -18,7 +18,6 @@ export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
             alt=''
             role='presentation'
             className={clsx(defaultClasses, className)}
-            placeholder="blurred"
         />
     }
 
@@ -29,7 +28,6 @@ export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
             alt=''
             role='presentation'
             className={clsx(defaultClasses, className)}
-            placeholder="blurred"
         />
     }
 
@@ -40,7 +38,6 @@ export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
             alt=''
             role='presentation'
             className={clsx(defaultClasses, className)}
-            placeholder="blurred"
         />
     }
 
@@ -51,7 +48,6 @@ export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
             alt=''
             role='presentation'
             className={clsx(defaultClasses, className)}
-            placeholder="blurred"
         />
     }
 

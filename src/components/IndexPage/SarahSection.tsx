@@ -44,7 +44,6 @@ export const SarahSection: React.FC = () => {
                             src='../../images/sarah-about-me-image.jpg'
                             width={450}
                             height={600}
-                            placeholder="blurred"
                             onLoad={() => setImageLoaded(true)}
                             className='absolute inset-0 h-full w-full md:mr-10'
                             objectFit="cover"

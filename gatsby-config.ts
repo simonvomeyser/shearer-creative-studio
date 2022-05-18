@@ -51,8 +51,15 @@ const config: GatsbyConfig = {
             },
         },
     },
+    {
+        resolve: "gatsby-plugin-sharp",
+        options: {
+            defaults: {
+                placeholder: 'blurred'
+            },
+        },
+    },
         "gatsby-transformer-remark",
-        "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
         "gatsby-plugin-image",
         "gatsby-plugin-react-helmet",

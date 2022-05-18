@@ -14,7 +14,6 @@ export const SalonImagesSlider: React.FC = () => {
                                 objectFit="cover"
                                 width={534}
                                 height={400}
-                                placeholder="blurred"
                                 src="../images/index-salon-01.jpg"
                                 alt="Innenansicht des Salons 1"/>
 
@@ -27,7 +26,6 @@ export const SalonImagesSlider: React.FC = () => {
                                 objectFit="cover"
                                 width={534}
                                 height={400}
-                                placeholder="blurred"
                                 src="../images/index-salon-02.jpg"
                                 alt="Innenansicht des Salons 2"/>
 
@@ -40,7 +38,6 @@ export const SalonImagesSlider: React.FC = () => {
                                 objectFit="cover"
                                 width={534}
                                 height={400}
-                                placeholder="blurred"
                                 src="../images/index-salon-03.jpg"
                                 alt="Innenansicht des Salons 3"/>
                         </div>
@@ -52,7 +49,6 @@ export const SalonImagesSlider: React.FC = () => {
                                 objectFit="cover"
                                 width={534}
                                 height={400}
-                                placeholder="blurred"
                                 src="../images/index-salon-04.jpg"
                                 alt="Innenansicht des Salons 4"/>
                         </div>
