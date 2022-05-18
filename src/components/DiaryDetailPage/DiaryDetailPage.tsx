@@ -113,7 +113,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                     </div>
                 </Container>
             </Section>
-            <Section className="p-16 md:py-20">
+            <Section className="py-16 md:py-20">
                 <Container>
                     <Quote quoteData={getRandomQuote()}/>
                 </Container>
