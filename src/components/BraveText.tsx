@@ -12,7 +12,7 @@ export const BraveText: React.FC<BraveProps> = ({
 }) => {
 
   return (
-	<div className={clsx('font-roma font-bold text-[36px] xs:text-[44px] md:text-[80px] xl:text-[100px] !leading-[0.9] uppercase hyphens-auto', className)}>
+	<div className={clsx('font-roma font-bold text-[36px] xs:text-[44px] md:text-[80px] xl:text-[100px] !leading-[1] uppercase hyphens-auto', className)}>
         {children}
 	</div>
   );

@@ -12,7 +12,7 @@ export const CopyText: React.FC<CopyTextProps> = ({
 }) => {
 
   return (
-	<div className={clsx('text-lg md:text-xl xl:text-2xl max-w-[40ch] !leading-[1.4]', className)}>
+	<div className={clsx('text-lg xs:text-xl xl:text-2xl max-w-[40ch] !leading-[1.4]', className)}>
         {children}
 	</div>
   );

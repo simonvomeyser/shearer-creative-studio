@@ -58,8 +58,14 @@ body {
 
 .stroked-sage-500 {
   color: transparent;
-  -webkit-text-stroke: 2px var(--sage-500);
+  -webkit-text-stroke: 1px var(--sage-500);
 }
+@media (min-width: 480px) {
+  .stroked-sage-500 {
+    -webkit-text-stroke: 2px var(--sage-500);
+  }
+}
+
 
 .skew-top {
   position: relative;
