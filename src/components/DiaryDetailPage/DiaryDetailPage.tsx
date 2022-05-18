@@ -125,7 +125,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                     </h2>
                 </Container>
                 <Container fluid>
-                    <DiaryTeaserSlider exceptId={diaryEntry.id} maxElements={4} shuffle/>
+                    <DiaryTeaserSlider exceptId={diaryEntry.id} maxElements={4} />
                 </Container>
             </Section>
         </>

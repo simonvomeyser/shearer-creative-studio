@@ -2,19 +2,17 @@ import clsx from "clsx";
 import {graphql, StaticQuery} from "gatsby";
 import React from 'react';
 import {isOdd} from "../../lib/isOdd";
-import {shuffleArray} from "../../lib/shuffleArray";
 import {DiaryTeaser} from "./components/DiaryTeaser";
 import {StaticDiaryQueryDataType} from "./types";
 
 export type DiaryTeaserSliderProps = {
     className?: string;
     featuredOnly?: Boolean;
-    shuffle?: Boolean;
     exceptId?: number
     maxElements?: number
 };
 
-export const DiaryTeaserSlider: React.FC<DiaryTeaserSliderProps> = ({className, featuredOnly, exceptId, maxElements, shuffle}) => {
+export const DiaryTeaserSlider: React.FC<DiaryTeaserSliderProps> = ({className, featuredOnly, exceptId, maxElements}) => {
 
     function getGatsbyImageData(imageBaseName: string, allFileData: StaticDiaryQueryDataType['allFile']) {
         const value = allFileData.nodes.find((file) => file.base === imageBaseName);
@@ -53,10 +51,6 @@ export const DiaryTeaserSlider: React.FC<DiaryTeaserSliderProps> = ({className, 
                     }
                     if (maxElements) {
                         diaryEntries = diaryEntries.slice(0, maxElements)
-                    }
-
-                    if (shuffle) {
-                        diaryEntries = shuffleArray(diaryEntries)
                     }
 
                     return (
