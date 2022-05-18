@@ -46,6 +46,7 @@ const Salon = () => {
                                 <div className="xs:hidden my-8">
 
                                 <StaticImage src="../images/salon/1.png"
+                                             loading="eager"
                                              width={580}
                                              height={750}
                                              objectFit="cover"
@@ -218,7 +219,7 @@ const Salon = () => {
                     </div>
                 </Container>
             </Section>
-            <Section className="bg-sage-700 pb-8 xs:pb-10 md:pb-20">
+            <Section className="bg-sage-700 pb-8 xs:pb-10 md:pb-20" id="sarah">
                 <Container fluid className="px-[1rem] xs:px-[2rem] md:px-0">
                     <div className="grid md:grid-cols-2 gap-10 2xl:gap-12">
                         <div className="flex justify-end">
@@ -245,6 +246,11 @@ const Salon = () => {
                         </div>
                     </div>
                 </Container>
+            </Section>
+            <Section id="kontakt">
+               <Container>
+                   Test
+               </Container>
             </Section>
         </>
     )
