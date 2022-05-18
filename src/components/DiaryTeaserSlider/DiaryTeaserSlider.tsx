@@ -29,7 +29,7 @@ export const DiaryTeaserSlider: React.FC<DiaryTeaserSliderProps> = ({className, 
     return (
         <div className={clsx('', className)}>
             <div className='pl-8 2xl:pl-0 2xl:ml-[8.3333%] flex gap-4 overflow-x-auto  no-scrollbar pr-8'>
-                <StaticQuery query={query} render={(data: StaticDiaryQueryDataType) => {
+                <StaticQuery query={diaryTeaserSliderQuery} render={(data: StaticDiaryQueryDataType) => {
 
                     let diaryEntries = data.allMarkdownRemark.edges.map((edge) => edge.node.frontmatter)
 
@@ -78,8 +78,8 @@ export const DiaryTeaserSlider: React.FC<DiaryTeaserSliderProps> = ({className, 
     );
 };
 
-const query = graphql`
-query IndexPageQuery {
+const diaryTeaserSliderQuery = graphql`
+query DiaryTeaserSliderQuery {
   allMarkdownRemark(
     sort: {fields: frontmatter___id, order: DESC}
   ) {
