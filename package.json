@@ -17,7 +17,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy-dev": "npm run prod && rsync -zarvh ./public/ ssh-w011e33a@85.13.133.225:/www/htdocs/w011e33a/dev.shearer.studio/"
+    "deploy-dev": "npm run clean && npm run prod && rsync -zarvh ./public/ ssh-w011e33a@85.13.133.225:/www/htdocs/w011e33a/dev.shearer.studio/"
   },
   "dependencies": {
     "gatsby": "^4.14.0",
