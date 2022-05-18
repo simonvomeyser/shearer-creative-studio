@@ -4,13 +4,18 @@ import React from 'react';
 import {BraveText} from "../components/BraveText";
 import {Container} from "../components/Container";
 import {CopyText} from "../components/CopyText";
+import {Mail} from "../components/icons/Mail";
+import {Phone} from "../components/icons/phone";
+import {WhatsApp} from "../components/icons/WhatsApp";
 import {MetaTags} from "../components/MetaTags";
 import {Quote} from "../components/Quote";
 import {SalonHeading} from "../components/SalonHeading";
 import {SalonImagesSlider} from "../components/SalonImagesSlider";
+import {IconBubbleLink} from "../components/SalonPage/IconBubbleLink";
 import {SarahHeading} from "../components/SarahHeading";
 import {Section} from "../components/Section";
 import {Watercolor} from "../components/Watercolor";
+import {globalData} from "../data/global";
 import {getRandomQuote} from "../data/quotes";
 
 const Salon = () => {
@@ -45,13 +50,13 @@ const Salon = () => {
                                 selbst zu fühlen.</span>
                                 <div className="xs:hidden my-8">
 
-                                <StaticImage src="../images/salon/1.png"
-                                             loading="eager"
-                                             width={580}
-                                             height={750}
-                                             objectFit="cover"
-                                             alt="Bild des Salons 1, organisches Interieur mit vielen Pflanzen"
-                                />
+                                    <StaticImage src="../images/salon/1.png"
+                                                 loading="eager"
+                                                 width={580}
+                                                 height={750}
+                                                 objectFit="cover"
+                                                 alt="Bild des Salons 1, organisches Interieur mit vielen Pflanzen"
+                                    />
                                 </div>
                                 <span className="hidden xs:inline"><br/><br/></span>
                                 Unser Anspruch ist es, dir zu zu hören und dich ehrlich und ausführlich zu beraten. Das
@@ -247,10 +252,43 @@ const Salon = () => {
                     </div>
                 </Container>
             </Section>
-            <Section id="kontakt">
-               <Container>
-                   Test
-               </Container>
+            <Section id="kontakt" className="py-8 xs:py-14 md:py-20">
+                <Container>
+                    <h2 className="sr-only">Kontakt</h2>
+                    <BraveText className="mb-8 xs:mb-14 md:mb-20">
+                        Say Hello!
+                    </BraveText>
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-8">
+                        <div className="space-y-8">
+                            <IconBubbleLink title={globalData.phoneDisplay}
+                                            superTitle="WhatsApp Business"
+                                            href={globalData.phoneLinkWhatsAppHref}
+                                            icon={<WhatsApp className="w-8 h-8"/>}
+                            />
+                            <IconBubbleLink title={globalData.email}
+                                            superTitle="Mail"
+                                            href={'mailto:'+ globalData.email}
+                                            icon={<Mail className="w-7 h-7"/>}
+                            />
+                            <IconBubbleLink title={globalData.phoneDisplay}
+                                            superTitle="Telefon"
+                                            href={'tel:' + globalData.phoneLink}
+                                            icon={<Phone className="w-7 h-7"/>}
+                            />
+                        </div>
+                        <div>
+                            <div className="pt-[100%] relative w-full ml-auto ">
+                                <StaticImage src="../images/salon/map-placeholder.png"
+                                             width={700}
+                                             height={700}
+                                             objectFit="cover"
+                                             alt="Platzhalter der Karte"
+                                             className="absolute mx-auto inset-0 sm:max-w-[600px] sm:max-h-[600px] lg:max-w-[none] lg:max-h-[none] w-full h-full"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </Container>
             </Section>
         </>
     )

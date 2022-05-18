@@ -93,7 +93,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({className, isOpen}) => {
                         <a className="transition hover:text-secondary"
                            href={"mailto:" + globalData.email}>{globalData.email}</a> <br/>
                         <a className="transition hover:text-secondary" target="_blank" rel="noopener noreferrer"
-                           href={"https://wa.me/" + globalData.phoneLinkWhatsapp}>WhatsApp</a><br/>
+                           href={globalData.phoneLinkWhatsAppHref}>WhatsApp</a><br/>
                         <a className="transition hover:text-secondary"
                            href={"tel:" + globalData.phoneLink}>{globalData.phoneDisplay}</a> <br/>
                         <a className="transition hover:text-secondary" href={globalData.googleMapsLink}
