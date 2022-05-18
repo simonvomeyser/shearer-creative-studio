@@ -4,13 +4,13 @@ import {ArrowLinkStyles} from "../components/ArrowLinkStyles";
 import {BraveText} from "../components/BraveText";
 import {Container} from "../components/Container";
 import {CopyText} from "../components/CopyText";
-import {MetaTitle} from "../components/MetaTitle";
+import {MetaTags} from "../components/MetaTags";
 import {Section} from "../components/Section";
 
 const NotFoundPage = () => {
     return (
         <>
-            <MetaTitle pageName="404 - Seite nicht gefunden"/>
+            <MetaTags pageName="404 - Seite nicht gefunden"/>
             <Section className=" justify-center items-center flex " headerPaddingTop>
                 <Container className="text-center space-y-10 md:space-y-14 py-10 md:py-20">
                     <BraveText >

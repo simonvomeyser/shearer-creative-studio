@@ -2,7 +2,7 @@ import React from "react"
 import clsx from "clsx";
 import {Footer} from "./Footer";
 import {Header} from "./Header/Header";
-import {MetaTitle} from "./MetaTitle";
+import { MetaTags } from "./MetaTags";
 
 export type LayoutProps = {
     className?: string;
@@ -13,7 +13,7 @@ export type LayoutProps = {
 const Layout: React.FC = ({children}) => {
     return (
         <div className={clsx('relative font-sans antialiased bg-s-black text-white')}>
-            <MetaTitle/>
+            <MetaTags/>
 
             <Header/>
 

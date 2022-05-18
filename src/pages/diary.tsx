@@ -5,7 +5,7 @@ import {BraveText} from '../components/BraveText';
 import {Container} from '../components/Container';
 import {DiaryCard, DiaryCardSize} from '../components/DiaryPage/DiaryCard';
 import {DiaryPagePropsType, ImageType} from "../components/DiaryPage/types";
-import {MetaTitle} from "../components/MetaTitle";
+import {MetaTags} from "../components/MetaTags";
 import {Quote} from '../components/Quote';
 import {Section} from '../components/Section';
 import {DiaryEntryType} from '../data/diaryEntries';
@@ -59,7 +59,7 @@ const Diary = (props: DiaryPagePropsType) => {
 
     return (
         <>
-            <MetaTitle pageName="Diary"/>
+            <MetaTags pageName="Diary" seo={{description: 'Egal ob Awards oder tolle Kundengeschichte, im unserem Dairy bist du absolut richtig.'}}/>
             <Section headerPaddingTop>
                 <Container>
 

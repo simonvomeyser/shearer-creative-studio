@@ -1,12 +1,12 @@
 import React from 'react';
-import {MetaTitle} from "../components/MetaTitle";
+import {MetaTags} from "../components/MetaTags";
 
 const Salon = () => {
 
 
     return (
         <>
-            <MetaTitle pageName="Salon"/>
+            <MetaTags pageName="Salon"/>
             <section className="h-screen text-8xl justify-center items-center flex ">
                 Salon
             </section>

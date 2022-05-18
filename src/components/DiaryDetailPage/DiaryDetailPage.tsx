@@ -7,6 +7,7 @@ import {getRandomQuote} from "../../data/quotes";
 import {Container} from '../Container';
 import {CopyText} from '../CopyText';
 import {DiaryTeaserSlider} from "../DiaryTeaserSlider/DiaryTeaserSlider";
+import {MetaTags} from "../MetaTags";
 import {Quote} from "../Quote";
 import {Section} from '../Section';
 
@@ -59,6 +60,12 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
 
     return (
         <>
+            <MetaTags pageName={diaryEntry.title}
+                      seo={{
+                          description: diaryEntry.excerpt,
+                          image: getImageMetaData(diaryEntry.titleImageUrl).full.original.src,
+                      }}
+            />
             <Section headerPaddingTop={true}>
                 <Container fluid className='max-w-[1400px] mb-8'>
                     <div className='relative pt-[50%] md:pt-[40%] 2xl:pt-[35%]'>
