@@ -32,7 +32,7 @@ export const SalonSection: React.FC = () => {
                         Grenzen- und <br/> Gender-Los
                     </BraveText>
                     <Link to="/salon">
-                        <ArrowLinkStyles>Zum Salon</ArrowLinkStyles>
+                        <ArrowLinkStyles>Erfahre mehr</ArrowLinkStyles>
                     </Link>
                 </Container>
                 <Container fluid>
