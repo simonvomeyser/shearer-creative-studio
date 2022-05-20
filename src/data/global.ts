@@ -17,5 +17,6 @@ export const globalData =  {
         'city': 'Krefeld',
         'zip': '47798',
     },
+    'location' : {lat: 51.336154, lng: 6.5590803},
     'email': 'hello@shearer.studio',
 }
