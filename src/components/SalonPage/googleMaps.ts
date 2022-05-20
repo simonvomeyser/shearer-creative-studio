@@ -9,7 +9,6 @@ function addGoogleMapScript(doneCallback: () => void) {
     }
 
     const script = document.createElement('script');
-    console.log(process.env.GOOGLE_MAPS_API_KEY)
     script.setAttribute('src',
         `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}&callback=initMap`
     );
