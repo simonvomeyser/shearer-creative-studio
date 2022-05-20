@@ -1,14 +1,16 @@
 import type {GatsbyConfig} from "gatsby";
 import path from "path";
 
-require("dotenv").config()
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
 
 const config: GatsbyConfig = {
     siteMetadata: {
         title: `Shearer Creative Studio`,
         siteUrl: `https://shearer.studio`
     },
-    plugins: [ {
+    plugins: [{
         resolve: 'gatsby-plugin-manifest',
         options: {
             "icon": "src/images/icon.png"
@@ -43,22 +45,23 @@ const config: GatsbyConfig = {
             component: path.resolve(`src/components/Layout.tsx`),
         },
     },
-    {
-        resolve: "gatsby-plugin-web-font-loader",
-        options: {
-            typekit: {
-                id: process.env.TYPEKIT_ID,
+        {
+            resolve: "gatsby-plugin-web-font-loader",
+            options: {
+                typekit: {
+                    id: process.env.TYPEKIT_ID,
+                },
             },
         },
-    },
-    {
-        resolve: "gatsby-plugin-sharp",
-        options: {
-            defaults: {
-                placeholder: 'blurred'
+        {
+            resolve: "gatsby-plugin-sharp",
+            options: {
+                defaults: {
+                    placeholder: 'blurred'
+                },
             },
         },
-    },
+
         "gatsby-transformer-remark",
         "gatsby-transformer-sharp",
         "gatsby-plugin-image",
