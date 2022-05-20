@@ -4,6 +4,7 @@ import React from 'react';
 import {BraveText} from "../components/BraveText";
 import {Container} from "../components/Container";
 import {CopyText} from "../components/CopyText";
+import {House} from "../components/icons/House";
 import {Mail} from "../components/icons/Mail";
 import {Phone} from "../components/icons/phone";
 import {WhatsApp} from "../components/icons/WhatsApp";
@@ -12,6 +13,7 @@ import {Quote} from "../components/Quote";
 import {SalonHeading} from "../components/SalonHeading";
 import {SalonImagesSlider} from "../components/SalonImagesSlider";
 import {IconBubbleLink} from "../components/SalonPage/IconBubbleLink";
+import {MapWithConsent} from "../components/SalonPage/MapWithConsent";
 import {SarahHeading} from "../components/SarahHeading";
 import {Section} from "../components/Section";
 import {Watercolor} from "../components/Watercolor";
@@ -267,7 +269,7 @@ const Salon = () => {
                         Say Hello!
                     </BraveText>
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-8">
-                        <div className="space-y-14 lg:space-y-8">
+                        <div className="space-y-14 lg:space-y-8 flex flex-col justify-center lg:pb-4">
                             <IconBubbleLink title={globalData.phoneDisplay}
                                             superTitle="WhatsApp Business"
                                             href={globalData.phoneLinkWhatsAppHref}
@@ -283,18 +285,20 @@ const Salon = () => {
                                             href={'tel:' + globalData.phoneLink}
                                             icon={<Phone className="w-7 h-7"/>}
                             />
+                            <IconBubbleLink title={
+                                                globalData.address.street + ' ' +
+                                                globalData.address.number  + "<br/>" +
+                                                globalData.address.zip  + ' ' +
+                                                globalData.address.city
+                                            }
+                                            superTitle="Adresse"
+                                            href={globalData.googleMapsLink}
+                                            icon={<House className="w-9 h-9"/>}
+                            />
                         </div>
                         <div>
                             <div className="mx-auto sm:max-w-[600px] sm:max-h-[600px] lg:max-w-[none] lg:max-h-[none] ">
-                                <div className="pt-[100%] relative w-full ml-auto mt-6 xs:mt-12 lg:mt-0 mx-auto ">
-                                    <StaticImage src="../images/salon/map-placeholder.png"
-                                                 width={700}
-                                                 height={700}
-                                                 objectFit="cover"
-                                                 alt="Platzhalter der Karte"
-                                                 className="absolute inset-0 w-full h-full"
-                                    />
-                                </div>
+                                <MapWithConsent/>
                             </div>
                         </div>
                     </div>

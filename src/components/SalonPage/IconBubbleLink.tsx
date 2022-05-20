@@ -28,8 +28,8 @@ export const IconBubbleLink: React.FC<IconBubbleLinkProps> = ({
            <span className="text-primary ">
                {superTitle}
            </span>
-            <span className="font-bold font-roma uppercase text-lg xs:text-xl sm:text-2xl md:text-3xl 2xl:text-4xl group-hover:text-primary transition duration-500">
-                {title}
+            <span className="font-bold font-roma uppercase text-lg xs:text-xl sm:text-2xl lg:text-[1.75rem] xl:text-4xl group-hover:text-primary transition duration-500">
+                <span dangerouslySetInnerHTML={{__html: title}}/>
             </span>
 
         </span>
