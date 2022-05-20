@@ -14,7 +14,7 @@ export const MapWithConsent: React.FC<MapWithConsentProps> = ({}) => {
 
     useEffect(() => {
         if (consentGiven && showOverlays) {
-            setTimeout(() => createGoogleMap, 500)
+            setTimeout(() => createGoogleMap('map'), 500)
             setTimeout(() =>setShowOverlays(false), 1000)
         }
     }, [consentGiven])
