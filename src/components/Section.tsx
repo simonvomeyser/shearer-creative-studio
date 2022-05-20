@@ -17,7 +17,7 @@ const Section = React.forwardRef<HTMLElement, SectionProps>(
         return (
             <section id={id} ref={actualRef} className={clsx('z-section relative',
                 {
-                    'pt-[calc(var(--header-height--mobile)+2rem)] md:pt-[calc(var(--header-height--desktop)+4rem)]': headerPaddingTop,
+                    'pt-[calc(var(--header-height--mobile)+0.25rem)] md:pt-[calc(var(--header-height--desktop)+4rem)]': headerPaddingTop,
                 },
                 className)}>
                 {children}

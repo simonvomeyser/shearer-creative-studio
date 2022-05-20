@@ -60,6 +60,7 @@ body {
   color: transparent;
   -webkit-text-stroke: 1px var(--sage-500);
 }
+
 @media (min-width: 480px) {
   .stroked-sage-500 {
     -webkit-text-stroke: 2px var(--sage-500);
@@ -70,17 +71,22 @@ body {
 .skew-top {
   position: relative;
 }
+
 .skew-top:before {
   display: block;
   content: "";
   position: absolute;
-  top: -10vh;
-  right:0;
-  width: 110%;
-  height: 10vh;
+  top: -50px;
+  right: 0;
+  width: 120%;
+  height: 50px;
   background: var(--sage-700);
   transform: translateX(5%) rotate(-1deg);
   transform-origin: right;
+}
+
+.skew-top--black:before {
+  background: var(--s-black);
 }
 
 .safari-rounded-overflow-hidden-fix {
@@ -93,25 +99,26 @@ body {
 
 body > iframe {
   /* Salonized integration */
-  display: none!important;
+  display: none !important;
   opacity: 1 !important;
 }
 
 *:focus-visible {
   outline-color: var(--primary);
-  outline-style: groove ;
+  outline-style: groove;
   outline-offset: 4px;
 }
 
-*.lozad{
-    transition: all 2s ease;
+*.lozad {
+  transition: all 2s ease;
 }
 
 *.lozad:not([data-loaded="true"]) {
-    opacity: 0!important;
+  opacity: 0 !important;
 }
+
 *.lozad.lozad--scale-in:not([data-loaded="true"]) {
-    transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .h-screen-safari-fix {
@@ -131,9 +138,11 @@ body > iframe {
   border-bottom: 2px solid var(--primary);
   transition: color .3s ease;
 }
+
 .rich-text a:hover {
   color: var(--primary);
 }
+
 .rich-text p + p {
   margin-top: 1.5em;
 }

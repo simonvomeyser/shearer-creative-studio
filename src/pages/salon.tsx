@@ -24,7 +24,7 @@ const Salon = () => {
     return (
         <>
             <MetaTags pageName="Salon"/>
-            <Section headerPaddingTop>
+            <Section headerPaddingTop className="mt-8">
                 <Watercolor
                     color="green"
                     className={clsx(' md:block top-[-15%] right-[-600px] xl:right-[-450px] w-[900px] h-[1000px] opacity-20 md:opacity-30 ')}
@@ -224,10 +224,10 @@ const Salon = () => {
                     </div>
                 </Container>
             </Section>
-            <Section className="bg-sage-700 pb-8 xs:pb-10 md:pb-20" id="sarah">
+            <Section className="bg-sage-700 pb-20 md:pb-32" id="sarah">
                 <Container fluid className="px-[1rem] xs:px-[2rem] md:px-0">
                     <div className="grid md:grid-cols-2 gap-10 2xl:gap-12">
-                        <div className="flex justify-end">
+                        <div className="flex justify-end xs:pl-[var(--container-padding--md)]">
                             <CopyText className=" max-w-[35ch]">
                                 Seit nun fast 10 Jahren fühlt sich die German Hairdressing Award Gewinnerin nicht nur
                                 hinter dem Friseurstuhl wohl, sondern begleitet erfolgreich Kampagnen und Kunden quer
@@ -252,14 +252,22 @@ const Salon = () => {
                     </div>
                 </Container>
             </Section>
-            <Section id="kontakt" className="py-8 xs:py-14 md:py-20">
-                <Container>
+            <Section id="kontakt" className="lg:pb-20 pt-8 md:pt-12 skew-top--black skew-top">
+                <Watercolor
+                    color="green"
+                    className={clsx(' md:block top-[-50px] right-[-600px] xl:right-[-450px] w-[900px] h-[1000px] opacity-20 md:opacity-30 ')}
+                />
+                <Watercolor
+                    color="green"
+                    className={clsx(' lg:hidden top-[15%] left-[-600px] w-[900px] h-[1000px] opacity-20 md:opacity-30 ')}
+                />
+                <Container size="xl">
                     <h2 className="sr-only">Kontakt</h2>
-                    <BraveText className="mb-8 xs:mb-14 md:mb-20">
+                    <BraveText className="mb-8 xs:mb-14 md:mb-20 text-center lg:text-left">
                         Say Hello!
                     </BraveText>
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-8">
-                        <div className="space-y-8">
+                        <div className="space-y-14 lg:space-y-8">
                             <IconBubbleLink title={globalData.phoneDisplay}
                                             superTitle="WhatsApp Business"
                                             href={globalData.phoneLinkWhatsAppHref}
@@ -267,7 +275,7 @@ const Salon = () => {
                             />
                             <IconBubbleLink title={globalData.email}
                                             superTitle="Mail"
-                                            href={'mailto:'+ globalData.email}
+                                            href={'mailto:' + globalData.email}
                                             icon={<Mail className="w-7 h-7"/>}
                             />
                             <IconBubbleLink title={globalData.phoneDisplay}
@@ -277,14 +285,16 @@ const Salon = () => {
                             />
                         </div>
                         <div>
-                            <div className="pt-[100%] relative w-full ml-auto ">
-                                <StaticImage src="../images/salon/map-placeholder.png"
-                                             width={700}
-                                             height={700}
-                                             objectFit="cover"
-                                             alt="Platzhalter der Karte"
-                                             className="absolute mx-auto inset-0 sm:max-w-[600px] sm:max-h-[600px] lg:max-w-[none] lg:max-h-[none] w-full h-full"
-                                />
+                            <div className="mx-auto sm:max-w-[600px] sm:max-h-[600px] lg:max-w-[none] lg:max-h-[none] ">
+                                <div className="pt-[100%] relative w-full ml-auto mt-6 xs:mt-12 lg:mt-0 mx-auto ">
+                                    <StaticImage src="../images/salon/map-placeholder.png"
+                                                 width={700}
+                                                 height={700}
+                                                 objectFit="cover"
+                                                 alt="Platzhalter der Karte"
+                                                 className="absolute inset-0 w-full h-full"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

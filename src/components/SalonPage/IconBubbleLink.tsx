@@ -18,13 +18,13 @@ export const IconBubbleLink: React.FC<IconBubbleLinkProps> = ({
 }) => {
 
   return (
-	<a className={clsx('flex w-full group transition duration-500', className)} href={href} target="_blank">
-		<span className="border border-white w-16 h-16  2xl:w-24 2xl:h-24 md:w-20 md:h-20  flex justify-center items-center mr-4 md:mr-6 2xl:mr-8 rounded-full transition duration-500 group-hover:border-primary flex-shrink-0">
+	<a className={clsx('flex items-center flex-col lg:items-start lg:flex-row lg:items-center w-full group transition duration-500', className)} href={href} target="_blank">
+		<span className="border border-white w-16 h-16 xs:w-24 xs:h-24  flex justify-center items-center mb-4 lg:mb-0 lg:mr-6 2xl:mr-8 rounded-full transition duration-500 group-hover:border-primary flex-shrink-0 bg-s-black">
             <span className="inline-block group-hover:scale-110 transition duration-500 group-hover:text-primary">
                 {icon}
             </span>
         </span>
-        <span className="flex-1 flex  flex-col justify-center text-lg md:text-xl transition duration-500 group-hover:-translate-x-2">
+        <span className="flex-1 text-center justify-center lg:text-left flex items-center flex-col lg:items-start justify-center text-lg md:text-xl transition duration-500 lg:group-hover:-translate-x-2">
            <span className="text-primary ">
                {superTitle}
            </span>

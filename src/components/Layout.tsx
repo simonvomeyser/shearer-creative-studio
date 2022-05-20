@@ -12,12 +12,12 @@ export type LayoutProps = {
 
 const Layout: React.FC = ({children}) => {
     return (
-        <div className={clsx('relative font-sans antialiased bg-s-black text-white')}>
+        <div className={clsx('relative font-sans antialiased bg-s-black text-white overflow-hidden')}>
             <MetaTags/>
 
             <Header/>
 
-            <main className="relative overflow-hidden">
+            <main className="relative ">
                 {children}
             </main>
 

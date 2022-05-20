@@ -18,6 +18,7 @@ module.exports = {
                 'container': 100,
                 'watercolor': 50,
                 'section': 0, // To create stacking context
+                'section--overlap': 1, // To overlap following sections
             },
             fontFamily: {
                 sans: ['lexend', 'serif'],
