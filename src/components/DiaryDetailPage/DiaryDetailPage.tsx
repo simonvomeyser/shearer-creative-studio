@@ -10,6 +10,7 @@ import {DiaryTeaserSlider} from "../DiaryTeaserSlider/DiaryTeaserSlider";
 import {MetaTags} from "../MetaTags";
 import {Quote} from "../Quote";
 import {Section} from '../Section';
+import {Watercolor} from "../Watercolor";
 
 type ChildrenImageSharpType = {
     gatsbyImageData: IGatsbyImageData
@@ -126,6 +127,10 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                 </Container>
             </Section>
             <Section className="  py-20 md:py-28 bg-sage-700">
+                <Watercolor
+                    color='white'
+                    className='top-[-25%] left-[-400px] h-[900px] w-[700px] opacity-10 xl:opacity-20'
+                />
                 <Container>
                     <h2 className="font-roma mb-12 md:mb-16 font-bold text-[36px] xs:text-[44px] md:text-[56px] xl:text-[68px]  uppercase">
                         Mehr aus dem Diary
