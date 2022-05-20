@@ -18,7 +18,7 @@ export const Container: React.FC<ContainerProps> = ({
   return (
 	<div className={clsx(' mx-auto w-full z-container relative',
         {
-            'px-[1rem] xs:px-[2rem] md:px-[3rem] ' : !fluid,
+            'px-[var(--container-padding)] xs:px-[var(--container-padding--xs)] md:px-[var(--container-padding-md)] ' : !fluid,
             'max-w-7xl ' : !fluid && size === 'default',
             'max-w-[1400px] ' : !fluid && size === 'xl',
         },

@@ -2,15 +2,10 @@ import clsx from "clsx";
 import {Link} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
 import React, {useEffect, useState} from 'react';
-import {globalData} from "../../data/global";
 import {ButtonStyles} from "../ButtonStyles";
 import {createGoogleMap} from "./googleMaps";
 
-
 export type MapWithConsentProps = {};
-
-
-
 
 export const MapWithConsent: React.FC<MapWithConsentProps> = ({}) => {
 
@@ -19,13 +14,16 @@ export const MapWithConsent: React.FC<MapWithConsentProps> = ({}) => {
 
     useEffect(() => {
         if (consentGiven && showOverlays) {
-            setTimeout(() => createGoogleMap('map'), 500)
+            setTimeout(() => createGoogleMap, 500)
             setTimeout(() =>setShowOverlays(false), 1000)
         }
     }, [consentGiven])
 
     return (
-        <div className="pt-[100%] relative w-full ml-auto mt-6 xs:mt-12 lg:mt-0 mx-auto bg-s-black overflow-hidden">
+        <div className="pt-[150%] xs:pt-[100%] relative
+            w-[calc(100%+(var(--container-padding)*2))] md:w-full
+            mx-[calc(-1*(var(--container-padding)))] md:mx-0
+            mt-6 xs:mt-12 lg:mt-0 mx-auto bg-s-black overflow-hidden">
             <div className="absolute inset-0 w-full h-full" id="map"/>
             {showOverlays ?
                 <>
