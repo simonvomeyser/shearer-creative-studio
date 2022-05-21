@@ -15,7 +15,7 @@ export const priceCategories: PriceCategory[] = [
         "title": "Beratung",
         "anchor": "beratung",
         "description": `
-            Du bist dir noch unsicher, was dir steht oder du wünscht ein komplettes Make-Over? <br><br> 
+            Du bist dir noch unsicher, was dir steht oder du wünschst ein komplettes Make-Over? <br><br> 
             Du brächtest einen professionellen Rat bezüglich deiner Heimpflege oder brauchst eine ehrliche Einschätzung zu einer Farbkorrektur? 
          `,
         "prices": [
@@ -37,25 +37,24 @@ Deswegen berechnen wir den Haarschnitt nach benötigtem Zeitaufwand und Komplexi
         `,
         "prices": [
             {
-                "title": "Ansatzblondierung + Toner",
-                "price": "Umsonst"
+                "title": "Just the litte things in life ",
+                "price": "26 €",
+                "description" : "Bis 25min (Beispiel: Pony nach scheiden, Konturenschnitt, Maschinenschnitt) "
             },
             {
-                "title": "Neufärbung",
-                "price": "7 € / Einmalig"
+                "title": "Keep it simple please",
+                "price": "46 €",
+                "description" : "Bis 45min (Beispiel: Waschen, Schneiden, Pflegen, Stylen von einfachen Haarschnitten)"
             },
             {
-                "title": "Gloss + Toner",
-                "price": "50€ / Stunde"
+                "title": "Der Klassiker",
+                "price": "61€",
+                "description": "Beispiel: Waschen, Schneiden, Pflegen, Stylen von Komplexen Haarschnitten"
             },
             {
-                "title": "lorem ispum dolor sit amet <i>kursiv</i>",
-                "price": "120€ / Stunde"
-            },
-            {
-                "title": "Ansatzfärbung <b>ab</b> 2cm",
-                "price": "50€ / Stunde",
-                "description": 'Massa nec dis dictum auctor cras rhoncus curabitur, ullamcorper pellentesque cursus ac accumsan. <br> <b>Varius adipiscing</b> sem nulla mollis himenaeos nisi cras hendrerit pellentesque mattis consectetur elit, sollicitudin nostra dictumst condimentum natoque torquent praesent facilisis amet sed. Sagittis dapibus dis id cubilia finibus sed varius metus nam congue, dictum mi aliquet facilisis primis quis eros massa.'
+                "title": "I want it all. I want it now",
+                "price": "76€",
+                "description": 'Bis 75min( Beispiel:Waschen, Schneiden, Pflegen, Stylen von Neuhaarschnitten bzw.Typveränderungen '
 
             }
         ]
@@ -63,64 +62,79 @@ Deswegen berechnen wir den Haarschnitt nach benötigtem Zeitaufwand und Komplexi
     {
         "title": "Color",
         "anchor": "color",
+        "description": `Alle Farbdienstleistungen verstehen sich immer inkl. passenem Haarpflege Treatment <br><br>
+Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor XX€ als Föhnpauschale zu berechnen. 
+`,
         "prices": [
             {
-                "title": "Grün",
-                "price": "Umsonst"
+                "title": "Ansatzfärbung bis 2cm",
+                "price": "XXX"
             },
             {
-                "title": "Gelb",
-                "price": "7 € / Einmalig"
+                "title": "Ansatzfärbung ab 2cm",
+                "price": "XXX"
             },
             {
-                "title": "Orange",
-                "price": "50€ / Stunde"
-            }
+                "title": "Längenausgleich",
+                "price": "XXX - XXX",
+                "description": "Auffrischung von verblassten Längen und Spitzen"
+            },
+            {
+                "title": "Ansatz Blondierung bis 8 Wochen",
+                "price": "XXX",
+                "description": "inkl. Gloss"
+            },
+            {
+                "title": "Neublondierung",
+                "price": "XXX",
+                "description": "inkl. Gloss"
+            },
+            {
+                "title": "Gloss",
+                "price": "XXX",
+            },
+            { "title" : "Faceframe", price: "XXX" },
+            { "title" : "Fashion Color", price:  "ab 79€/h" },
+
+            { "title" : "Highlights 1/3", price: "XXX" },
+            { "title" : "Highlights 2/3", price: "XXX" },
+            { "title" : "Highlights 3/3", price: "XXX" , description: "Highlights sind inkl. Gloss/Rootshadow" },
+            { "title" : "Farbkorrekturen", price: "89 € / Std" },
+
         ]
     },
     {
         "title": "Balayage",
         "anchor": "balayage",
+        "description": "Alle Balayage Pakete verstehen sich inkl. Olaplex, Glossing, passendem Pflegetreatment. und exkl. Haarschnitt ",
 
         "prices": [
             {
-                "title": "Ansatzblondierung + Toner",
-                "price": "Umsonst"
+                "title": "Natural Balayage (ca. 150min)",
+                "price": "ab 140€"
             },
             {
-                "title": "Neufärbung",
-                "price": "7 € / Einmalig"
+                "title": "Fashion Balayage (ca. 180min)",
+                "price": "ab 190€"
             },
-            {
-                "title": "Gloss + Toner",
-                "price": "50€ / Stunde"
-            },
-            {
-                "title": "lorem ispum dolor sit amet <i>kursiv</i>",
-                "price": "120€ / Stunde"
-            },
-            {
-                "title": "Ansatzfärbung <b>ab</b> 2cm",
-                "price": "50€ / Stunde"
-            }
         ]
     },
     {
         "title": "Care",
         "anchor": "care",
         "prices": [
-            {
-                "title": "Grün",
-                "price": "Umsonst"
-            },
-            {
-                "title": "Gelb",
-                "price": "7 € / Einmalig"
-            },
-            {
-                "title": "Orange",
-                "price": "50€ / Stunde"
-            }
+            {"title": "Grün", "price": "Umsonst"},
+            {"title" : "Olaplex Treatment", price: "XXX"},
+            {"title" : "K18", price: "XXX"},
+            {"title" : "Detox", price: "XXX"},
+            {"title" : "Styling", price: "XXX"},
+            {"title" : "Blow Dry", price: "XXX"},
+            {"title" : "Fashion Styling", price: "XXX"},
+            {"title" : "Hochstecken", price: "XXX"},
+            {"title" : "Beauty", price: "XXX"},
+            {"title" : "Brow", price: "15 €"},
+            {"title" : "Lashes", price: "XXX"},
+            {"title" : "Make-up", price: "XXX"	},
         ]
     },
     {
@@ -128,25 +142,17 @@ Deswegen berechnen wir den Haarschnitt nach benötigtem Zeitaufwand und Komplexi
         "anchor": "styling",
         "prices": [
             {
-                "title": "Ansatzblondierung + Toner",
-                "price": "Umsonst"
+                "title": "xxx",
+                "price": "xxx"
             },
             {
-                "title": "Neufärbung",
-                "price": "7 € / Einmalig"
+                "title": "xxx",
+                "price": "xxx"
             },
             {
-                "title": "Gloss + Toner",
-                "price": "50€ / Stunde"
+                "title": "xxx",
+                "price": "xxx"
             },
-            {
-                "title": "lorem ispum dolor sit amet <i>kursiv</i>",
-                "price": "120€ / Stunde"
-            },
-            {
-                "title": "Ansatzfärbung <b>ab</b> 2cm",
-                "price": "50€ / Stunde"
-            }
         ]
     },
     {
@@ -154,17 +160,17 @@ Deswegen berechnen wir den Haarschnitt nach benötigtem Zeitaufwand und Komplexi
         "anchor": "beauty",
         "prices": [
             {
-                "title": "Grün",
-                "price": "Umsonst"
+                "title": "xxx",
+                "price": "xxx"
             },
             {
-                "title": "Gelb",
-                "price": "7 € / Einmalig"
+                "title": "xxx",
+                "price": "xxx"
             },
             {
-                "title": "Orange",
-                "price": "50€ / Stunde"
-            }
+                "title": "xxx",
+                "price": "xxx"
+            },
         ]
     },
     {
@@ -172,17 +178,12 @@ Deswegen berechnen wir den Haarschnitt nach benötigtem Zeitaufwand und Komplexi
         "anchor": "extensions",
         "prices": [
             {
-                "title": "Grün",
-                "price": "Umsonst"
+                title: "Preise auf Anfrage",
+                price: "-",
+                description: `Kontaktiere uns einfach , und wir besprechen deinen Preis!`
             },
-            {
-                "title": "Gelb",
-                "price": "7 € / Einmalig"
-            },
-            {
-                "title": "Orange",
-                "price": "50€ / Stunde"
-            }
+            { "title" : "Highlights 3/3", price: "XXX" , description: "Highlights sind inkl. Gloss/Rootshadow" },
+
         ]
     }
 

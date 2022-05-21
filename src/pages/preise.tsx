@@ -66,13 +66,13 @@ const Preise = () => {
                                 {category.prices.map((price, priceId) => (
                                     <div key={`${id}.${priceId}`}>
                                         <div
-                                            className="border-b border-dashed flex-wrap xs:flex-nowrap sm:text-lg md:text-xl py-3 mb-3 flex w-full justify-between items-end">
+                                            className="border-b border-dashed flex-wrap xs:flex-nowrap sm:text-lg md:text-xl py-2 mb-3 flex w-full justify-between items-end">
 
                                             <div className="w-full xs:w-auto"
                                                  dangerouslySetInnerHTML={{__html: price.title}}/>
                                             <div className="w-full xs:w-auto text-right opacity-75 md:ml-2">{price.price}</div>
                                         </div>
-                                        {category.description ? <div className="text-s-gray-400"
+                                        {price.description ? <div className="text-s-gray-400"
                                                                      dangerouslySetInnerHTML={{__html: price.description}}/> : null}
                                     </div>
                                 ))}
