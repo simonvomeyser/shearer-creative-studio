@@ -16,6 +16,7 @@
   --mango-800: #432900;
   --mango-900: #0B070;
   --s-black: #121212;
+  --s-gray-400: #727272;
   --s-gray-500: #616161;
   --primary: var(--mango-500);
   --secondary: var(--sage-500);
@@ -151,3 +152,16 @@ body > iframe {
 .gatsby-image-wrapper.absolute {
   position: absolute;
 }
+
+.price-heading path, .price-heading rect {
+  border: solid red 1px;
+  stroke-width: 2;
+}
+
+@media (min-width: 768px) {
+  .price-heading path, .price-heading rect {
+    stroke-width: 1;
+  }
+
+}
+

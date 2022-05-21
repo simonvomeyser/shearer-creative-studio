@@ -6,6 +6,7 @@ export type PriceType = {
 export type PriceCategory = {
     title: string,
     anchor: string,
+    description?: string,
     prices: PriceType[],
 }
 
@@ -13,37 +14,27 @@ export const priceCategories: PriceCategory[] = [
     {
         "title": "Beratung",
         "anchor": "beratung",
+        "description": `
+            Du bist dir noch unsicher, was dir steht oder du wünscht ein komplettes Make-Over? <br><br> 
+            Du brächtest einen professionellen Rat bezüglich deiner Heimpflege oder brauchst eine ehrliche Einschätzung zu einer Farbkorrektur? 
+         `,
         "prices": [
             {
-                "title": "Ansatzfärbung <b>bis</b> 2cm",
-                "price": "30€ / Stunde",
-                "description": 'Massa nec dis dictum auctor cras rhoncus curabitur, ullamcorper pellentesque cursus ac accumsan. <br> <b>Varius adipiscing</b> sem nulla mollis himenaeos nisi cras hendrerit pellentesque mattis consectetur elit, sollicitudin nostra dictumst condimentum natoque torquent praesent facilisis amet sed. Sagittis dapibus dis id cubilia finibus sed varius metus nam congue, dictum mi aliquet facilisis primis quis eros massa.'
+                "title": "Typgerechte Beratung",
+                "description": `
+                    Wir setzen uns zusammen und du bekommst eine persönliche Beratung! 
+                    Die Beratung wird im Falle einer Folgebuchung mit der nächsten Dienstleistung verrechnet.<br>
+                `,
+                "price": "19€ / 20 Min",
             },
-            {
-                "title": "Ansatzfärbung <b>ab</b> 2cm",
-                "price": "50€ / Stunde"
-            },
-            {
-                "title": "Ansatzblondierung + Toner <br> Aber zweizeilig",
-                "price": "Umsonst"
-            },
-            {
-                "title": "Neufärbung",
-                "price": "7 € / Einmalig"
-            },
-            {
-                "title": "Gloss + Toner",
-                "price": "50€ / Stunde"
-            },
-            {
-                "title": "lorem ispum dolor sit amet <i>kursiv</i>",
-                "price": "120€ / Stunde"
-            }
         ]
     },
     {
         "title": "Cut",
         "anchor": "cut",
+        "description": ` Dein Haarschnitt, ist genau so Individeuell wie du. 
+Deswegen berechnen wir den Haarschnitt nach benötigtem Zeitaufwand und Komplexität sowie gewünschten Serviceleistungen.    
+        `,
         "prices": [
             {
                 "title": "Ansatzblondierung + Toner",

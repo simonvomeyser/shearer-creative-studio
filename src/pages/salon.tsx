@@ -26,7 +26,7 @@ const Salon = () => {
     return (
         <>
             <MetaTags pageName="Salon"/>
-            <Section headerPaddingTop className="mt-8">
+            <Section headerPaddingTop >
                 <Watercolor
                     color="green"
                     className={clsx(' md:block top-[-15%] right-[-600px] xl:right-[-450px] w-[900px] h-[1000px] opacity-20 md:opacity-30 ')}

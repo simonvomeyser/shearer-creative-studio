@@ -6,18 +6,24 @@ export type SectionProps = {
     children?: React.ReactNode;
     id?: string;
     headerPaddingTop?: boolean
+    headerMarginTop?: boolean
 };
 
 const Section = React.forwardRef<HTMLElement, SectionProps>(
-    ({ children, id, className , headerPaddingTop},
+    ({ children, id, className , headerPaddingTop, headerMarginTop},
      ref) => {
         const localRef = useRef(null);
         const actualRef = ref || localRef;
 
+        if(headerPaddingTop && typeof headerMarginTop === 'undefined') {
+           headerMarginTop = true;
+        }
+
         return (
             <section id={id} ref={actualRef} className={clsx('z-section relative',
                 {
-                    'pt-[calc(var(--header-height--mobile)+0.25rem)] md:pt-[calc(var(--header-height--desktop)+4rem)]': headerPaddingTop,
+                    'pt-[calc(var(--header-height--mobile))] md:pt-[calc(var(--header-height--desktop))]': headerPaddingTop,
+                    'mt-[0.25rem] md:mt-[4rem]' : headerMarginTop
                 },
                 className)}>
                 {children}

@@ -8,7 +8,7 @@ export type PriceHeadingProps = {
 export const PriceHeading: React.FC<PriceHeadingProps> = ({className,}) => {
 
     return (
-        <svg className={clsx('', className)} viewBox="0 0 1590.309 742.554">
+        <svg className={clsx('price-heading', className)} viewBox="0 0 1590.309 742.554">
             <defs>
                 <clipPath id="clip-path">
                     <rect id="Rectangle_109" data-name="Rectangle 109" width="1590.309" height="742.554" fill="none"/>

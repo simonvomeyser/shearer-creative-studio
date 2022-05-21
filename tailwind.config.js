@@ -38,6 +38,7 @@ module.exports = {
                 'mango-800': 'var(--mango-800)',
                 'mango-900': 'var(--mango-900)',
                 's-black': 'var(--s-black)',
+                's-gray-400': 'var(--s-gray-400)',
                 's-gray-500': 'var(--s-gray-500)',
                 'primary': 'var(--primary)',
                 'secondary': 'var(--secondary)',
