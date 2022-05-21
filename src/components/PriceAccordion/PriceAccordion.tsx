@@ -102,8 +102,8 @@ export const PriceAccordion: React.FC<PriceAccordionProps> = ({className,}) => {
                                 animate={isCurrent(id) ? 'open' : 'closed'}>
                         <div className="py-6 space-y-2 ">
 
-                            <div className="mb-4 max-w-[50ch]">
-                                Unsere Preise werden fair und transparent berechnet - und vielleicht anders, als du es kennst!  <Link to="/preise" className="underline">Erfahre mehr</Link></div>
+                            <motion.div className="mb-4 max-w-[50ch]" variants={readMoreMotionVariant} >
+                                Unsere Preise werden fair und transparent berechnet - und vielleicht anders, als du es kennst!  <Link to="/preise" className="underline">Erfahre mehr</Link></motion.div>
 
                             {category.prices.map((price, priceId) => (
                                 <motion.div key={`${id}.${priceId}`}
