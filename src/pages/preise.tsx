@@ -50,7 +50,7 @@ const Preise = () => {
                                     {category.title}
                                 </BraveText>
                                 {category.description ?
-                                    <div className="md:text-lg"
+                                    <div className="md:text-lg max-w-"
                                          dangerouslySetInnerHTML={{__html: category.description}}/>
                                     : null}
                                 <div>
@@ -62,7 +62,7 @@ const Preise = () => {
                                 </div>
 
                             </div>
-                            <div className="pl-0 xs:pl-4 sm:pl-[25%] pt-0 md:pl-0 md:pt-[80px] w-full md:w-auto md:flex-1">
+                            <div className="pl-0 xs:pl-4 sm:pl-[25%] pt-0 md:pl-0 md:pt-[65px] xl:pt-[80px]  w-full md:w-auto md:flex-1 space-y-2">
                                 {category.prices.map((price, priceId) => (
                                     <div key={`${id}.${priceId}`}>
                                         <div
@@ -70,7 +70,7 @@ const Preise = () => {
 
                                             <div className="w-full xs:w-auto"
                                                  dangerouslySetInnerHTML={{__html: price.title}}/>
-                                            <div className="w-full xs:w-auto text-right opacity-75">{price.price}</div>
+                                            <div className="w-full xs:w-auto text-right opacity-75 md:ml-2">{price.price}</div>
                                         </div>
                                         {category.description ? <div className="text-s-gray-400"
                                                                      dangerouslySetInnerHTML={{__html: price.description}}/> : null}
