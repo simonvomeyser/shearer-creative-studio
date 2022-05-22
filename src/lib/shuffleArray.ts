@@ -1,4 +1,5 @@
-export function shuffleArray(array: Array<any>) {
+export function shuffleArray(_array: Array<any>) {
+  const array = [..._array];
   let currentIndex = array.length,  randomIndex;
 
   // While there remain elements to shuffle.

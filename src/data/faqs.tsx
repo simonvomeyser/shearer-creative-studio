@@ -5,12 +5,21 @@ export type FaqType = {
 
 export const faqs: FaqType[] = [
     {
-        question: 'Warum gender neutral und nicht "unisex"',
-        answer: 'Sit adipiscing etiam et fermentum ultrices laoreet libero tellus sem iaculis dapibus venenatis suscipit lorem porttitor tortor urna, aliquam integer praesent taciti erat nam odio mollis sapien montes nullam lacinia interdum magnis at. Condimentum massa eros eu scelerisque dictum platea vulputate blandit placerat mattis, conubia suspendisse sociosqu felis mi posuere convallis libero bibendum tortor, lacus interdum laoreet pellentesque erat faucibus potenti mus imperdiet. Iaculis maximus nunc tempus erat augue suscipit donec <br><br> massa dis quam scelerisque, inceptos id fermentum hac felis eget ex conubia duis.'
+        question: 'Warum gender neutral und nicht "unisex"?',
+        answer: `
+             Haare sind nicht an ein Geschlechtsmerkmal gebunden. Unisex impliziert für uns das es nur “Mann” und “Frau” gibt. Aber Haaren ist es egal wie du dich identifiziert. 
+             <br><br> 
+             <span class="italic">
+             Wir wollen deine Individualität feiern, egal wo du dich auf dem Genderspektrum seht!
+             </span> 
+        `
     },
     {
-        question: 'Was tut ihr für Nachhaltigkeit?',
-        answer: ' Condimentum massa eros eu scelerisque dictum platea vulputate blandit placerat mattis, conubia suspendisse sociosqu felis mi posuere convallis libero bibendum tortor, lacus interdum laoreet pellentesque erat faucibus potenti mus imperdiet. Iaculis maximus nunc tempus erat augue suscipit donec <br><br> massa dis quam scelerisque, inceptos id fermentum hac felis eget ex conubia duis.'
+        question: 'Wie setzten sich die Preise zusammen?',
+        answer: `
+            Wir berechnen unsere Dienstleistungen ausschließlich nach Zeit, Skill und Material Aufwand. Wir besprechen mit dir im Vorfeld, wie sich die Preise individuell zusammensetzen. 
+            Eine genauere Beschreibung findest du auch  <a href="/preise"> auf unserer Preise-Seite</a>.
+        `
     },
     {
         question: 'Warum muss ich meinen Termin anzahlen? ',
@@ -25,15 +34,67 @@ Um euch durch kurzfristige Terminabsagen anfallende Kosten zu ersparen, seit euc
     {
         question: 'Mist, ich komme zu spät. was nun? ',
         answer: `
-     Das ist natürlich nicht der hit aber auch kein Weltuntergang. Shit happens. Ruft uns kurz an oder schreibt uns, dann wissen wir zumindest schon mal Bescheid, dass es später wird. Wir versuchen natürlich dann in deiner gebuchten Zeit deine Wünsche umzusetzten. <br> <br>Sollte die Verspätung aber größer ausfallen, behalten wir uns vor die zusätzlich benötigte Zeit in Rechung zu stellen. 
-    <br><br> 
-    <span class="text-primary">Unter Zeitdruck ist noch nie eine gute Frisur entstanden ;)</span> 
+         Das ist natürlich nicht der hit aber auch kein Weltuntergang. Shit happens. 
+         <br><br> 
+         Ruft uns kurz an oder schreibt uns, dann wissen wir zumindest schon mal Bescheid, dass es später wird. Wir versuchen natürlich dann in deiner gebuchten Zeit deine Wünsche umzusetzten. <br> <br>Sollte die Verspätung aber größer ausfallen, behalten wir uns vor die zusätzlich benötigte Zeit in Rechung zu stellen. 
+         <br><br> 
+         <span class="italic">Unter Zeitdruck ist noch nie eine gute Frisur entstanden!</span> 
 
         `
     },
     {
-        question: 'Imperdiet aliquet netus cubilia elementum lobortis torquent',
-        answer: 'massa dis quam scelerisque, inceptos id fermentum hac felis eget ex conubia duis.'
+        question: 'Welche Zahlungsarten bietet ihr an? ',
+        answer: `
+            Wir bevorzugen bargeldloses Bezahlen, aber bieten auch die Möglichkeit, Bar zu bezahlen. <br><br>
+            <ul>
+<li>Barzahlung</li>
+<li>EC Karten</li>
+<li>Kreditkarte</li>
+<li>Paypal</li>
+</ul>
+        `
+    },
+    {
+        question: 'Was ist, wenn ich kein smalltalk führen will? ',
+        answer: `
+        Du möchtest zum Friseur gehen um einfach mal abzuschalten? Deine Nase in dein Buch zu stecken, Musik hören oder etwas ruhe zu genießen? 
+        <br><br> 
+        Garkein Problem. Nachdem wir dich Beraten haben und deine Wünsche klar sind, machen wir unsere Magie, ganz ohne zu quatschen! Sag uns einfach kurz bescheid, wenn dir das lieber ist. 
+        `
+    },
+    {
+        question: 'Welche Produkte benutzt ihr? ',
+        answer: `
+        Wir setzten auf höchste Qualität in jeden Belangen auch in unseren Produkten. 
+        <br><br> 
+        Wir arbeiten mit Davines, Schwarzkopf Professional, Pulp Riot, Olaplex uvm…
+        `
+    },
+    {
+        question: 'Gibt es etwas vor meinem Haarfärbetermin zu beachten? ',
+        answer: `
+Plane genug Zeit ein. Blondierung arbeitet nicht schneller nur damit du schneller wieder ins Büro kommst. Haarschonende Farbtechniken brauchen ihre Zeit. 
+        <br><br> 
+Wir empfehlen dir auch 24-48h vor deinem Termin nicht mehr die Haare zu waschen, dies dient zum Schutz deiner Kopfhaut.
+        <br><br> 
+Bedenke auch, schöne Haarfarben kommen immer von zwei Seiten. Wir geben alles das du Happy aus dme Laden schwebst und du wäscht so selten wie dir möglich mit Produkten die auf deine Haare abgestimmt sind. Nur so hast du wirklich langfristig Freude daran. 
+        `
+    },
+    {
+        question: 'Was tut ihr für Nachhaltigkeit?',
+        answer: `
+Wir setzen geziehlte Leuchtmittel ein, um so wenig Strom wie möglich zu verbrauchen. Zudem sind alle unsere Waschbecken mit Perloatoren ausgestattet um Wasser zu reduzieren. 
+        <br><br> 
+Wir spenden unserere Schnitthaare an “...” die aus vermeintlichen Haarabfällen Ölmatten produzieren um damit Rohöl aus den Meeren aufzufangen. 
+        `
+    },
+    {
+        question: 'Mit welchen Verkehrsmitteln kann ich euch erreichen?',
+        answer: `
+Es sind auf dem Nordwall gegen eine Parkgebühr reichlich Parkplätze vorhanden. 
+        <br><br> 
+Zudem hält die Straßenbahn 044 und der Bus 076 an der Haltestelle “Friedrichsplatz” 200m vom Salon entfernt. Vom Krefelder Hbf seit ihr mit Bus oder Bahn in 15min bei uns. Diese fahren Tagsüber ca. alle 15min 
+        `
     },
 
 ]
