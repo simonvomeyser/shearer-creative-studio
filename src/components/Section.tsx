@@ -23,7 +23,7 @@ const Section = React.forwardRef<HTMLElement, SectionProps>(
             <section id={id} ref={actualRef} className={clsx('z-section relative',
                 {
                     'pt-[calc(var(--header-height--mobile))] md:pt-[calc(var(--header-height--desktop))]': headerPaddingTop,
-                    'mt-[0.25rem] md:mt-[4rem]' : headerMarginTop
+                    'mt-[2rem] md:mt-[4rem]' : headerMarginTop
                 },
                 className)}>
                 {children}
