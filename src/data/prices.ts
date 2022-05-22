@@ -1,16 +1,16 @@
-export type PriceType = {
+export type PriceTypeType = {
     title: string,
     price: string,
     description?: string,
 }
-export type PriceCategory = {
+export type PriceCategoryType = {
     title: string,
     anchor: string,
     description?: string,
-    prices: PriceType[],
+    prices: PriceTypeType[],
 }
 
-export const priceCategories: PriceCategory[] = [
+export const priceCategories: PriceCategoryType[] = [
     {
         "title": "Beratung",
         "anchor": "beratung",
