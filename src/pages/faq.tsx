@@ -47,7 +47,7 @@ const Preise = () => {
                 <Container className="space-y-16 md:space-y-24" size="xl">
                     {faqs.map((faq, index) => (
                         <div key={index} className="space-y-10 md:space-y-16" id={slugify(faq.question)}>
-                            <BraveText className="xl:!text-[80px] lg:max-w-[85%]">
+                            <BraveText className="xl:!text-[60px] xl:!text-[60px] lg:max-w-[75%]">
                                 <div  className=" mb-2">
                                     <a className="inline-block w-20 h-[2px] md:h-2 bg-primary" href={`/faq#${slugify(faq.question)}`}/>
                                 </div>
