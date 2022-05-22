@@ -18,11 +18,11 @@ export const Burger: React.FC<BurgerProps> = ({className, isOpen}) => {
                     transition: {
                         y: {
                             duration: isOpen ? .2 : .1,
-                            delay: isOpen ? 0 : .2,
+                            delay: isOpen ? 0 : .1,
                         },
                         rotate: {
                             duration: isOpen ? .2 : .1,
-                            delay: isOpen ? .2 : 0,
+                            delay: isOpen ? .1 : 0,
                         }
                     }
                 }}
@@ -33,7 +33,7 @@ export const Burger: React.FC<BurgerProps> = ({className, isOpen}) => {
                     opacity: isOpen ? 0 : 1,
                     transition: {
                         duration: isOpen ? .4 : .2,
-                        delay: isOpen ? 0 : .2,
+                        delay: isOpen ? 0 : .1,
                     }
                 }}
                 className="h-1 bg-white inline-block w-full rounded-full "/>
@@ -45,11 +45,11 @@ export const Burger: React.FC<BurgerProps> = ({className, isOpen}) => {
                         duration: isOpen ? .2 : .1,
                         y: {
                             duration: isOpen ? .2 : .1,
-                            delay: isOpen ? 0 : .2,
+                            delay: isOpen ? 0 : .1,
                         },
                         rotate: {
                             duration: isOpen ? .2 : .1,
-                            delay: isOpen ? .2 : 0,
+                            delay: isOpen ? .1 : 0,
                         }
                     }
                 }}
