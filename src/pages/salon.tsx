@@ -2,22 +2,16 @@ import clsx from "clsx";
 import {StaticImage} from "gatsby-plugin-image";
 import React from 'react';
 import {BraveText} from "../components/BraveText";
+import {ContactSection} from "../components/ContactSection";
 import {Container} from "../components/Container";
 import {CopyText} from "../components/CopyText";
-import {House} from "../components/icons/House";
-import {Mail} from "../components/icons/Mail";
-import {Phone} from "../components/icons/phone";
-import {WhatsApp} from "../components/icons/WhatsApp";
 import {MetaTags} from "../components/MetaTags";
 import {Quote} from "../components/Quote";
 import {SalonHeading} from "../components/SalonHeading";
 import {SalonImagesSlider} from "../components/SalonImagesSlider";
-import {IconBubbleLink} from "../components/SalonPage/IconBubbleLink";
-import {MapWithConsent} from "../components/SalonPage/MapWithConsent";
 import {SarahHeading} from "../components/SarahHeading";
 import {Section} from "../components/Section";
 import {Watercolor} from "../components/Watercolor";
-import {globalData} from "../data/global";
 import {getRandomQuote} from "../data/quotes";
 
 const Salon = () => {
@@ -254,56 +248,9 @@ const Salon = () => {
                     </div>
                 </Container>
             </Section>
-            <Section id="kontakt" className="lg:pb-20 pt-8 md:pt-12 skew-top--black skew-top">
-                <Watercolor
-                    color="green"
-                    className={clsx(' md:block top-[-50px] right-[-600px] xl:right-[-450px] w-[900px] h-[1000px] opacity-20 md:opacity-30 ')}
-                />
-                <Watercolor
-                    color="green"
-                    className={clsx(' lg:hidden top-[15%] left-[-600px] w-[900px] h-[1000px] opacity-20 md:opacity-30 ')}
-                />
-                <Container size="xl">
-                    <h2 className="sr-only">Kontakt</h2>
-                    <BraveText className="mb-8 xs:mb-14 md:mb-20 text-center lg:text-left">
-                        Say Hello!
-                    </BraveText>
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-8">
-                        <div className="space-y-14 lg:space-y-8 flex flex-col justify-center lg:pb-4">
-                            <IconBubbleLink title={globalData.phoneDisplay}
-                                            superTitle="WhatsApp Business"
-                                            href={globalData.phoneLinkWhatsAppHref}
-                                            icon={<WhatsApp className="w-8 h-8"/>}
-                            />
-                            <IconBubbleLink title={globalData.email}
-                                            superTitle="Mail"
-                                            href={'mailto:' + globalData.email}
-                                            icon={<Mail className="w-7 h-7"/>}
-                            />
-                            <IconBubbleLink title={globalData.phoneDisplay}
-                                            superTitle="Telefon"
-                                            href={'tel:' + globalData.phoneLink}
-                                            icon={<Phone className="w-7 h-7"/>}
-                            />
-                            <IconBubbleLink title={
-                                                globalData.address.street + ' ' +
-                                                globalData.address.number  + "<br/>" +
-                                                globalData.address.zip  + ' ' +
-                                                globalData.address.city
-                                            }
-                                            superTitle="Adresse"
-                                            href={globalData.googleMapsLink}
-                                            icon={<House className="w-9 h-9"/>}
-                            />
-                        </div>
-                        <div>
-                            <div className="mx-auto sm:max-w-[600px] sm:max-h-[600px] lg:max-w-[none] lg:max-h-[none] ">
-                                <MapWithConsent/>
-                            </div>
-                        </div>
-                    </div>
-                </Container>
-            </Section>
+
+            <ContactSection className="skew-top--black skew-top"/>
+
         </>
     )
 };

@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React from 'react';
 import {ArrowLinkStyles} from "../components/ArrowLinkStyles";
 import {Container} from "../components/Container";
@@ -7,6 +8,7 @@ import {MetaTags} from "../components/MetaTags";
 import {PriceCategory} from "../components/PreisePage/PriceCategory";
 import {PriceHeading} from "../components/PriceHeading";
 import {Section} from "../components/Section";
+import {Watercolor} from "../components/Watercolor";
 import {priceCategories} from "../data/prices";
 
 const Preise = () => {
@@ -15,8 +17,11 @@ const Preise = () => {
         <>
             <MetaTags pageName="Preise"/>
             <Section headerPaddingTop headerMarginTop={false}>
+                <Watercolor
+                    color="green"
+                    className={clsx(' md:block top-[-15%] right-[-600px] xl:right-[-450px] w-[900px] h-[1000px] opacity-20 md:opacity-30 ')}
+                />
                 <Container>
-
                     <div className="mb-4">
                         <h1 className="sr-only">Unsere Preise</h1>
                         <PriceHeading className="w-full h-auto sm:w-[530px] md:w-[700px]   text-secondary"/>
