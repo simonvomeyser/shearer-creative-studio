@@ -67,7 +67,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                           image: getImageMetaData(diaryEntry.titleImageUrl).full.original.src,
                       }}
             />
-            <Section headerPaddingTop={true}>
+            <Section headerPaddingTop={true} headerMarginTop={false} className="md:mt-4">
                 <Container fluid className='max-w-[1400px] mb-8'>
                     <div className='relative pt-[50%] md:pt-[40%] 2xl:pt-[35%]'>
                         <GatsbyImage alt="Titelbild"
