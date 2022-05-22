@@ -10,7 +10,7 @@ export type PriceProps = {
 export const Price: React.FC<PriceProps> = ({price,}) => {
 
     const [ref, isVisible] = useInView({
-        threshold: 1,
+        threshold: 0.5,
         unobserveOnEnter: true
     })
 
