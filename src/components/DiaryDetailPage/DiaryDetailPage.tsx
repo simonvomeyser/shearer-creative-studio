@@ -78,8 +78,6 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                         />
                     </div>
                 </Container>
-                <Container fluid className='max-w-[1400px] mb-8'>
-                </Container>
                 <Container className='!max-w-screen-md '>
                     <div className="mb-1">
                         <Link to="/diary" className="hover:text-mango-400 transition">
@@ -89,7 +87,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                     <h1 className='text-2xl xs:text-4xl md:text-6xl font-bold uppercase mb-4'
                         dangerouslySetInnerHTML={{__html: diaryEntry.title}}/>
                     <div className='text-lg text-s-gray-500'> {diaryEntry.category} | by Sarah Scherer</div>
-                    <hr className='border-s-gray-500 mt-20 mb-4'/>
+                    <hr className='border-s-gray-500 mt-8 xs:mt-10 md:mt-20 mb-4'/>
                 </Container>
                 <Container className='!max-w-screen-md mb-16'>
                     <CopyText className='!max-w-none'>
