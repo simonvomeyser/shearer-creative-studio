@@ -10,7 +10,7 @@ export const faqs: FaqType[] = [
              Haare sind nicht an ein Geschlechtsmerkmal gebunden. Unisex impliziert für uns das es nur “Mann” und “Frau” gibt. Aber Haaren ist es egal wie du dich identifiziert. 
              <br><br> 
              <span class="italic">
-             Wir wollen deine Individualität feiern, egal wo du dich auf dem Genderspektrum seht!
+             Wir wollen deine Individualität feiern, egal wo du dich auf dem Genderspektrum siehst!
              </span> 
         `
     },

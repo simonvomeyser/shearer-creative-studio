@@ -22,6 +22,9 @@ export const quotes: QuoteDataType[] = [
         body: 'Also komm! Lass uns deine Individualität feiern.',
         author: 'Sarah Scherer',
     },
+    {
+        body: 'Individualität feiern, egal wo du dich auf dem Genderspektrum siehst!',
+    },
 ];
 
 export function getRandomQuote(): QuoteDataType {
