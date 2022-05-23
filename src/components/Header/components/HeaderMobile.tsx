@@ -3,7 +3,6 @@ import {Link} from "gatsby";
 
 import React, {useEffect, useState} from 'react';
 import {useFoldbackMenu} from "../../../hooks/useFoldbackMenu";
-import {useSmoothScroll} from "../../../hooks/useSmoothScroll";
 import {LogoSimple} from "../../LogoSimple";
 import {Burger} from "./Burger";
 import {MobileMenu} from "./MobileMenu";
@@ -19,8 +18,6 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({className}) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const {headerRef, isVisible, isFixed} = useFoldbackMenu();
 
-    const smoothScroll = useSmoothScroll();
-
     useEffect(() => {
         return globalHistory.listen(({action}) => {
             if (action === 'PUSH') {
@@ -35,7 +32,11 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({className}) => {
             scrollLock.enablePageScroll();
             setIsMobileMenuOpen(false);
         } else {
-            smoothScroll?.animateScroll(0)
+            // Handle edge case: user scrolled a little passed the (stille absolute) header
+            // Scroll to top to avoid weird "half visible burger"
+            if (headerRef.current && window.scrollY < headerRef.current.clientHeight) {
+                window.scrollTo({top: 0});
+            }
             scrollLock.disablePageScroll();
             setIsMobileMenuOpen(true);
         }
@@ -43,9 +44,9 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({className}) => {
 
     return (
         <div className={clsx('flex justify-between items-center w-full bg-gradient-to-t from-transparent to-s-black z-header h-[var(--header-height--mobile)] px-4 ', {
-            'fixed top-0 left-0 transition duration-500'  : isFixed,
+            'fixed -top-[var(--header-height--mobile)] left-0 transition duration-500' : isFixed,
             'absolute top-0 left-0'  : !isFixed,
-            '-translate-y-full'  : !isVisible && isFixed
+            'translate-y-full'  : isVisible && isFixed,
         },className)} ref={headerRef}>
             <Link to="/">
                 <LogoSimple className="translate-y-0.5 w-32"/>

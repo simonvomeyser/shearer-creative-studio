@@ -14,10 +14,10 @@ export const HeaderDesktop: React.FC<HeaderDesktopProps> = ({className}) => {
     const {headerRef, isVisible, isFixed} = useFoldbackMenu();
 
     return (
-        <div className={clsx('bg-gradient-to-t from-transparent to-s-black w-full h-[var(--header-height--desktop)] z-header w-full transition duration-500', {
-            'fixed top-0 left-0 transition duration-500'  : isFixed,
+        <div className={clsx('bg-gradient-to-t from-transparent to-s-black w-full h-[var(--header-height--desktop)] z-header w-full', {
+            'fixed -top-[var(--header-height--desktop)] left-0 transition duration-500' : isFixed,
             'absolute top-0 left-0'  : !isFixed,
-            '-translate-y-full'  : !isVisible && isFixed
+            'translate-y-full'  : isVisible && isFixed,
         }, className)} ref={headerRef}>
             <ul className="justify-center items-center h-full text-xl font-regular text-gray-50 flex">
                 <MenuLink linkClassName="p-8" href="/salon">Salon</MenuLink>
