@@ -70,18 +70,14 @@ export function usePercentageInView(ref: RefObject<HTMLElement>) {
 
 
                 } else {
-                    const log = ref.current.id === 'balayage';
-                    log && console.log('// The element is smaller than the viewport ')
 
                     // How much % of the element is in view
                     if (between(viewportEnd, elementStart, elementEnd)) {
-                        log && console.log('viewport end is inside elment' + ref.current.id)
                         setViewportPosition(-1);
                         setPercentageInView(((viewportEnd - elementStart) / elementHeight) * 100);
                         return;
                     }
                     if (between(viewportStart, elementStart, elementEnd)) {
-                        log && console.log('viewport start is in elemnt' + ref.current.id)
                         setViewportPosition(1);
                         setPercentageInView(((elementEnd - viewportStart) / elementHeight) * 100);
                         return;
