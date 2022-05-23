@@ -37,7 +37,6 @@ export function usePercentageInView(ref: RefObject<HTMLElement>) {
                 const viewportEnd = viewportStart + viewportHeight;
                 const normalizedViewportHeight = viewportHeight / 100;
 
-                        console.log({viewportStart})
                 if (viewportEnd < elementStart) {
                     setViewportPosition(-1);
                     setPercentageInView(0);
