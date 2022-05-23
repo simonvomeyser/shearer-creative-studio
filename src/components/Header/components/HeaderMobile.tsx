@@ -2,7 +2,6 @@ import clsx from "clsx";
 import {Link} from "gatsby";
 
 import React, {useEffect, useState} from 'react';
-import {useFoldbackMenu} from "../../../hooks/useFoldbackMenu";
 import {useSmoothScroll} from "../../../hooks/useSmoothScroll";
 import {LogoSimple} from "../../LogoSimple";
 import {Burger} from "./Burger";
@@ -17,7 +16,6 @@ export type HeaderMobileProps = {
 export const HeaderMobile: React.FC<HeaderMobileProps> = ({className}) => {
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const {headerRef, isVisible, isFixed} = useFoldbackMenu();
 
     const smoothScroll = useSmoothScroll();
 
@@ -42,11 +40,7 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({className}) => {
     }
 
     return (
-        <div className={clsx('flex justify-between items-center w-full bg-gradient-to-t from-transparent to-s-black z-header h-[var(--header-height--mobile)] px-4 ', {
-            'fixed top-0 left-0 transition duration-500'  : isFixed,
-            'absolute top-0 left-0'  : !isFixed,
-            '-translate-y-full'  : !isVisible && isFixed
-        },className)} ref={headerRef}>
+        <div className={clsx('flex justify-between items-center w-full ', className)}>
             <Link to="/">
                 <LogoSimple className="translate-y-0.5 w-32"/>
             </Link>
