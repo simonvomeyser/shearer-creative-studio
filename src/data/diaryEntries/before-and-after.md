@@ -7,7 +7,7 @@ excerpt: 'Semper pharetra augue rhoncus sociosqu aptent libero metus '
 date: 'Mai 2022'
 category: 'Salonalltag'
 listImageUrl: 'tamara.jpg'
-titleImageUrl: 'tamara.jpg'
+titleImageUrl: 'title.jpg'
 imageUrls: [
     'tamara.jpg',
     'kiki.jpg',

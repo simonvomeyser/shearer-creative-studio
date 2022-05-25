@@ -8,7 +8,7 @@ date: 'Juni 2019'
 category: 'Award'
 excerpt: 'Die für den German Hair Dressing Award nominierte Strecke "Maniac"'
 listImageUrl: '_DSC9373_A4.jpg'
-titleImageUrl: '_DSC9373_A4.jpg'
+titleImageUrl: 'title.jpg'
 imageUrls: [
     '_DSC9233_A4.jpg',
     '_DSC9152_A4.jpg',
