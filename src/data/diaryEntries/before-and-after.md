@@ -17,7 +17,7 @@ imageUrls: [
 ]
 ---
 
-<i>"Leben heißt Veränderung sagte der Stein zur Blume und flog davon"<i>
+<i>"Leben heißt Veränderung sagte der Stein zur Blume und flog davon"</i>
 
 Wir lieben Veränderung und Makeovers. Hier findest du ein paar unserer Highlights aus unserem Salonalltag. 
 
