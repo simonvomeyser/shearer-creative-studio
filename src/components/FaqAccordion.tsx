@@ -4,6 +4,7 @@ import {Link} from "gatsby";
 
 import React, {useState} from 'react';
 import {shuffleArray} from "../lib/shuffleArray";
+import {slugify} from "../lib/slugify";
 import {ArrowLinkStyles} from "./ArrowLinkStyles";
 import {faqs as _faqs} from '../data/faqs';
 
@@ -66,7 +67,7 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({className}) => {
             <div className="space-y-5">
 
                 {faqs.map((faq, id) => (
-                    <div key={id}>
+                    <div key={slugify(faq.question)}>
                         <button
                             className='flex leading-none pl-10 md:pl-16 relative transition duration-500 leading-none active:outline-none justify-start text-left text-2xl xs:text-3xl md:text-4xl hover:text-mango-50'
                             onClick={() => handleCategoryClick(id)}>
