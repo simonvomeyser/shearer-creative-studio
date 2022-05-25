@@ -12,24 +12,6 @@ export type PriceCategoryType = {
 
 export const priceCategories: PriceCategoryType[] = [
     {
-        "title": "Beratung",
-        "anchor": "beratung",
-        "description": `
-            Du bist dir noch unsicher, was dir steht oder du wünschst ein komplettes Make-Over? <br><br> 
-            Du brächtest einen professionellen Rat bezüglich deiner Heimpflege oder brauchst eine ehrliche Einschätzung zu einer Farbkorrektur? 
-         `,
-        "prices": [
-            {
-                "title": "Typgerechte Beratung",
-                "description": `
-                    Wir setzen uns zusammen und du bekommst eine persönliche Beratung! 
-                    Die Beratung wird im Falle einer Folgebuchung mit der nächsten Dienstleistung verrechnet.<br>
-                `,
-                "price": "19€ / 20 Min",
-            },
-        ]
-    },
-    {
         "title": "Cut",
         "anchor": "cut",
         "description": ` Dein Haarschnitt, ist genau so Individeuell wie du. 
@@ -116,6 +98,24 @@ Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor X
             {
                 "title": "Fashion Balayage (ca. 180min)",
                 "price": "ab 190€"
+            },
+        ]
+    },
+    {
+        "title": "Beratung",
+        "anchor": "beratung",
+        "description": `
+            Du bist dir noch unsicher, was dir steht oder du wünschst ein komplettes Make-Over? <br><br> 
+            Du brächtest einen professionellen Rat bezüglich deiner Heimpflege oder brauchst eine ehrliche Einschätzung zu einer Farbkorrektur? 
+         `,
+        "prices": [
+            {
+                "title": "Typgerechte Beratung",
+                "description": `
+                    Wir setzen uns zusammen und du bekommst eine persönliche Beratung! 
+                    Die Beratung wird im Falle einer Folgebuchung mit der nächsten Dienstleistung verrechnet.<br>
+                `,
+                "price": "19€ / 20 Min",
             },
         ]
     },
