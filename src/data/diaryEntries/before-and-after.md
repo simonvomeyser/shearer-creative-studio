@@ -17,9 +17,8 @@ imageUrls: [
 ]
 ---
 
-<b>Fringilla platea feugiat vel lectus orci lacinia mollis nec auctor, pulvinar mattis nibh </b>
+<i>"Leben heißt Veränderung sagte der Stein zur Blume und flog davon"<i>
 
-adipiscing arcu sagittis parturient urna sit consequat, vivamus finibus class tincidunt commodo efficitur nisl euismod. Ultrices porttitor risus orci pellentesque morbi eget mattis egestas accumsan, nam quisque proin dis sem nec vitae sapien dui, consequat praesent sit augue interdum maximus nullam sollicitudin. Sagittis nisi integer dignissim pellentesque suspendisse sit taciti 
+Wir lieben Veränderung und Makeovers. Hier findest du ein paar unserer Highlights aus unserem Salonalltag. 
 
-consequat cras in donec eget himenaeos nisl, torquent neque fames curae nullam massa commodo interdum ligula magna condimentum porttitor. Massa pulvinar purus tortor convallis montes varius volutpat arcu tincidunt, sodales consectetur velit fusce integer at ad est senectus ligula, nibh justo quam 
-
+Aktuelle Bilder und Geschichten findest du auch immer bei <a href="https://www.instagram.com/shearer.studio/" target="_blank">Instagram</a> - besuche uns doch mal dort. 
