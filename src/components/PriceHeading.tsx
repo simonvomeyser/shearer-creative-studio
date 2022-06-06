@@ -1,14 +1,16 @@
 import clsx from "clsx";
-import React from 'react';
+import React, {CSSProperties} from 'react';
 
 export type PriceHeadingProps = {
     className?: string;
+    style?: CSSProperties,
+
 };
 
-export const PriceHeading: React.FC<PriceHeadingProps> = ({className,}) => {
+export const PriceHeading: React.FC<PriceHeadingProps> = ({className,style}) => {
 
     return (
-        <svg className={clsx('price-heading', className)} viewBox="0 0 1590.309 742.554">
+        <svg className={clsx('price-heading', className)} style={style} viewBox="0 0 1590.309 742.554">
             <defs>
                 <clipPath id="clip-path">
                     <rect id="Rectangle_109" data-name="Rectangle 109" width="1590.309" height="742.554" fill="none"/>

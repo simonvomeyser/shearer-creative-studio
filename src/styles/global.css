@@ -172,5 +172,11 @@ body > iframe {
 }
 
 .price-heading path, .price-heading rect {
-  stroke-width: 2;
+  stroke-width: 3;
+}
+
+@media (min-width: 768px) {
+  .price-heading path, .price-heading rect {
+    stroke-width: 2;
+  }
 }

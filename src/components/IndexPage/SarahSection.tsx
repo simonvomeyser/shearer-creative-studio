@@ -31,7 +31,7 @@ export const SarahSection: React.FC = () => {
                     className='absolute right-0 top-[-5%] w-full text-secondary sm:w-[90%] 2xl:w-[66%]'
                     style={{
                         opacity: percentageInView / 100,
-                        transform: viewportPosition === -1 ? `translateX(${percentageInView - 100}px)` : '',
+                        transform: viewportPosition === -1 ? `translateX(${(percentageInView - 100)}px)` : '',
                     }}
                 />
             </div>
@@ -64,13 +64,7 @@ export const SarahSection: React.FC = () => {
                     </div>
                     <CopyText
                         className='mt-0 sm:flex-1 w-full sm:w-auto -translate-y-12 -mb-12 bg-sage-700 p-4 md:mt-[40%] lg:mt-[25%] md:translate-y-0 md:mb-0 md:bg-transparent'>
-                        <div
-                            className='max-w-screen-sm'
-                            style={{
-                                opacity: percentageInView / 100,
-                                transform: viewportPosition === -1 ? `translateX(${(percentageInView - 100) * -1}px)` : '',
-                            }}
-                        >
+                        <div className='max-w-screen-sm'>
                             <div className='mb-6'>
                                 Sarah Scherer (Sie/Ihre) - Das multifunktionale Chamäleon.
                                 irgendwo zwischen Pippi Langstrumpf und Rapunzel, macht gerne Dinge die ihr schwer

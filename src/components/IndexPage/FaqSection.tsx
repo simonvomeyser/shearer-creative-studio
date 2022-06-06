@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useRef} from "react";
+import {usePercentageInView} from "../../hooks/usePercentageInView";
 import {Container} from "../Container";
 import {FaqAccordion} from "../FaqAccordion";
 import {FaqHeading} from "../FaqHeading";
@@ -7,9 +8,13 @@ import {Watercolor} from "../Watercolor";
 
 
 export const FaqSection: React.FC = ({}) => {
+    const sectionRef = useRef<HTMLElement>(null);
+    const {percentageInView, viewportPosition} = usePercentageInView(sectionRef);
+
 
     return (
         <Section id="faq"
+                 ref={sectionRef}
                  className="bg-sage-700 pb-[80px] pt-[80px] md:pt-[200px] mt-[100px] md:mt-[200px] skew-top">
             <h2 className="sr-only">Häufig gestellte fragen</h2>
             <Watercolor
@@ -18,7 +23,11 @@ export const FaqSection: React.FC = ({}) => {
             />
             <Container className="mt-[-250px] sm:mt-[-300px] md:mt-[-450px]">
 
-                <FaqHeading className="w-[80%] text-secondary -translate-y-4 md:translate-y-0"/>
+                <FaqHeading className="w-[80%] text-secondary -translate-y-4 md:translate-y-0"
+                            style={{
+                                transform: viewportPosition === -1 ? `translateX(${(percentageInView - 100) * -0.5}px)` : '',
+                            }}
+                />
 
             </Container>
             <Container>
