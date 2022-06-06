@@ -10,7 +10,7 @@ export type BurgerProps = {
 export const Burger: React.FC<BurgerProps> = ({className, isOpen}) => {
 
     return (
-        <span className={clsx('h-6 w-9 flex flex-col justify-between items-center', className)}>
+        <span className={clsx('h-6 w-9 flex flex-col justify-between items-center pointer-events-none', className)}>
             <motion.span
                 animate={{
                     y: isOpen ? '10px' : 0,
