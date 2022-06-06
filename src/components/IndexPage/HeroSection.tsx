@@ -31,7 +31,7 @@ export const HeroSection: React.FC = () => {
 
     return (
         < Section
-            className="min-h-[95vh] md:min-h-screen flex flex-col justify-center ">
+            className="min-h-[var(--100vh)] md:min-h-screen flex flex-col justify-center ">
 
             {/* BG-Image */}
             <StaticImage
@@ -103,7 +103,7 @@ export const HeroSection: React.FC = () => {
             <Container>
 
                 <div className={clsx('relative transition opacity-100 duration-1000 delay-1000', {})}>
-                    <h1 className="text-5xl xs:text-7xl md:text-[120px] 2xl:text-[160px] font-semibold uppercase leading-none mb-6 font-roma">
+                    <h1 className="text-4xl xs:text-6xl md:text-[120px] 2xl:text-[160px] font-semibold uppercase leading-none mb-6 font-roma">
                         <span className="text-white">Salon</span> <br/>
                         <span
                             className="stroked-sage-500 text-secondary transition-all"
