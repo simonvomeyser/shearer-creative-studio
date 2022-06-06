@@ -40,9 +40,9 @@ const Salon = () => {
                             <CopyText className="ml-auto md:max-w-[35ch]">
                                 Im Herzen Krefelds - inmitten der lauten Stadt - öffnet das Creative Studio seine Türe.
                                 <br/> <br/>
-                                Ein Ort wo es um dich geht. Ein Safespace, wo du die sein Person darfst die du sein
-                                möchtest. Hier kansnt du es dir gut gehen lassen und bekommst <span
-                                className="underline decoration-primary">die perfekte Frisur, um dich mehr nach dir
+                                Ein Ort wo es um dich geht. Ein Safespace, wo du die Person sein darfst, die du sein
+                                möchtest. Hier kannst du es dir gut gehen lassen und bekommst <span
+                                className=" text-black bg-secondary">die perfekte Frisur, um dich mehr nach dir
                                 selbst zu fühlen.</span>
                                 <div className="xs:hidden my-8">
 
@@ -110,10 +110,10 @@ const Salon = () => {
 
                             <CopyText className="mr-auto md:max-w-[35ch]">
                                 Mit den besten Produkten auf dem Markt arbeiten wir am Puls der Zeit mit vollem Herzblut
-                                und Leidenschaft, so Ökologisch und Nachhaltig wie uns möglich. <span
-                                className="underline decoration-primary">Unsere Preise richten sich ausschließlich nach
+                                    und Leidenschaft, so Ökologisch und Nachhaltig wie uns möglich. <br/><span
+                                className=" text-black bg-secondary inline">Unsere Preise richten sich ausschließlich nach
                                 dem zeitlichen Aufwand, Skill und Materialverbrauch und nicht nach deinem
-                                Geschlecht.</span>
+                                Geschlecht!</span>
 
                                 <br/><br/>
                                 Schöne Haare verändert nicht die Welt, aber wir können damit das Leben ein kleines
@@ -162,7 +162,7 @@ const Salon = () => {
 
                             <div className="space-y-8">
 
-                                <CopyText className="mr-auto md:max-w-[35ch]">
+                                <CopyText className="mr-auto max-w-[35ch]">
                                     Sarah Scherer (Sie/Ihre) - Das multifunktionale Chamäleon.
                                     irgendwo zwischen Pippi Langstrumpf und Rapunzel, macht gerne Dinge die ihr schwer
                                     fallen,
@@ -176,7 +176,7 @@ const Salon = () => {
                                                  alt="Bild des Salons 1, organisches Interieur mit vielen Pflanzen"
                                     />
                                 </div>
-                                <CopyText className="mr-auto md:max-w-[35ch]">
+                                <CopyText className="ml-auto sm:ml-0 sm:mr-auto max-w-[35ch]">
                                     Dabei ist es egal, ob es sich um das Perfektionieren der neuesten Haartrends handelt
                                     oder
                                     der Einsatz dafür, unsere Welt ein kleines bisschen offener zu gestalten.
@@ -223,11 +223,11 @@ const Salon = () => {
             <Section className="bg-sage-700 pb-20 md:pb-32" id="sarah">
                 <Container fluid className="px-[1rem] xs:px-[2rem] md:px-0">
                     <div className="grid md:grid-cols-2 gap-10 2xl:gap-12">
-                        <div className="flex justify-end xs:pl-[var(--container-padding--md)]">
-                            <CopyText className=" max-w-[35ch]">
+                        <div className="flex justify-end md:pl-[var(--container-padding--md)]">
+                            <CopyText className="max-w-[35ch]">
                                 Seit nun fast 10 Jahren fühlt sich die German Hairdressing Award Gewinnerin nicht nur
                                 hinter dem Friseurstuhl wohl, sondern begleitet erfolgreich Kampagnen und Kunden quer
-                                durch Europa als <span className="bg-mango-500">etablierte Hair & Make-up
+                                durch Europa als <span className="bg-mango-300 text-black">etablierte Hair & Make-up
                                 Artistin</span>.
                                 <br/><br/>
                                 Auch wenn die Meister Stipendiatin eher zufällig in die Branche stolperte, liebt sie

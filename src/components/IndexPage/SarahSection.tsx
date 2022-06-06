@@ -78,7 +78,7 @@ export const SarahSection: React.FC = () => {
                             <div className='text-right'>
 
                                 <Link to='/salon#sarah' className='text-right'>
-                                    <ArrowLinkStyles size='sm'>
+                                    <ArrowLinkStyles size='sm' className="!text-mango-400">
                                         Mehr lesen
                                     </ArrowLinkStyles>
                                 </Link>

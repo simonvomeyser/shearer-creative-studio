@@ -103,7 +103,7 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({className}) => {
             </div>
             <div className="flex justify-end mt-8 ">
                 <Link to="/faq">
-                    <ArrowLinkStyles size="md">Mehr Fragen?</ArrowLinkStyles>
+                    <ArrowLinkStyles size="md" className="!text-mango-400">Mehr Fragen?</ArrowLinkStyles>
                 </Link>
             </div>
         </div>

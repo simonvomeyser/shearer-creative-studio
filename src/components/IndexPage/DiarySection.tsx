@@ -12,12 +12,12 @@ export const DiarySection: React.FC = () => {
 
 
     return (
-        <Section id='diary' className='pt-24 pb-36 sm:py-[160px]'>
+        <Section id='diary' className='pt-14 pb-36 sm:py-[160px]'>
             <Container className='mb-16'>
                 <div className='grid md:grid-cols-3 gap-4'>
                     <div className='md:col-span-2'>
                         <BraveText className='mb-6'>
-                            Highlights <br/>
+                            Highlights <br className="hidden md:inline"/>
                             und mehr
                         </BraveText>
                         <Link to='/diary'>

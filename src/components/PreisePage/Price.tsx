@@ -23,10 +23,10 @@ export const Price: React.FC<PriceProps> = ({price,}) => {
 
                 <div className="w-full xs:w-auto"
                      dangerouslySetInnerHTML={{__html: price.title}}/>
-                <div className="w-full xs:w-auto text-right opacity-75 md:ml-2">{price.price}</div>
+                <div className="w-full xs:w-auto text-right opacity-90 md:ml-2">{price.price}</div>
             </div>
             {price.description ?
-                <div className="text-s-gray-400" dangerouslySetInnerHTML={{__html: price.description}}/>
+                <div className="text-white opacity-60" dangerouslySetInnerHTML={{__html: price.description}}/>
                 : null}
         </div>
     );
