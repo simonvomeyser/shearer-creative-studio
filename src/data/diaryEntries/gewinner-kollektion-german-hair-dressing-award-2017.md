@@ -7,7 +7,7 @@ category: Award
 featured: 1
 title: 'GHDA 2017 Gewinner Kollektion'
 excerpt: 'Die Gewinnerkollektion "Insomina" für den German Hairdressing Award 2017 als Newcomer'
-listImageUrl: 'Larahighres.jpg'
+listImageUrl: '2017-06-18 21.42.04.jpg'
 titleImageUrl: '19400309_1372991149450350_50137453373403212_o.jpg'
 imageUrls: 
 - "Ophelia-highres.jpg" 
