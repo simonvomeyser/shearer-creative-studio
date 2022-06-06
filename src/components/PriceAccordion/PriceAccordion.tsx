@@ -118,7 +118,7 @@ export const PriceAccordion: React.FC<PriceAccordionProps> = ({className,}) => {
                             <motion.div variants={readMoreMotionVariant} className="flex w-full justify-end pt-4">
                                 <Link to={`/preise#${category.anchor}`}>
                                         <ArrowLinkStyles size="sm">
-                                            Mehr zu "{category.title}"-Preisen
+                                            Details zu "{category.title}"-Preisen
                                         </ArrowLinkStyles>
                                 </Link>
                             </motion.div>
