@@ -4,6 +4,7 @@ import {Link} from "gatsby";
 
 import React from 'react';
 import {globalData} from "../../../data/global";
+import {ButtonStyles} from "../../ButtonStyles";
 import {Container} from "../../Container";
 import {Facebook} from "../../icons/Facebook";
 import {Instagram} from "../../icons/Instagram";
@@ -75,6 +76,9 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({className, isOpen}) => {
                     </Link>
                 </motion.div>
                 <ul className=" sm:flex-1 justify-center text-center text-2xl xs:text-3xl md:text-5xl flex flex-col mb-4">
+                    <MenuLink linkClassName="py-2 md:py-4" href="/">
+                        <motion.div variants={navLinkMotionVariant}>Startseite</motion.div>
+                    </MenuLink>
                     <MenuLink linkClassName="py-2 md:py-4" href="/salon">
                         <motion.div variants={navLinkMotionVariant}>Salon</motion.div>
                     </MenuLink>
@@ -84,9 +88,13 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({className, isOpen}) => {
                     <MenuLink linkClassName="py-2 md:py-4" href="/diary">
                         <motion.div variants={navLinkMotionVariant}>Diary</motion.div>
                     </MenuLink>
-                    <MenuLink linkClassName="py-2 md:py-4" href="/termin">
-                        <motion.div variants={navLinkMotionVariant}>Termin</motion.div>
-                    </MenuLink>
+                    <li className="mt-10">
+                        <Link to="/kontakt">
+                            <ButtonStyles>
+                                Termin buchen
+                            </ButtonStyles>
+                        </Link>
+                    </li>
                 </ul>
                 <motion.div variants={fadeMotionVariant} className="mt-auto pb-4 pt-2">
                     <div className="w-full text-center mt-auto mb-8 text-lg space-y-1">
