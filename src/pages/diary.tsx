@@ -66,7 +66,7 @@ const Diary = (props: DiaryPagePropsType) => {
                     <BraveText className='text-center mb-8 md:mb-12'>
 
                         <h1>
-                            Geschichten, Highlights und der Alltag. <span className='stroked-sage-500'>Dear
+                            Geschichten, Highlights und der Alltag. <span className='stroked-sage-500 block xl:inline'>Dear
                             Diary...</span>
                         </h1>
                     </BraveText>
