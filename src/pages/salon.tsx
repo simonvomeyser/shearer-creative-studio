@@ -192,8 +192,8 @@ const Salon = () => {
                     <div className="grid md:grid-cols-2 md:grid-rows-2 gap-4 md:gap-8 2xl:gap-12">
                         <div className="md:row-span-2 pt-[125%] md:pt-[140%] relative sm:max-w-[500px] md:max-w-none ">
                             <StaticImage src="../images/salon/sarah-grid-big.jpg"
-                                         width={700}
-                                         height={910}
+                                         width={900}
+                                         height={1125}
                                          objectFit="cover"
                                          alt="Bild von Sarah bei der Arbeit"
                                          className="absolute inset-0 w-full h-full max"
@@ -201,8 +201,8 @@ const Salon = () => {
                         </div>
                         <div className=" pt-[75%] md:pt-0 relative">
                             <StaticImage src="../images/salon/sarah-grid-right-1.jpg"
-                                         width={700}
-                                         height={396}
+                                         width={900}
+                                         height={675}
                                          objectFit="cover"
                                          alt="Sarah mit glücklicher Kundin"
                                          className="absolute inset-0 w-full h-full"
@@ -210,8 +210,8 @@ const Salon = () => {
                         </div>
                         <div className=" pt-[75%] md:pt-0 relative">
                             <StaticImage src="../images/salon/sarah-grid-right-2.jpg"
-                                         width={700}
-                                         height={396}
+                                         width={900}
+                                         height={675}
                                          objectFit="cover"
                                          alt="Bild von Sarah bei der Arbeit"
                                          className="absolute inset-0 w-full h-full"
