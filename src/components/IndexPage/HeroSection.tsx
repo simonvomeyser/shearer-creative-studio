@@ -25,7 +25,7 @@ export const HeroSection: React.FC = () => {
                 });
             }
 
-        }, 4000)
+        }, 5000)
 
     }, [bgVideo])
 
@@ -102,18 +102,26 @@ export const HeroSection: React.FC = () => {
             {/* Content */}
             <Container>
 
-                <div className={clsx('relative transition opacity-100 duration-1000 delay-1000', {})}>
+                <div className={'relative '}>
                     <h1 className="text-4xl xs:text-6xl md:text-[120px] 2xl:text-[160px] font-semibold uppercase leading-none mb-6 font-roma">
-                        <span className="text-white">Salon</span> <br/>
+                        <span className={clsx('text-white delay-500 transition duration-[2s] inline-block', {
+                            'opacity-0 translate-y-10': !mountedTick
+                        })}>
+                            Salon
+                        </span>
+                        <br/>
                         <span
-                            className="stroked-sage-500 text-secondary transition-all"
+                            className={clsx('stroked-sage-500 text-secondary delay-[1000ms] transition duration-[2s] inline-block', {
+                                'opacity-0 translate-y-8': !mountedTick
+                            })}
                         >
                             neu gedacht
                         </span>
-
                     </h1>
                     <Link to="/termin">
-                        <ButtonStyles>
+                        <ButtonStyles className={clsx('delay-[2s] transition duration-[1s]', {
+                            'opacity-0': !mountedTick,
+                        })}>
                             Termin buchen
                         </ButtonStyles>
                     </Link>
