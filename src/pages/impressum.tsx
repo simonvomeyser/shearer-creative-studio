@@ -53,7 +53,7 @@ const Impressum = () => {
           <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
           <h2>Design & Umsetzung</h2>
-          <p><b>Branding:</b> Kathi Link, Felix Rostig, Damian Brzostewicz </p>
+          <p><b>Branding:</b> Kathi Link </p>
           <p><b>Screendesign:</b> Felix Rostig, Damian Brzostewicz </p>
           <p><b>Technische Umsetzung:</b> <a href="https://simonvomeyser.de"  target="_blank" rel="noopener noreferrer">Simon vom Eyser</a></p>
 
