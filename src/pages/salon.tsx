@@ -38,7 +38,7 @@ const Salon = () => {
                         <div>
 
                             <CopyText className="ml-auto md:max-w-[35ch]">
-                                Im Herzen Krefelds - inmitten der lauten Stadt - öffnet das Creative Studio seine Türe.
+                                Im Herzen Krefelds - inmitten der lauten Stadt - öffnet das SHEARER (sprich schie-ra) Creative Studio seine Türen.
                                 <br/> <br/>
                                 Ein Ort wo es um dich geht. Ein Safespace, wo du die Person sein darfst, die du sein
                                 möchtest. Hier kannst du es dir gut gehen lassen und bekommst <span
