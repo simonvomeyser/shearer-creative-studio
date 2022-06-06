@@ -3,7 +3,7 @@ id: 6
 slug: 'before-and-after'
 folder: '6-before-and-after'
 title: 'Before and After'
-excerpt: 'Semper pharetra augue rhoncus sociosqu aptent libero metus '
+excerpt: 'Wir lieben Veränderung und Makeovers. Hier findest du ein paar unserer Highlights!'
 date: 'Mai 2022'
 category: 'Salonalltag'
 listImageUrl: 'tamara.jpg'
