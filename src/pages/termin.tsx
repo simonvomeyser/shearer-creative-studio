@@ -49,7 +49,7 @@ const Termin = () => {
                     </CopyText>
                 </Container>
             </Section>
-            <Section className="h-screen-safari-fix" id="online-termin-buchen">
+            <Section  id="online-termin-buchen">
                 <Watercolor
                     color="black"
                     className={clsx('top-[5%] left-[-300px] w-[900px] h-[1000px] opacity-30 md:opacity-40 ')}
@@ -57,9 +57,9 @@ const Termin = () => {
                 <h2 className="sr-only">Online Termin buchen</h2>
                 <Container fluid className="h-full">
 
-                <div className="w-[488px] h-full rounded-2xl overflow-hidden mx-auto relative">
+                <div className="w-full sm:w-[488px] h-full mx-auto relative">
                     <iframe src="https://simon-vom-eyser-webentwicklung.salonized.com/widget_bookings/new"
-                            frameBorder="0" className="w-full h-full "/>
+                            frameBorder="0" className="w-full h-[var(--100vh)] max-h-[700px] rounded-2xl overflow-hidden"/>
                 </div>
                 </Container>
             </Section>
