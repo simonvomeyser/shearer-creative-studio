@@ -81,14 +81,6 @@ Bedenke auch, schöne Haarfarben kommen immer von zwei Seiten. Wir geben alles d
         `
     },
     {
-        question: 'Was tut ihr für Nachhaltigkeit?',
-        answer: `
-Wir setzen geziehlte Leuchtmittel ein, um so wenig Strom wie möglich zu verbrauchen. Zudem sind alle unsere Waschbecken mit Perloatoren ausgestattet um Wasser zu reduzieren. 
-        <br><br> 
-Wir spenden unserere Schnitthaare an “...” die aus vermeintlichen Haarabfällen Ölmatten produzieren um damit Rohöl aus den Meeren aufzufangen. 
-        `
-    },
-    {
         question: 'Mit welchen Verkehrsmitteln kann ich euch erreichen?',
         answer: `
 Es sind auf dem Nordwall gegen eine Parkgebühr reichlich Parkplätze vorhanden. 
