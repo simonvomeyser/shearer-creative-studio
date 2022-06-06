@@ -29,18 +29,18 @@ export const Footer: React.FC = () => {
                             <Pintrest className="w-5 h-5"/>
                         </SocialBubble>
                     </div>
-                    <div className="w-full sm:w-auto">
-                        Shearer Creative Studio <br/>
-                        <a className="transition hover:text-secondary" href={globalData.googleMapsLink}
+                    <div className="w-full sm:w-auto space-y-2 mb-4 md:space-y-0 md:mb-0">
+                        <span className="inline-block text-primary md:text-white font-bold md:font-normal">Shearer Creative Studio</span> <br/>
+                        <a className="inline-block transition hover:text-secondary" href={globalData.googleMapsLink}
                            target="_blank" rel="noopener noreferrer">Nordwall 60 <br/> 47798 Krefeld </a><br/><br/>
-                        <a className="transition hover:text-secondary"
+                        <a className="inline-block transition hover:text-secondary"
                            href={"mailto:"+globalData.email}>{globalData.email}</a> <br/>
-                        <a className="transition hover:text-secondary" target="_blank" rel="noopener noreferrer"
+                        <a className="inline-block transition hover:text-secondary" target="_blank" rel="noopener noreferrer"
                            href={globalData.phoneLinkWhatsAppHref}>WhatsApp</a><br/>
-                        <a className="transition hover:text-secondary" href={"tel:"+globalData.phoneLink}>{globalData.phoneDisplay}</a> <br/>
+                        <a className="inline-block transition hover:text-secondary" href={"tel:"+globalData.phoneLink}>{globalData.phoneDisplay}</a> <br/>
                     </div>
                     <div className="w-full sm:w-auto">
-                        <ul>
+                        <ul className="space-y-2 md:space-y-0">
                             <li><Link to="/salon" className="transition hover:text-secondary">Salon</Link></li>
                             <li><Link to="/preise" className="transition hover:text-secondary">Preise</Link></li>
                             <li><Link to="/termin" className="transition hover:text-secondary">Termin</Link></li>
