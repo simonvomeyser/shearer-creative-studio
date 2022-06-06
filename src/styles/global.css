@@ -171,12 +171,12 @@ body > iframe {
   position: absolute;
 }
 
-.price-heading path, .price-heading rect {
+.price-heading path, .price-heading rect, .salon-heading path  {
   stroke-width: 3;
 }
 
 @media (min-width: 768px) {
-  .price-heading path, .price-heading rect {
+  .price-heading path, .price-heading rect, .salon-heading path {
     stroke-width: 2;
   }
 }

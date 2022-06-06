@@ -22,6 +22,7 @@ export const quotes: QuoteDataType[] = [
     },
     {
         body: 'Leben heißt Veränderung sagte der Stein zur Blume und flog davon',
+        preventCta: true,
     },
 ];
 

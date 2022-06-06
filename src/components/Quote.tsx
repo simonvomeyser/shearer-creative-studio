@@ -3,6 +3,7 @@ import {Link} from "gatsby";
 
 import React from 'react';
 import {QuoteDataType} from '../data/quotes';
+import useInView from "../hooks/useInView";
 import {BraveText} from './BraveText';
 import {ButtonStyles} from './ButtonStyles';
 
@@ -14,8 +15,17 @@ export type QuoteProps = {
 
 export const Quote: React.FC<QuoteProps> = ({className, quoteData, preventCta,}) => {
 
+    const [ref, isVisible] = useInView({
+        threshold: 0.5,
+        unobserveOnEnter: true
+    })
+
     return (
-        <div className={clsx('', className)}>
+        <div ref={ref} className={clsx('transition duration-[1.5s] ',
+            {
+                'opacity-0 -translate-y-5': !isVisible
+            }, className
+        )}>
             <BraveText className='text-center text-s-gray-500'>
                 <blockquote>
                     &bdquo;{quoteData.body}&rdquo;

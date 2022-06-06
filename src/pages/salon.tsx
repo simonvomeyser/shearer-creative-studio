@@ -79,7 +79,7 @@ const Salon = () => {
             </Section>
             <Section className="py-8 xs:py-14 md:py-20">
                 <SalonHeading
-                    className=" h-[135%] w-auto max-w-full absolute left-0 -top-1/2 xs:top-0 text-white opacity-30"/>
+                    className=" h-[135%] w-auto max-w-full absolute left-0 -top-1/2 xs:top-0 text-white opacity-70 text-secondary"/>
                 <Container size="xl">
                     <BraveText
                         size="small"
@@ -129,8 +129,8 @@ const Salon = () => {
                     </div>
                 </Container>
             </Section>
-            <Section className="py-8 xs:py-10 md:py-20">
-                <Container>
+            <Section className="py-8 xs:pt-5 xs:pb-28 md:pt-16 md:pb-20">
+                <Container >
                     <Quote quoteData={getRandomQuote()}/>
                 </Container>
             </Section>
