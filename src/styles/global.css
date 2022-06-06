@@ -149,7 +149,13 @@ body > iframe {
 .rich-text h2 {
   font-size: 1.75rem;
   font-weight: bold;
-  margin: 1.5rem 0 0.5rem 0;
+  color: var(--mango-400);
+  margin: 3rem 0 0.5rem 0;
+}
+
+.rich-text h3, .rich-text h4, .rich-text h5 {
+  font-weight: bold;
+  margin: 1.5em 0 0.5em 0;
 }
 
 .rich-text a:hover {

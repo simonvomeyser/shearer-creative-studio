@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import {Link} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
 import React, {useEffect, useState} from 'react';
 import {ButtonStyles} from "./ButtonStyles";
@@ -48,8 +47,8 @@ export const MapWithConsent: React.FC<MapWithConsentProps> = ({}) => {
                         </button>
                         <div className="text-center p-4">
                             Hier werden ggf. Daten an Google gesendet und Cookies gesetzt! <br/> Unsicher? Schau mal in
-                            unserer <Link to="/datenschutz" target="_blank"
-                                          className="underline">Datenschutzerklärung</Link>
+                            unserer <a href="/datenschutz#google-maps" target="_blank"
+                                          className="underline">Datenschutzerklärung</a>
                         </div>
                     </div>
                 </> : null}
