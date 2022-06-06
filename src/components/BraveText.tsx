@@ -16,7 +16,7 @@ export const BraveText: React.FC<BraveProps> = ({
   return (
 	<div className={clsx('font-roma font-bold !leading-[1] uppercase hyphens-auto',
         {
-            'text-[36px] xs:text-[44px] md:text-[80px] xl:text-[100px] ' : size === 'default',
+            'text-[30px] xs:text-[40px] md:text-[80px] xl:text-[100px] ' : size === 'default',
             'text-3xl xs:text-4xl md:text-5xl' : size === 'small',
         },
         className)}
