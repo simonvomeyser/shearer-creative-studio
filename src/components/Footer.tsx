@@ -41,13 +41,13 @@ export const Footer: React.FC = () => {
                     </div>
                     <div className="w-full sm:w-auto">
                         <ul>
-                            <li><Link to="/salon">Salon</Link></li>
-                            <li><Link to="/preise">Preise</Link></li>
-                            <li><Link to="/termin">Termin</Link></li>
-                            <li><Link to="/diary">Diary</Link></li>
-                            <li><Link to="/faq">FAQ</Link></li>
-                            <li><Link to="/impressum">Impressum</Link></li>
-                            <li><Link to="/datenschutz">Datenschutz</Link></li>
+                            <li><Link to="/salon" className="transition hover:text-secondary">Salon</Link></li>
+                            <li><Link to="/preise" className="transition hover:text-secondary">Preise</Link></li>
+                            <li><Link to="/termin" className="transition hover:text-secondary">Termin</Link></li>
+                            <li><Link to="/diary" className="transition hover:text-secondary">Diary</Link></li>
+                            <li><Link to="/faq" className="transition hover:text-secondary">FAQ</Link></li>
+                            <li><Link to="/impressum" className="transition hover:text-secondary">Impressum</Link></li>
+                            <li><Link to="/datenschutz" className="transition hover:text-secondary">Datenschutz</Link></li>
                         </ul>
                     </div>
                 </div>

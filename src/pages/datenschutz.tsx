@@ -1,5 +1,6 @@
 import React from 'react';
 import {PlainTextPage} from "../components/PlainTextPage";
+import {globalData} from "../data/global";
 
 
 const Datenschutz = () => {
@@ -80,8 +81,8 @@ const Datenschutz = () => {
             Nordwall 60<br/>
             47798 Krefeld</p>
 
-            <p>Telefon: 01234567890<br/>
-                E-Mail: hello@shearer.studio</p>
+            <p>Telefon: {globalData.phoneDisplay}<br/>
+                E-Mail: {globalData.email}</p>
             <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit
                 anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen,
                 E-Mail-Adressen o. &Auml;.) entscheidet.</p>

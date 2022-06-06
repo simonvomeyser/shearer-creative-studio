@@ -1,5 +1,6 @@
 import React from 'react';
 import {PlainTextPage} from "../components/PlainTextPage";
+import {globalData} from "../data/global";
 
 
 const Impressum = () => {
@@ -13,8 +14,8 @@ const Impressum = () => {
               47798 Krefeld</p>
 
           <h2>Kontakt</h2>
-          <p>Telefon: +49 (0) 123 44 55 66<br />
-              E-Mail: hello@shearer.studio</p>
+          <p>Telefon: {globalData.phoneDisplay}<br />
+              E-Mail: {globalData.email}</p>
 
           <h2>Umsatzsteuer-ID</h2>
           <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />
