@@ -130,6 +130,12 @@ body > iframe {
   hyphens: auto;
 }
 
+@media (min-width: 768px) {
+  .md\:hyphens-none {
+    hyphens: none;
+  }
+}
+
 .rich-text strong {
   color: black;
   background: var(--sage-500);
@@ -139,6 +145,7 @@ body > iframe {
   border-bottom: 2px solid var(--primary);
   transition: color .3s ease;
 }
+
 .rich-text h2 {
   font-size: 1.75rem;
   font-weight: bold;
