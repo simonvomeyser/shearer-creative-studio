@@ -9,9 +9,14 @@ import {PriceCategory} from "../components/PreisePage/PriceCategory";
 import {PriceHeading} from "../components/PriceHeading";
 import {Section} from "../components/Section";
 import {Watercolor} from "../components/Watercolor";
-import {priceCategories} from "../data/prices";
+import {priceCategories, PriceCategoryType} from "../data/prices";
 
 const Preise = () => {
+
+    function sortByDetailPageSorting(a: PriceCategoryType, b: PriceCategoryType) {
+        return b.detailPageSorting - a.detailPageSorting;
+    }
+    const sortedPrices = [...priceCategories].sort(sortByDetailPageSorting);
 
     return (
         <>
@@ -47,7 +52,7 @@ const Preise = () => {
 
             <Section id="preise" className="py-8 xs:py-14 md:py-20">
                 <Container className="space-y-16 md:space-y-24" size="xl">
-                    {priceCategories.map((category, index) => (
+                    {sortedPrices.map((category, index) => (
                         <React.Fragment key={index}>
                             <PriceCategory category={category}/>
                         </React.Fragment>

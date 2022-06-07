@@ -5,6 +5,7 @@ export type PriceTypeType = {
 }
 export type PriceCategoryType = {
     title: string,
+    detailPageSorting: number,
     anchor: string,
     description?: string,
     prices: PriceTypeType[],
@@ -14,6 +15,7 @@ export const priceCategories: PriceCategoryType[] = [
     {
         "title": "Cut",
         "anchor": "cut",
+        "detailPageSorting": 0,
         "description": ` Dein Haarschnitt, ist genau so Individeuell wie du. 
 Deswegen berechnen wir den Haarschnitt nach benötigtem Zeitaufwand und Komplexität sowie gewünschten Serviceleistungen.    
         `,
@@ -44,6 +46,7 @@ Deswegen berechnen wir den Haarschnitt nach benötigtem Zeitaufwand und Komplexi
     {
         "title": "Color",
         "anchor": "color",
+        "detailPageSorting": 0,
         "description": `Alle Farbdienstleistungen verstehen sich immer inkl. passenem Haarpflege Treatment <br><br>
 Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor XX€ als Föhnpauschale zu berechnen. 
 `,
@@ -88,6 +91,7 @@ Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor X
     {
         "title": "Balayage",
         "anchor": "balayage",
+        "detailPageSorting": 0,
         "description": "Alle Balayage Pakete verstehen sich inkl. Olaplex, Glossing, passendem Pflegetreatment. und exkl. Haarschnitt ",
 
         "prices": [
@@ -104,6 +108,7 @@ Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor X
     {
         "title": "Beratung",
         "anchor": "beratung",
+        "detailPageSorting": 1,
         "description": `
             Du bist dir noch unsicher, was dir steht oder du wünschst ein komplettes Make-Over? <br><br> 
             Du brächtest einen professionellen Rat bezüglich deiner Heimpflege oder brauchst eine ehrliche Einschätzung zu einer Farbkorrektur? 
@@ -122,6 +127,7 @@ Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor X
     {
         "title": "Care",
         "anchor": "care",
+        "detailPageSorting": 0,
         "prices": [
             {"title": "Grün", "price": "Umsonst"},
             {"title" : "Olaplex Treatment", price: "XXX"},
@@ -140,6 +146,7 @@ Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor X
     {
         "title": "Styling",
         "anchor": "styling",
+        "detailPageSorting": 0,
         "prices": [
             {
                 "title": "xxx",
@@ -158,6 +165,7 @@ Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor X
     {
         "title": "Beauty",
         "anchor": "beauty",
+        "detailPageSorting": 0,
         "prices": [
             {
                 "title": "xxx",
@@ -176,6 +184,7 @@ Bei Farbterminen, die keinen Haarschnitt mit einbeziehen, behalten wir uns vor X
     {
         "title": "Extensions",
         "anchor": "extensions",
+        "detailPageSorting": 0,
         "prices": [
             {
                 title: "Preise auf Anfrage",
