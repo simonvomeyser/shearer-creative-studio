@@ -9,19 +9,21 @@ const Datenschutz = () => {
         <PlainTextPage heading="Datenschutz">
             <h2>1. Datenschutz auf einen Blick</h2>
             <h3>Eine persönliche Nachricht</h3>
-            <p>Wir haben uns auf dieser Webseite viel Mühe gegeben, deine Daten zu schützen. Das ist auch der Grund,
+            <p>Datenschutzerklärungen sind schwer zu verstehen und lang, daher vor dem üblichen Rechtstext hier eine persönliche Nachricht:</p>
+            <p>Wir haben uns bei dieser Webseite viel Mühe gegeben, deine Daten zu schützen. Das ist zum Beispiel auch der Grund,
                 warum dich hier kein klassisches "Cookie Banner" begrüßt.</p>
             <p>Wir speichern nur anonymisierte Daten über deinen Besuch, und das auch nur auf unseren eigenen Servern in
                 Deutschland.</p>
             <p>Wir geben keine Daten an Drittanbieter weiter, ohne dass du ausdrücklich zugestimmt hast. </p>
             <p>
-                Wir verwenden beispielsweise an verschiedenen Stellen eine "Google Map", weil es dir helfen kann, zu uns
+                Wir verwenden beispielsweise an verschiedenen Stellen eine "Google Map", weil diese dir helfen kann, uns
                 zu finden. Allerdings musst du der Nutzung aktiv
                 zustimmen, und das bei jedem Seitenbesuch. Mehr Informationen findest du <a href="#google-maps">weiter unten</a>
             </p>
             <p>
                 Bei unserer Online-Buchung verwenden wir die Software der Firma <a href="https://www.salonized.com/de/" target="_blank" rel="noopener noreferrer">Salonized B.V.</a> aus den Niederlanden (EU). Solltest du Online einen Termin buchen, werden deine Daten auf den Servern dieser Firma gespeichert. Mehr Informationen erhälst du während deiner Terminbuchung oder <a href="https://www.salonized.com/de/privacy-statement"  target="_blank" rel="noopener noreferrer">hier</a>.
             </p>
+            <p>Wir hoffen du fühlst dich informiert, hier folgt nun die eigentliche Datenschutzerklärung!</p>
             <h3>Allgemeine Hinweise</h3>
             <p>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber,
                 was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten
