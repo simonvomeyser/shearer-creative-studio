@@ -89,7 +89,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({className, isOpen}) => {
                         <motion.div variants={navLinkMotionVariant}>Diary</motion.div>
                     </MenuLink>
                     <li className="mt-10">
-                        <Link to="/kontakt">
+                        <Link to="/termin">
                             <ButtonStyles>
                                 Termin buchen
                             </ButtonStyles>
