@@ -16,7 +16,9 @@ export const PriceCategory: React.FC<PriceCategoryProps> = ({category}) => {
         <div className="flex gap-4 md:gap-8 lg:gap-14 flex-wrap lg:flex-nowrap relative" id={category.anchor} ref={categoryRef}>
             <div className="w-full lg:w-auto lg:flex-1 space-y-2 lg:space-y-4">
                 <BraveText className="mb-4 sm:!text-[60px] lg:!text-[80px]">
-                    {category.title}
+                    <h2>
+                        {category.title}
+                    </h2>
                 </BraveText>
                 {category.description ?
                     <div className="md:text-lg max-w-"
