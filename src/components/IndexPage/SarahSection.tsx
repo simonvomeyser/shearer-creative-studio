@@ -18,7 +18,7 @@ export const SarahSection: React.FC = () => {
     return (
         <Section
             id='sarah'
-            className='bg-sage-700 pb-[80px] pt-[80px] md:pt-[200px] '
+            className='bg-sage-700 pb-[40px] sm:pb-[80px] pt-[80px] md:pt-[200px] '
             ref={sectionRef}
         >
             <h2 className='sr-only'>Über Sarah</h2>
@@ -30,8 +30,7 @@ export const SarahSection: React.FC = () => {
                 <SarahHeading
                     className='absolute right-0 top-[-5%] w-full text-secondary sm:w-[90%] 2xl:w-[66%]'
                     style={{
-                        opacity: percentageInView / 100,
-                        transform: viewportPosition === -1 ? `translateX(${(percentageInView - 100)}px)` : '',
+                        transform: viewportPosition === -1 ? `translateX(${(percentageInView - 100) * 0.5}px)` : '',
                     }}
                 />
             </div>

@@ -21,9 +21,9 @@ export const FaqSection: React.FC = ({}) => {
                 color="white"
                 className="top-[-450px] md:top-[-250px] right-[-500px] w-[900px] h-[1000px] opacity-[0.02] md:opacity-10"
             />
-            <Container className="mt-[-250px] sm:mt-[-300px] md:mt-[-450px]">
+            <Container className="mt-[-220px] sm:mt-[-300px] md:mt-[-450px]">
 
-                <FaqHeading className="w-[80%] text-secondary -translate-y-4 md:translate-y-0"
+                <FaqHeading className="w-[80%] text-secondary"
                             style={{
                                 transform: viewportPosition === -1 ? `translateX(${(percentageInView - 100) * -0.5}px)` : '',
                             }}
