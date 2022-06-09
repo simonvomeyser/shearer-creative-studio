@@ -46,17 +46,20 @@ const Preise = () => {
             <Section id="fragen" className="py-8 xs:py-14 md:py-20">
                 <Container className="space-y-16 md:space-y-24" size="xl">
                     {faqs.map((faq, index) => (
-                        <div key={index} className="space-y-10 md:space-y-16" id={slugify(faq.question)}>
+                        <div key={index} className="space-y-10 md:space-y-16" id={slugify(faq.question)} itemScope
+                             itemProp="mainEntity" itemType="https://schema.org/Question">
                             <BraveText className="xl:!text-[60px] xl:!text-[60px] lg:max-w-[75%]">
                                 <div  className=" mb-2">
                                     <a className="inline-block w-20 h-[2px] md:h-2 bg-primary" href={`/faq#${slugify(faq.question)}`}/>
                                 </div>
-                                <h2>
+                                <h2 itemProp="name">
                                     {faq.question}
                                 </h2>
                             </BraveText>
-                            <CopyText className="sm:ml-[20%] md:ml-[40%]">
-                                <div dangerouslySetInnerHTML={{__html: faq.answer}}/>
+                            <CopyText className="sm:ml-[20%] md:ml-[40%]" >
+                                <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                                    <span dangerouslySetInnerHTML={{__html: faq.answer}} itemProp="text"/>
+                                </div>
                             </CopyText>
                         </div>
                     ))}
