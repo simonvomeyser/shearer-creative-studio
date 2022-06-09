@@ -9,7 +9,7 @@ const Datenschutz = () => {
         <PlainTextPage heading="Datenschutz">
             <h2>1. Datenschutz auf einen Blick</h2>
             <h3>Eine persönliche Nachricht</h3>
-            <p>Datenschutzerklärungen sind schwer zu verstehen und lang, daher vor dem üblichen Rechtstext hier eine persönliche Nachricht:</p>
+            <p>Datenschutzerklärungen sind schwer zu verstehen und lang, daher vor dem üblichen Text hier eine persönliche Nachricht:</p>
             <p>Wir haben uns bei dieser Webseite viel Mühe gegeben, deine Daten zu schützen. Das ist zum Beispiel auch der Grund,
                 warum dich hier kein klassisches "Cookie Banner" begrüßt.</p>
             <p>Wir speichern nur anonymisierte Daten über deinen Besuch, und das auch nur auf unseren eigenen Servern in
