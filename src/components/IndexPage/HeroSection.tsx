@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import {Link} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
 import React, {useEffect, useState} from "react";
+import useInView from "../../hooks/useInView";
 import {ButtonStyles} from "../ButtonStyles";
 import {Container} from "../Container";
 import {SmoothScrollPageAnchor} from "../Header/components/SmoothScrollPageAnchor";
@@ -14,6 +15,8 @@ export const HeroSection: React.FC = () => {
     let bgVideo: React.RefObject<HTMLVideoElement> = React.createRef();
     let [videoStarted, setVideoStarted] = useState(false);
     let mountedTick = useMountedTick();
+
+    const [ref, isVisible] = useInView()
 
     useEffect(() => {
         setTimeout(() => {
@@ -29,9 +32,23 @@ export const HeroSection: React.FC = () => {
 
     }, [bgVideo])
 
+    useEffect(() => {
+        if(!videoStarted) {
+            return;
+        }
+
+        if(isVisible) {
+            bgVideo.current?.play();
+        } else {
+            bgVideo.current?.pause();
+        }
+
+    }, [isVisible])
+
+
     return (
         < Section
-            className="min-h-[var(--100vh)] md:min-h-screen flex flex-col justify-center ">
+            className="min-h-[var(--100vh)] md:min-h-screen flex flex-col justify-center " ref={ref}>
 
             {/* BG-Image */}
             <StaticImage
