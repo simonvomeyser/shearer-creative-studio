@@ -3,6 +3,7 @@ import clsx from "clsx";
 import {Footer} from "./Footer";
 import {Header} from "./Header/Header";
 import { MetaTags } from "./MetaTags";
+import {SkipMainLink} from "./SkipMainLink";
 
 export type LayoutProps = {
     className?: string;
@@ -15,9 +16,11 @@ const Layout: React.FC = ({children}) => {
         <div className={clsx('relative font-sans antialiased bg-s-black text-white overflow-hidden')}>
             <MetaTags/>
 
+            <SkipMainLink/>
+
             <Header/>
 
-            <main className="relative ">
+            <main className="relative" id="main">
                 {children}
             </main>
 
