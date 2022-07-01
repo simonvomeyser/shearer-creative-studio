@@ -128,8 +128,8 @@ export const HeroSection: React.FC = () => {
                         </span>
                         <br/>
                         <span
-                            className={clsx('stroked-sage-500 text-secondary delay-[1000ms] transition duration-[2s] inline-block', {
-                                'opacity-0 translate-y-8': !mountedTick
+                            className={clsx('stroked-sage-500 text-secondary delay-500 transition duration-[2s] inline-block', {
+                                'opacity-0 translate-y-10': !mountedTick
                             })}
                         >
                             neu gedacht
