@@ -2,7 +2,7 @@ export const globalData =  {
     'title': 'SHEARER Creative Studio',
     'url': 'https://shearer.studio',
     'titleDefaultExtension': 'Cut & Color Spezialist in Krefeld',
-    'defaultDescription': 'Im Herzen Krefelds öffnet das Shearer Creative Studio seine Tore. Mehr als ein Friseur. Ein Safespace für die Person, die du sein möchtest.',
+    'defaultDescription': 'Die Spezialisten für angesagte Farben & kreative Schnitte. Dein genderneutraler Friseur im Herzen Krefelds. Jetzt online Termin buchen!',
     'defaultOgImage': 'default-og-image.png',
     'phoneDisplay': '+49151 68467666',
     'phoneLink': '+4915168467666',
