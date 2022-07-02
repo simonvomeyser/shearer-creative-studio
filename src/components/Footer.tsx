@@ -41,6 +41,7 @@ export const Footer: React.FC = () => {
                     </div>
                     <div className="w-full sm:w-auto">
                         <ul className="space-y-2 md:space-y-0">
+                            <li><Link to="/" className="transition hover:text-secondary">Startseite</Link></li>
                             <li><Link to="/salon" className="transition hover:text-secondary">Salon</Link></li>
                             <li><Link to="/preise" className="transition hover:text-secondary">Preise</Link></li>
                             <li><Link to="/termin" className="transition hover:text-secondary">Termin</Link></li>
