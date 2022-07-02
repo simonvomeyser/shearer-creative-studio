@@ -38,8 +38,8 @@ export const Quote: React.FC<QuoteProps> = ({className, quoteData, preventCta,})
                 </div>
             ) : null}
             {!preventCta && !quoteData.preventCta ? (
-                <div className=' mt-4 md:mt-8 flex justify-center'>
-                    <Link to='/termin'>
+                <div className="mt-8 md:mt-16 flex justify-center">
+                    <Link to="/termin">
                         <ButtonStyles>
                             Termin buchen
                         </ButtonStyles>
