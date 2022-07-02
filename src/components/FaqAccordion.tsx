@@ -3,12 +3,11 @@ import {motion} from "framer-motion";
 import {Link} from "gatsby";
 
 import React, {useState} from 'react';
-import {shuffleArray} from "../lib/shuffleArray";
 import {slugify} from "../lib/slugify";
 import {ArrowLinkStyles} from "./ArrowLinkStyles";
 import {faqs as _faqs} from '../data/faqs';
 
-const faqs = shuffleArray([..._faqs]).slice(0,5)
+const faqs = _faqs.slice(0,5)
 
 export type FaqAccordionProps = {
     className?: string;
@@ -94,7 +93,7 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({className}) => {
                                     className="flex-wrap xs:flex-nowrap sm:text-lg md:text-2xl py-2 flex w-full justify-between items-end"
                                 >
 
-                                    <div className="w-full xs:w-auto" dangerouslySetInnerHTML={{__html: faq.answer}}/>
+                                    <div className="w-full xs:w-auto max-w-screen-md" dangerouslySetInnerHTML={{__html: faq.answer}}/>
                                 </motion.div>
                             </div>
                         </motion.div>
