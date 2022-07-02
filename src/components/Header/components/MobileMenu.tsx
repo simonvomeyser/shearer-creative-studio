@@ -71,7 +71,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({className, isOpen}) => {
             <Container className="flex flex-col h-full items-center py-8">
                 <motion.div variants={fadeMotionVariant}>
                     <Link to="/" aria-label="Link zur Startseite">
-                        <img  alt="Logo von SHEARER Creative Studio" width="144" height="62" src="/logo.svg" className="w-36 flex-shrink-0 xs:w-56 mb-4 xs:mb-12 "/>
+                        <img  alt="Logo von SHEARER Creative Studio" width="144" loading="lazy" height="62" src="/logo.svg" className="w-36 flex-shrink-0 xs:w-56 mb-4 xs:mb-12 "/>
                     </Link>
                 </motion.div>
                 <ul className=" sm:flex-1 justify-center text-center text-2xl xs:text-3xl md:text-5xl flex flex-col mb-4">
