@@ -39,7 +39,7 @@ export const DiaryCard: React.FC<DiaryCardProps> = ({diaryEntry, size, className
                         alt={`Titelbild für den Diary Eintrag ${diaryEntry.title}`}/>
                 </Link>
             </div>
-            <div className={clsx('flex gap-4', {
+            <div className={clsx('flex gap-4 mt-4 md:mt-6', {
                 'sm:px-[5%]': size === 'full'
             })}>
 
