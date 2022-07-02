@@ -71,7 +71,7 @@ export const HeroSection: React.FC = () => {
                    preload="none"
                    className={clsx('w-full h-full object-cover absolute inset-0 transition duration-1000', {
                        'opacity-0': !videoStarted,
-                       'opacity-60 md:opacity-100': videoStarted,
+                       'opacity-60 md:opacity-70': videoStarted,
                    })}
             >
                 <source src="/shearer-placeholder-bg-video.mp4" type="video/mp4"/>
