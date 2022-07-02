@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import {Link} from "gatsby";
 import React, {useRef} from 'react';
 import {PriceCategoryType} from "../../data/prices";
@@ -7,13 +8,19 @@ import {Price} from "./Price";
 
 export type PriceCategoryProps = {
     category: PriceCategoryType
+    isFirst: boolean,
 };
 
-export const PriceCategory: React.FC<PriceCategoryProps> = ({category}) => {
+export const PriceCategory: React.FC<PriceCategoryProps> = ({category , isFirst}) => {
 
     const categoryRef = useRef<HTMLDivElement>(null);
     return (
-        <div className="flex gap-4 md:gap-8 lg:gap-14 flex-wrap lg:flex-nowrap relative" id={category.anchor} ref={categoryRef}>
+        <div className={clsx('flex gap-4 md:gap-8 lg:gap-14 flex-wrap lg:flex-nowrap relative', {
+            'pt-16 md:pt-24' : !isFirst
+        })}
+             id={category.anchor}
+
+             ref={categoryRef}>
             <div className="w-full lg:w-auto lg:flex-1 space-y-2 lg:space-y-4">
                 <BraveText className="mb-4 sm:!text-[60px] lg:!text-[80px]">
                     <h2>

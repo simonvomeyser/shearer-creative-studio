@@ -51,10 +51,10 @@ const Preise = () => {
             </Section>
 
             <Section id="preise" className="py-8 xs:py-14 md:py-20">
-                <Container className="space-y-16 md:space-y-24" size="xl">
+                <Container  size="xl">
                     {sortedPrices.map((category, index) => (
                         <React.Fragment key={index}>
-                            <PriceCategory category={category}/>
+                            <PriceCategory category={category} isFirst={!index}/>
                         </React.Fragment>
                     ))}
                 </Container>
