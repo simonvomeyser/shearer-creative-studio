@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import {motion} from "framer-motion";
+import {m as motion} from "framer-motion";
 import {Link} from "gatsby";
 
 import React, {useState} from 'react';

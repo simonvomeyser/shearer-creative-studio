@@ -2,8 +2,9 @@ import React from "react"
 import clsx from "clsx";
 import {Footer} from "./Footer";
 import {Header} from "./Header/Header";
-import { MetaTags } from "./MetaTags";
+import {MetaTags} from "./MetaTags";
 import {SkipMainLink} from "./SkipMainLink";
+import {LazyMotion, domAnimation} from "framer-motion"
 
 export type LayoutProps = {
     className?: string;
@@ -21,7 +22,9 @@ const Layout: React.FC = ({children}) => {
             <Header/>
 
             <main className="relative" id="main">
-                {children}
+                <LazyMotion features={domAnimation}>
+                    {children}
+                </LazyMotion>
             </main>
 
             <Footer/>

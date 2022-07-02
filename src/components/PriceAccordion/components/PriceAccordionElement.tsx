@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from 'react';
 import {PriceCategoryType} from "../../../data/prices";
-import {motion} from "framer-motion";
+import {m as motion} from "framer-motion";
 import {Link} from "gatsby";
 import useInView from "../../../hooks/useInView";
 import {ArrowLinkStyles} from "../../ArrowLinkStyles";
