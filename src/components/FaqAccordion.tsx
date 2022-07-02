@@ -8,7 +8,7 @@ import {slugify} from "../lib/slugify";
 import {ArrowLinkStyles} from "./ArrowLinkStyles";
 import {faqs as _faqs} from '../data/faqs';
 
-const faqs = shuffleArray(_faqs).slice(0,5)
+const faqs = shuffleArray([..._faqs]).slice(0,5)
 
 export type FaqAccordionProps = {
     className?: string;
