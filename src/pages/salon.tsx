@@ -42,7 +42,7 @@ const Salon = () => {
                                 <br/> <br/>
                                 Ein Ort wo es um dich geht. Ein Safespace, wo du die Person sein darfst, die du sein
                                 möchtest. Hier kannst du es dir gut gehen lassen und bekommst <span
-                                className=" text-black bg-secondary">die perfekte Frisur, um dich mehr nach dir
+                                className="font-bold">die perfekte Frisur, um dich mehr nach dir
                                 selbst zu fühlen.</span>
                                 <div className="xs:hidden my-8">
 
@@ -57,8 +57,8 @@ const Salon = () => {
                                 <span className="hidden xs:inline"><br/><br/></span>
                                 Unser Anspruch ist es, dir zu zu hören und dich ehrlich und ausführlich zu beraten. Das
                                 heißt aber auch dir transparent zu sagen was möglich ist, ohne dir das Unmögliche zu
-                                versprechen - <i>Denn die Qualität deiner Haare ist uns immer wichtiger als der neueste
-                                Trend.</i>
+                                versprechen - <b>Denn die Qualität deiner Haare ist uns immer wichtiger als der neueste
+                                Trend.</b>
                             </CopyText>
 
                         </div>
@@ -110,19 +110,17 @@ const Salon = () => {
 
                             <CopyText className="mr-auto md:max-w-[35ch]">
                                 Mit den besten Produkten auf dem Markt arbeiten wir am Puls der Zeit mit vollem Herzblut
-                                    und Leidenschaft, so Ökologisch und Nachhaltig wie uns möglich. <br/><span
-                                className=" text-black bg-secondary inline">Unsere Preise richten sich ausschließlich nach
+                                    und Leidenschaft, so Ökologisch und Nachhaltig wie uns möglich. <br/> <br/>
+                                <b>Unsere Preise richten sich ausschließlich nach
                                 dem zeitlichen Aufwand, Skill und Materialverbrauch und nicht nach deinem
-                                Geschlecht!</span>
+                                Geschlecht!</b>
 
                                 <br/><br/>
                                 Schöne Haare verändert nicht die Welt, aber wir können damit das Leben ein kleines
                                 bisschen besser machen.
 
-                                <br/><br/>
-
-                                Für ein bisschen breiteres Lächeln, ein wenig aufrechter Gang… <i>es ist ein kleiner
-                                Unterschied, aber es ist ein Unterschied.</i>
+                                Für ein bisschen breiteres Lächeln, ein wenig aufrechter Gang… <b>es ist ein kleiner
+                                Unterschied, aber es ist ein Unterschied.</b>
                             </CopyText>
 
                         </div>
@@ -227,12 +225,12 @@ const Salon = () => {
                             <CopyText className="max-w-[35ch]">
                                 Seit nun fast 10 Jahren fühlt sich die German Hairdressing Award Gewinnerin nicht nur
                                 hinter dem Friseurstuhl wohl, sondern begleitet erfolgreich Kampagnen und Kunden quer
-                                durch Europa als <span className="bg-mango-300 text-black">etablierte Hair & Make-up
-                                Artistin</span>.
+                                durch Europa als <b>etablierte Hair & Make-up
+                                Artistin</b>.
                                 <br/><br/>
                                 Auch wenn die Meister Stipendiatin eher zufällig in die Branche stolperte, liebt sie
                                 ihren Beruf. Er ist eins der mächtigsten Tools einem Menschen zu mehr Selbstwert zu
-                                verhelfen. <i>Dafür lebt sie: Menschen glücklich zu sehen.</i>
+                                verhelfen. <b>Dafür lebt sie: Menschen glücklich zu sehen.</b>
 
                             </CopyText>
                         </div>
