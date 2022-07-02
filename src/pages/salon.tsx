@@ -132,7 +132,7 @@ const Salon = () => {
                     <Quote quoteData={getRandomQuote()}/>
                 </Container>
             </Section>
-            <Section className="bg-sage-700 py-8 xs:py-10 md:py-20 md:mt-36 border-2 border-red-500" id="sarah">
+            <Section className="bg-sage-700 py-8 xs:py-10 md:py-20 md:mt-36 " id="sarah">
                 <Watercolor
                     color='white'
                     className='top-[-40%] left-[-400px] h-[900px] w-[700px] opacity-10 xl:opacity-20'
