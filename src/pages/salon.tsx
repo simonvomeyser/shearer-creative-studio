@@ -46,7 +46,7 @@ const Salon = () => {
                                 selbst zu fühlen.</span>
                                 <div className="xs:hidden my-8">
 
-                                    <StaticImage src="../images/salon/1.png"
+                                    <StaticImage src="../images/salon/DSC04953.jpg"
                                                  loading="eager"
                                                  width={580}
                                                  height={750}
@@ -65,7 +65,7 @@ const Salon = () => {
                         <div className="hidden xs:block md:pt-40">
                             <div className="max-w-[500px] md:w-full">
 
-                                <StaticImage src="../images/salon/1.png"
+                                <StaticImage src="../images/salon/DSC04953.jpg"
                                              width={580}
                                              height={750}
                                              objectFit="cover"
@@ -97,7 +97,7 @@ const Salon = () => {
                         <div className="flex justify-end order-3 md:order-2">
                             <div className="max-w-[500px] md:w-full ">
 
-                                <StaticImage src="../images/salon/2.png"
+                                <StaticImage src="../images/salon/DSC04888.jpg"
                                              width={580}
                                              height={750}
                                              objectFit="cover"
