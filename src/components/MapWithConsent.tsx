@@ -48,7 +48,7 @@ export const MapWithConsent: React.FC<MapWithConsentProps> = ({}) => {
                         <div className="text-center p-4">
                             Hier werden ggf. Daten an Google gesendet und Cookies gesetzt! <br/> Unsicher? Schau mal in
                             unserer <a href="/datenschutz#google-maps" target="_blank"
-                                          className="underline">Datenschutzerklärung</a>
+                                          className="underline transition duration-500 hover:text-primary ">Datenschutzerklärung</a>
                         </div>
                     </div>
                 </> : null}

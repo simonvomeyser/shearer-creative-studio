@@ -38,7 +38,7 @@ const Preise = () => {
                     </div>
                     <CopyText className="sm:ml-[20%] md:ml-[40%]">
                         Wir versuchen, unser Salon- und Preiskonzept so transparent wie möglich für dich zu gestalten.  <br/> <br/>
-                        Falls du trotzdem Fragen hast kannst du uns immer <Link to="/salon#kontakt" className="underline decoration-primary">kontaktieren</Link>, schau aber vielleicht vorher hier nach, ob du nicht schon eine Antwort findest
+                        Falls du trotzdem Fragen hast kannst du uns immer <Link to="/salon#kontakt" className="underline transition duration-500 hover:text-primary  decoration-primary">kontaktieren</Link>, schau aber vielleicht vorher hier nach, ob du nicht schon eine Antwort findest
                     </CopyText>
                 </Container>
             </Section>

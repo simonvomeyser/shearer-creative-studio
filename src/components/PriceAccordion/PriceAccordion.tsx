@@ -103,7 +103,7 @@ export const PriceAccordion: React.FC<PriceAccordionProps> = ({className,}) => {
                         <div className="py-6 space-y-2 ">
 
                             <motion.div className="mb-4 max-w-[50ch]" variants={readMoreMotionVariant} >
-                                Unsere Preise werden fair und transparent berechnet - und vielleicht anders, als du es kennst!  <Link to="/preise" className="underline">Erfahre mehr</Link></motion.div>
+                                Unsere Preise werden fair und transparent berechnet - und vielleicht anders, als du es kennst!  <Link to="/preise" className="underline transition duration-500 hover:text-primary ">Erfahre mehr</Link></motion.div>
 
                             {category.prices.map((price, priceId) => (
                                 <motion.div key={`${id}.${priceId}`}
