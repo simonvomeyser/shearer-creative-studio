@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import {Link} from "gatsby";
 import React from 'react';
-import {Logo} from "../../Logo";
 import {MenuLink} from "./MenuLink";
 
 export type HeaderDesktopProps = {
@@ -17,7 +16,8 @@ export const HeaderDesktop: React.FC<HeaderDesktopProps> = ({className}) => {
                 <MenuLink linkClassName="p-8" href="/preise">Preise</MenuLink>
                 <li className="w-[275px] mx-8">
                     <Link to="/" aria-label="Link zur Startseite">
-                            <Logo className="h-full w-auto transition hover:scale-105 duration-500 "/>
+                        <img src="/logo.svg" alt="Logo von SHEARER Creative Studio" loading="lazy"
+                             className="h-full w-auto transition hover:scale-105 duration-500 "/>
                     </Link>
                 </li>
                 <MenuLink linkClassName="p-8" href="/diary">Diary</MenuLink>
