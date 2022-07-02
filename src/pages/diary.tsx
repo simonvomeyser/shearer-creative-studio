@@ -47,7 +47,7 @@ const Diary = (props: DiaryPagePropsType) => {
         const gatsbyImageData = getGatsbyImageData(imageUrl, width)
         return (
             <>
-                {prependQuote ? <div className='md:col-span-2 py-10 md:py-0'>
+                {prependQuote ? <div className='md:col-span-2 py-8 md:pt-4 md:pb-12 '>
                     <Quote quoteData={getRandomQuote()} />
                 </div> : null}
                 <DiaryCard size={width} diaryEntry={diaryEntry} gatsbyImageData={gatsbyImageData} />
