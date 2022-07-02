@@ -97,7 +97,7 @@ export const PriceAccordionElement: React.FC<PriceAccordionElementProps> = (
             <button
                 className={clsx('flex leading-none pl-8 md:pl-12 relative transition duration-500 leading-none active:outline-none', {
                     'text-primary': isCurrent(id),
-                    'hover:text-mango-200': !isCurrent(id),
+                    'hover:text-primary': !isCurrent(id),
                 })} onClick={() => handleCategoryClick(id)}>
                 <span
                     className="inline-block absolute left-0 top-1/2 -translate-y-1/2">
