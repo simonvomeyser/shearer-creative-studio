@@ -39,7 +39,7 @@ const Termin = () => {
                     </div>
                     <CopyText className="sm:ml-[20%] md:ml-[40%]">
                         Falls du nicht gerne telefonierst (das können wir nachvollziehen), kannst du bei uns einen Termin bequem <SmoothScrollPageAnchor targetId="online-termin-buchen"
-                                                              className="underline decoration-primary">bequem online
+                                                              className="underline decoration-primary">online
                         buchen</SmoothScrollPageAnchor> <br/><br/>
                         Wir bieten aber natürlich auch alle "klassischen" Arten an, einen Termin zu buchen, scrolle
                         dafür einfach <SmoothScrollPageAnchor targetId="kontakt"
@@ -58,7 +58,7 @@ const Termin = () => {
 
                 <div className="w-full sm:w-[488px] h-full mx-auto relative">
                     <iframe src="https://widget.salonized.com/widget/?color=%23EB9100&language=de&company=zsd8WUUuiWFbDvnx73NH1LLT"
-                            frameBorder="0" className="w-full h-[var(--100vh)] max-h-[700px] rounded-2xl overflow-hidden bg-white"/>
+                             className="w-full h-[var(--100vh)] max-h-[700px] rounded-2xl overflow-hidden bg-white"/>
                 </div>
                 </Container>
             </Section>
