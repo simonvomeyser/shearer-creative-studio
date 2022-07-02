@@ -26,7 +26,7 @@ export const DiaryTeaserSlider: React.FC<DiaryTeaserSliderProps> = ({className, 
 
     return (
         <div className={clsx('', className)}>
-            <div className='pl-8 2xl:pl-0 2xl:ml-[8.3333%] flex gap-4 overflow-x-auto  no-scrollbar pr-8'>
+            <div className='pl-8 lg:pl-0 lg:ml-[8.3333%] flex gap-4 md:gap-6 overflow-x-auto  no-scrollbar pr-8'>
                 <StaticQuery query={diaryTeaserSliderQuery} render={(data: StaticDiaryQueryDataType) => {
 
                     let diaryEntries = data.allMarkdownRemark.edges.map((edge) => edge.node.frontmatter)
