@@ -132,7 +132,7 @@ const Salon = () => {
                     <Quote quoteData={getRandomQuote()}/>
                 </Container>
             </Section>
-            <Section className="bg-sage-700 py-8 xs:py-10 md:py-20 md:mt-36">
+            <Section className="bg-sage-700 py-8 xs:py-10 md:py-20 md:mt-36 border-2 border-red-500" id="sarah">
                 <Watercolor
                     color='white'
                     className='top-[-40%] left-[-400px] h-[900px] w-[700px] opacity-10 xl:opacity-20'
@@ -218,7 +218,7 @@ const Salon = () => {
                     </div>
                 </Container>
             </Section>
-            <Section className="bg-sage-700 pb-20 md:pb-32" id="sarah">
+            <Section className="bg-sage-700 pb-20 md:pb-32" >
                 <Container fluid className="px-[1rem] xs:px-[2rem] md:px-0">
                     <div className="grid md:grid-cols-2 gap-10 2xl:gap-12">
                         <div className="flex justify-end md:pl-[var(--container-padding--md)]">
