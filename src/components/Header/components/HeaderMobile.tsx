@@ -44,7 +44,7 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({className}) => {
             <Link to="/">
                 <LogoSimple className="translate-y-0.5 w-32"/>
             </Link>
-            <button className="z-20 p-4 translate-x-2 translate-y-2" onClick={handleBurgerClick}>
+            <button className="z-20 p-4 translate-x-2 translate-y-0.5" onClick={handleBurgerClick} aria-label="Mobiles Menü öffnen">
                 <Burger className="z-20" isOpen={isMobileMenuOpen}/>
             </button>
             <MobileMenu className="z-10" isOpen={isMobileMenuOpen}/>
