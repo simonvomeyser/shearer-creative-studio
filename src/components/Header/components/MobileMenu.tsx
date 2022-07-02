@@ -71,7 +71,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({className, isOpen}) => {
             className={clsx('opacity-0 h-screen-safari-fix overflow-y-auto  bg-s-black w-full inset-0 fixed', className)}>
             <Container className="flex flex-col h-full items-center py-8">
                 <motion.div variants={fadeMotionVariant}>
-                    <Link to="/">
+                    <Link to="/" aria-label="Link zur Startseite">
                         <Logo className="w-36 flex-shrink-0 xs:w-56 mb-4 xs:mb-12 "/>
                     </Link>
                 </motion.div>
