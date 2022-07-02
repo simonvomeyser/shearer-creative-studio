@@ -14,22 +14,22 @@ export type LayoutProps = {
 
 const Layout: React.FC = ({children}) => {
     return (
-        <div className={clsx('relative font-sans antialiased bg-s-black text-white overflow-hidden')}>
-            <MetaTags/>
+        <LazyMotion features={domAnimation}>
+            <div className={clsx('relative font-sans antialiased bg-s-black text-white overflow-hidden')}>
+                <MetaTags/>
 
-            <SkipMainLink/>
+                <SkipMainLink/>
 
-            <Header/>
+                <Header/>
 
-            <main className="relative" id="main">
-                <LazyMotion features={domAnimation}>
+                <main className="relative" id="main">
                     {children}
-                </LazyMotion>
-            </main>
+                </main>
 
-            <Footer/>
+                <Footer/>
 
-        </div>
+            </div>
+        </LazyMotion>
     )
 
 }
