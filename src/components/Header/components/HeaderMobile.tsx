@@ -41,7 +41,7 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({className}) => {
 
     return (
         <div className={clsx('flex justify-between items-center w-full ', className)}>
-            <Link to="/">
+            <Link to="/" aria-label="Link zur Startseite">
                 <LogoSimple className="translate-y-0.5 w-32"/>
             </Link>
             <button className="z-20 p-4 translate-x-2 translate-y-0.5" onClick={handleBurgerClick} aria-label="Mobiles Menü öffnen">

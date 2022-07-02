@@ -16,7 +16,7 @@ export const HeaderDesktop: React.FC<HeaderDesktopProps> = ({className}) => {
                 <MenuLink linkClassName="p-8" href="/salon">Salon</MenuLink>
                 <MenuLink linkClassName="p-8" href="/preise">Preise</MenuLink>
                 <li className="w-[275px] mx-8">
-                    <Link to="/">
+                    <Link to="/" aria-label="Link zur Startseite">
                             <Logo className="h-full w-auto transition hover:scale-105 duration-500 "/>
                     </Link>
                 </li>
