@@ -18,7 +18,7 @@ export const quotes: QuoteDataType[] = [
         body: 'Also komm! Lass uns deine Individualität feiern.',
     },
     {
-        body: 'Individualität feiern, egal wo du dich auf dem Genderspektrum siehst!',
+        body: 'Wir verkaufen dir keinen neuen Haarschnitt. Wir helfen dir, deine ganz eigene Idee von dir selbst nach außen zu tragen. ',
     },
     {
         body: 'Leben heißt Veränderung sagte der Stein zur Blume und flog davon',
