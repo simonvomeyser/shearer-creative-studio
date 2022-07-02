@@ -15,7 +15,7 @@ export type FaqAccordionProps = {
 };
 
 export const FaqAccordion: React.FC<FaqAccordionProps> = ({className}) => {
-    const [currentFaqId, setCurrentFaqId] = useState<null | undefined | number>(0)
+    const [currentFaqId, setCurrentFaqId] = useState<null | undefined | number>(null)
 
     function isCurrent(id: number) {
         return id === currentFaqId;
