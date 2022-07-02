@@ -19,7 +19,7 @@ export const SalonSection: React.FC = () => {
                     color="black"
                     className={clsx('top-[5%] left-[-300px] w-[900px] h-[1000px] opacity-30 md:opacity-40 ')}
                 />
-                <Container className="mb-8 lg:mb-12">
+                <Container className="mb-6 lg:mb-18">
                     <div className="sm:ml-[20%] md:ml-[50%] mb-10 lg:mb-16">
                         <CopyText>
                             Willkommen an dem Ort, an dem alle Willkommen sind! Einem Zuhause für die, die anders sind.
@@ -27,7 +27,7 @@ export const SalonSection: React.FC = () => {
                             <b>SHEARER Creative Studio</b>, dein Safe Space für Haare und Farbe mitten in Krefeld!
                         </CopyText>
                     </div>
-                    <BraveText className="mb-8 lg:mb-12">
+                    <BraveText className="mb-4">
                         Unser Mindset: <br/>
                         Grenzen- und <br/> Gender-Los
                     </BraveText>
