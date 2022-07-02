@@ -1,11 +1,11 @@
 import clsx from "clsx";
 import React from 'react';
 
-export type PintrestProps = {
+export type PinterestProps = {
     className?: string;
 };
 
-export const Pintrest: React.FC<PintrestProps> = ({className}) => {
+export const Pinterest: React.FC<PinterestProps> = ({className}) => {
 
     return (
         <svg className={clsx('', className)} viewBox="0 0 384 512" fill="currentColor">

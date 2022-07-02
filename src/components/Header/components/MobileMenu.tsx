@@ -8,7 +8,7 @@ import {ButtonStyles} from "../../ButtonStyles";
 import {Container} from "../../Container";
 import {Facebook} from "../../icons/Facebook";
 import {Instagram} from "../../icons/Instagram";
-import {Pintrest} from "../../icons/Pintrest";
+import {Pinterest} from "../../icons/Pinterest";
 import {Logo} from "../../Logo";
 import {SocialBubble} from "../../SocialBubble";
 import {MenuLink} from "./MenuLink";
@@ -113,11 +113,11 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({className, isOpen}) => {
                             opacity: isOpen ? 1 : 0,
                             transition: {duration: .75, delay: .3}
                         }}>
-                            <SocialBubble href={globalData.instagram}>
+                            <SocialBubble ariaLabel="Link zu Instagram öffnen"  href={globalData.instagram}>
                                 <Instagram className="w-4 h-4"/>
                             </SocialBubble>
                         </motion.div>
-                        <SocialBubble href={globalData.facebook}>
+                        <SocialBubble ariaLabel="Link zu Facebook öffnen"  href={globalData.facebook}>
                             <Facebook className="w-4 h-4"/>
                         </SocialBubble>
                         <motion.div animate={{
@@ -125,8 +125,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({className, isOpen}) => {
                             opacity: isOpen ? 1 : 0,
                             transition: {duration: .75, delay: .3}
                         }}>
-                            <SocialBubble href={globalData.facebook}>
-                                <Pintrest className="w-4 h-4"/>
+                            <SocialBubble ariaLabel="Link zu Pinterest öffnen"  href={globalData.facebook}>
+                                <Pinterest className="w-4 h-4"/>
                             </SocialBubble>
                         </motion.div>
                     </div>
