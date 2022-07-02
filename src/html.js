@@ -11,7 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
+        <link rel="dns-prefetch" href="https://use.typekit.net" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
