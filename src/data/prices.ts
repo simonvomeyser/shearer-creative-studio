@@ -21,7 +21,7 @@ Deswegen berechnen wir  nach benötigtem Zeitaufwand und Komplexität sowie gew�
         `,
         "prices": [
             {
-                "title": "Just the litte things in life",
+                "title": "Just the little things in life",
                 "price": "24 €",
                 "description" : "Einfacher Haarschnitt bis 25 Min. Beispiel: Pony nachscheiden, Konturenschnitt, Maschinenschnitt"
             },
