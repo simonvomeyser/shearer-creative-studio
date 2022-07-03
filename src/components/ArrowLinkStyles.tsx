@@ -13,7 +13,7 @@ export const ArrowLinkStyles: React.FC<ArrowLinkStylesProps> = ({className, chil
     return (
         <span
             className={clsx('inline-flex text-primary  font-roma uppercase items-center group transition duration-300 hover:text-mango-400', {
-                   'text-[24px] xs:text-[36px] md:text-[42px]'  : size === 'lg',
+                   'text-[24px] xs:text-[32px] md:text-[42px]'  : size === 'lg',
                    'text-[24px] xs:text-[28px] md:text-[36px]'  : size === 'md',
                    'text-[18px] md:text-[24px]'  : size === 'sm',
             } ,className)}>
