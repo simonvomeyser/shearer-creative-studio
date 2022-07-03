@@ -28,10 +28,12 @@ export function createTitle(pageName?: string) {
     return `${metaData.title} - ${metaData.titleDefaultExtension}`
 }
 
-export const MetaTags: React.FC<MetaTitleProps> = ({pageName, seo={}}, hideFromSearchEngines) => {
+export const MetaTags: React.FC<MetaTitleProps> = (
+    {pageName, seo={}, hideFromSearchEngines}) => {
     const title = createTitle(pageName);
     const image =  trimSlash(globalData.url) + '/' + (seo.image ?  trimSlash(seo.image) : trimSlash(metaData.defaultOgImage))
     const description = seo.description || metaData.defaultDescription;
+    console.log(hideFromSearchEngines)
     return (
         <Helmet title={title}  htmlAttributes={{lang: 'de'}}>
             <meta name="description" content={description} />
@@ -39,9 +41,9 @@ export const MetaTags: React.FC<MetaTitleProps> = ({pageName, seo={}}, hideFromS
             {image && <meta property="image" content={image} />}
             {image && <meta property="og:image" content={image} />}
 
-            {(seo.article ? true : null) && <meta property="og:type" content="article" />}
+            {(seo.article ? <meta property="og:type" content="article" /> : null) }
 
-            {(hideFromSearchEngines ? true : null) && <meta name="robots" content="noindex" />}
+            {(hideFromSearchEngines ? <meta name="robots" content="noindex" /> : null)  }
 
             <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
