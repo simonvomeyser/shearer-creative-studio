@@ -33,11 +33,11 @@ export const HeroSection: React.FC = () => {
     }, [bgVideo])
 
     useEffect(() => {
-        if(!videoStarted) {
+        if (!videoStarted) {
             return;
         }
 
-        if(isVisible) {
+        if (isVisible) {
             bgVideo.current?.play();
         } else {
             bgVideo.current?.pause();
@@ -47,8 +47,8 @@ export const HeroSection: React.FC = () => {
 
 
     return (
-        < Section
-            className="min-h-[var(--100vh)] md:min-h-screen flex flex-col justify-center " ref={ref}>
+        <Section
+            className="min-h-screen flex flex-col justify-center " ref={ref}>
 
             {/* BG-Image */}
             <StaticImage
@@ -104,7 +104,7 @@ export const HeroSection: React.FC = () => {
             />
             {/* Scroll Down Arrow  */}
             <SmoothScrollPageAnchor
-                className="absolute bottom-4 left-1/2 transform -translate-x-1/2 "
+                className="absolute top-[calc(var(--100vh)-3rem)] left-1/2 transform -translate-x-1/2 "
                 targetId="salon">
 
                 <span className={clsx('inline-block transition delay-[2s] duration-1000', {
