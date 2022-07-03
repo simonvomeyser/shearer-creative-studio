@@ -24,7 +24,8 @@ export const SalonSection: React.FC = () => {
                         <CopyText>
                             Herzlich willkommen im <b>SHEARER Creative Studio</b>, dein Safe Space für Haare und Farbe mitten in Krefeld!
                             <br/><br/>
-                            Wir sind mehr als ein Friseur. Bei uns geht es nur um dich, ohne dass wir dich in eine Schublade stecken. Wir möchten allen, die anders sind, ein Zuhause bieten. Einen Ort, an dem du einfach nur du sein kannst.
+                            Wir sind mehr als ein Friseur. Wir sind die Spezialisten für angesagte Farben & kreative Schnitte. Bei uns geht es nur um dich und deine Individualität. Wir bieten einen Ort, dem Du einfach Du sein kannst. <b>Schön.
+                            Einzigartig. Frei.</b>
                         </CopyText>
                     </div>
                     <BraveText className="mb-4">
