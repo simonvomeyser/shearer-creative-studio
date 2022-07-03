@@ -105,7 +105,7 @@ export const HeroSection: React.FC = () => {
             />
             {/* Scroll Down Arrow  */}
             <SmoothScrollPageAnchor
-                className="absolute top-[calc(var(--100vh)-3rem)] left-1/2 transform -translate-x-1/2 "
+                className="absolute top-[calc(var(--100vh)-3rem)] left-1/2 transition duration-300 transform -translate-x-1/2 "
                 targetId="salon">
 
                 <span className={clsx('inline-block transition delay-[2s] duration-1000', {
