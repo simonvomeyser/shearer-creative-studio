@@ -224,7 +224,7 @@ const Salon = () => {
                                 hinter dem Friseurstuhl wohl, sondern begleitet erfolgreich Kampagnen und Kunden quer
                                 durch Europa als etablierte Hair & Make-up Artistin.
                                 <br/><br/>
-                                Nicht nur, dass sie als Friseurgesellin mit 1,0 abschloss und darauf hin ihr
+                                Nicht nur, dass sie als Friseurgesellin mit 1,0 abschloss und daraufhin ihr
                                 Meisterstipendium bekam, sie ist auch seit einigen Jahren ein aktives Mitglied des
                                 Zentralverband der Friseure und Jurorin der deutschen Friseurmeisterschaften.
                                 <br/><br/>
