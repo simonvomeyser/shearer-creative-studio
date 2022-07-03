@@ -86,7 +86,7 @@ export const PriceAccordionElement: React.FC<PriceAccordionElementProps> = (
 
 
     const [ref, isVisible] = useInView({
-        threshold: 0.5,
+        threshold: id ? 0.5 : 0,
         unobserveOnEnter: true
     })
 
