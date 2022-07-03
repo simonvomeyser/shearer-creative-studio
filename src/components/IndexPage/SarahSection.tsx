@@ -65,14 +65,9 @@ export const SarahSection: React.FC = () => {
                         className='mt-0 sm:flex-1 w-full sm:w-auto sm:-translate-y-12 sm:-mb-12 sm:bg-sage-700 p-4 md:mt-[40%] lg:mt-[25%] md:translate-y-0 md:mb-0 md:bg-transparent'>
                         <div className='max-w-screen-sm md:ml-8 xl:ml-20'>
                             <div className='mb-6'>
-                                Sarah Scherer (Sie/Ihre) - Das multifunktionale Chamäleon.
-                                irgendwo zwischen Pippi Langstrumpf und Rapunzel, macht gerne Dinge die ihr schwer
-                                fallen,
-                                um an ihnen zu wachsen.
+                                Sarah Scherer (Sie/Ihre) - Das multifunktionale Chamäleon, irgendwo zwischen Pippi Langstrumpf und Rapunzel, stellt sich gerne Herausforderungen, um an ihnen zu wachsen.
                                 <br/><br/>
-                                Dabei ist es egal, ob es sich um das Perfektionieren der neuesten Haartrends handelt
-                                oder
-                                der Einsatz dafür, unsere Welt ein kleines bisschen offener zu gestalten.
+                                Dabei kann es sich um das Perfektionieren der neuesten Haartrends handeln oder aber um den Einsatz, unsere Welt ein kleines bisschen offener und bunter zu gestalten.
                             </div>
                             <div className='text-right'>
 

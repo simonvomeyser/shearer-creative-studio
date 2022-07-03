@@ -22,9 +22,9 @@ export const SalonSection: React.FC = () => {
                 <Container className="mb-6 lg:mb-18">
                     <div className="sm:ml-[20%] md:ml-[50%] mb-10 lg:mb-16">
                         <CopyText>
-                            Willkommen an dem Ort, an dem alle Willkommen sind! Einem Zuhause für die, die anders sind.
-                            Wir sind mehr als ein Friseur, hier geht es nur um dich, ohne dass es darum geht, wer du bist. <br/><br/>
-                            <b>SHEARER Creative Studio</b>, dein Safe Space für Haare und Farbe mitten in Krefeld!
+                            Herzlich willkommen im <b>SHEARER Creative Studio</b>, dein Safe Space für Haare und Farbe mitten in Krefeld!
+                            <br/><br/>
+                            Wir sind mehr als ein Friseur. Bei uns geht es nur um dich, ohne dass wir dich in eine Schublade stecken. Wir möchten allen, die anders sind, ein Zuhause bieten. Einen Ort, an dem du einfach nur du sein kannst.
                         </CopyText>
                     </div>
                     <BraveText className="mb-4">

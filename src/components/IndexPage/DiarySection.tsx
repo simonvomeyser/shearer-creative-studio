@@ -27,9 +27,7 @@ export const DiarySection: React.FC = () => {
                         </Link>
                     </div>
                     <CopyText className='mt-2 sm:mt-6 md:mt-0 xs:ml-auto md:ml-0 max-w-screen-xs'>
-                        Egal ob Awards, tolle Kundengeschichten, Arbeit für den Zentralverband oder Hilfe für deinen
-                        Haarnotfall, im meinem Dairy
-                        bist du absolut richtig.
+                        Egal ob Awards, großartige Kundengeschichten, Arbeit für den Zentralverband oder Hilfe für deinen Haarnotfall, in meinem Diary bist du absolut richtig.
                     </CopyText>
                 </div>
             </Container>

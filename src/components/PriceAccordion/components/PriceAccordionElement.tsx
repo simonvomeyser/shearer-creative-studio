@@ -116,9 +116,9 @@ export const PriceAccordionElement: React.FC<PriceAccordionElementProps> = (
 
                     {isCurrent(id) ?
                     <motion.div className="mb-4 max-w-[50ch]" variants={readMoreMotionVariant}>
-                        Unsere Preise werden fair und transparent berechnet - und vielleicht anders, als du es
-                        kennst! <Link to="/preise" className="underline transition duration-500 hover:text-primary ">Erfahre
-                        mehr</Link></motion.div>
+                        Unsere Preise werden fair und transparent berechnet - und vielleicht etwas anders, als du es kennst!
+                        <Link to="/preise" className="underline transition duration-500 hover:text-primary ">Erfahre mehr</Link>
+                    </motion.div>
                     : null}
 
                     {category.prices.map((price, priceId) => (

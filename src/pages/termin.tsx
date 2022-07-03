@@ -38,13 +38,10 @@ const Termin = () => {
                         </SmoothScrollPageAnchor>
                     </div>
                     <CopyText className="sm:ml-[20%] md:ml-[40%]">
-                        Falls du nicht gerne telefonierst (das können wir nachvollziehen), kannst du bei uns einen Termin bequem <SmoothScrollPageAnchor targetId="online-termin-buchen"
-                                                              className="underline transition duration-500 hover:text-primary  decoration-primary">online
-                        buchen</SmoothScrollPageAnchor> <br/><br/>
-                        Wir bieten aber natürlich auch alle "klassischen" Arten an, einen Termin zu buchen, scrolle
-                        dafür einfach <SmoothScrollPageAnchor targetId="kontakt"
-                                                              className="underline transition duration-500 hover:text-primary  decoration-primary">etwas weiter nach
-                        unten</SmoothScrollPageAnchor>
+                        Falls du nicht gerne anrufst, kannst du bei uns deinen Termin bequem <SmoothScrollPageAnchor targetId="online-termin-buchen" className="underline transition duration-500 hover:text-primary  decoration-primary">online
+                        buchen</SmoothScrollPageAnchor> und das sogar außerhalb unserer Geschäftszeiten.
+                        <br/><br/>
+                        Wir bieten aber natürlich auch alle "klassischen" Arten an, einen Termin zu buchen, scrolle dafür einfach <SmoothScrollPageAnchor targetId="kontakt" className="underline transition duration-500 hover:text-primary  decoration-primary">etwas weiter nach unten</SmoothScrollPageAnchor>
                     </CopyText>
                 </Container>
             </Section>

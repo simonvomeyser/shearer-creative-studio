@@ -20,7 +20,7 @@ const Salon = () => {
     return (
         <>
             <MetaTags pageName="Salon"/>
-            <Section headerPaddingTop >
+            <Section headerPaddingTop>
                 <Watercolor
                     color="green"
                     className={clsx(' md:block top-[-15%] right-[-600px] xl:right-[-450px] w-[900px] h-[1000px] opacity-20 md:opacity-30 ')}
@@ -38,12 +38,12 @@ const Salon = () => {
                         <div>
 
                             <CopyText className="ml-auto md:max-w-[35ch]">
-                                Im Herzen Krefelds - inmitten der lauten Stadt - öffnet das SHEARER (sprich schie-ra) Creative Studio seine Türen.
+                                Im Herzen Krefelds - inmitten der lauten Stadt - öffnet das Creative Studio seine
+                                Türen.
                                 <br/> <br/>
-                                Ein Ort wo es um dich geht. Ein Safespace, wo du die Person sein darfst, die du sein
-                                möchtest. Hier kannst du es dir gut gehen lassen und bekommst <span
-                                className="font-bold">die perfekte Frisur, um dich mehr nach dir
-                                selbst zu fühlen.</span>
+                                Ein Ort, wo es nur um dich geht. Ein Safe Space, wo du die Person sein darfst, die du
+                                sein möchtest. Hier kannst du es dir gut gehen lassen und bekommst die perfekte Frisur,
+                                um dich mehr nach dir selbst zu fühlen.
                                 <div className="xs:hidden my-8">
 
                                     <StaticImage src="../images/salon/DSC04953.jpg"
@@ -55,10 +55,10 @@ const Salon = () => {
                                     />
                                 </div>
                                 <span className="hidden xs:inline"><br/><br/></span>
-                                Unser Anspruch ist es, dir zu zu hören und dich ehrlich und ausführlich zu beraten. Das
-                                heißt aber auch dir transparent zu sagen was möglich ist, ohne dir das Unmögliche zu
-                                versprechen - <b>Denn die Qualität deiner Haare ist uns immer wichtiger als der neueste
-                                Trend.</b>
+                                Unser Anspruch ist es, dir zuzuhören und dich ehrlich und ausführlich zu beraten. Das
+                                heißt aber auch, dir transparent zu sagen was möglich ist, ohne dir das Unmögliche zu
+                                versprechen -
+                                <b> Denn die Qualität deiner Haare ist uns immer wichtiger als der neueste Trend.</b>
                             </CopyText>
 
                         </div>
@@ -84,7 +84,7 @@ const Salon = () => {
                     <BraveText
                         size="small"
                         className="font-roma font-bold !leading-[1] uppercase sm:max-w-[80%]">
-                        Das SHEARER creative studio steht für Perfektion, Empathie und Kreativität im Friseurhandwerk.
+                        DAS SHEARER CREATIVE STUDIO STEHT FÜR QUALITÄT, EMPATHIE UND KREATIVITÄT IM FRISEURHANDWERK.
                     </BraveText>
                 </Container>
             </Section>
@@ -110,17 +110,16 @@ const Salon = () => {
 
                             <CopyText className="mr-auto md:max-w-[35ch]">
                                 Mit den besten Produkten auf dem Markt arbeiten wir am Puls der Zeit mit vollem Herzblut
-                                    und Leidenschaft, so Ökologisch und Nachhaltig wie uns möglich. <br/> <br/>
-                                <b>Unsere Preise richten sich ausschließlich nach
-                                dem zeitlichen Aufwand, Skill und Materialverbrauch und nicht nach deinem
-                                Geschlecht!</b>
-
+                                und Leidenschaft, so ökologisch und nachhaltig wie möglich.
                                 <br/><br/>
-                                Schöne Haare verändert nicht die Welt, aber wir können damit das Leben ein kleines
-                                bisschen besser machen.
-
-                                Für ein bisschen breiteres Lächeln, ein wenig aufrechter Gang… <b>es ist ein kleiner
-                                Unterschied, aber es ist ein Unterschied.</b>
+                                Unsere Preise richten sich ausschließlich nach dem zeitlichen Aufwand, Komplexität und
+                                Materialverbrauch und nicht nach deinem Geschlecht.
+                                <br/><br/>
+                                Schöne Haare verändern nicht die Welt, aber wir können damit das Leben ein
+                                kleines bisschen besser machen.
+                                <br/><br/>
+                                <b>Für ein bisschen breiteres Lächeln, für einen wenig aufrechteren Gang...
+                                    Es ist ein kleiner Unterschied, aber es ist ein Unterschied!</b>
                             </CopyText>
 
                         </div>
@@ -128,7 +127,7 @@ const Salon = () => {
                 </Container>
             </Section>
             <Section className="py-8 xs:pt-5 xs:pb-28 md:pt-16 md:pb-20">
-                <Container >
+                <Container>
                     <Quote quoteData={getRandomQuote()}/>
                 </Container>
             </Section>
@@ -161,10 +160,9 @@ const Salon = () => {
                             <div className="space-y-8">
 
                                 <CopyText className="mr-auto max-w-[35ch]">
-                                    Sarah Scherer (Sie/Ihre) - Das multifunktionale Chamäleon.
-                                    irgendwo zwischen Pippi Langstrumpf und Rapunzel, macht gerne Dinge die ihr schwer
-                                    fallen,
-                                    um an ihnen zu wachsen.
+                                    Sarah Scherer (Sie/Ihre) - Das multifunktionale Chamäleon, irgendwo zwischen Pippi
+                                    Langstrumpf und Rapunzel, stellt sich gerne Herausforderungen, um an ihnen zu
+                                    wachsen.
                                 </CopyText>
                                 <div className="sm:hidden block ml-auto max-w-[450px]">
                                     <StaticImage src="../images/salon/sarah-1.jpg"
@@ -175,9 +173,8 @@ const Salon = () => {
                                     />
                                 </div>
                                 <CopyText className="ml-auto sm:ml-0 sm:mr-auto max-w-[35ch]">
-                                    Dabei ist es egal, ob es sich um das Perfektionieren der neuesten Haartrends handelt
-                                    oder
-                                    der Einsatz dafür, unsere Welt ein kleines bisschen offener zu gestalten.
+                                    Dabei kann es sich um das Perfektionieren der neuesten Haartrends handeln oder aber
+                                    um den Einsatz, unsere Welt ein kleines bisschen offener und bunter zu gestalten
                                 </CopyText>
                             </div>
 
@@ -218,20 +215,22 @@ const Salon = () => {
                     </div>
                 </Container>
             </Section>
-            <Section className="bg-sage-700 pb-20 md:pb-32" >
+            <Section className="bg-sage-700 pb-20 md:pb-32">
                 <Container fluid className="px-[1rem] xs:px-[2rem] md:px-0">
                     <div className="grid md:grid-cols-2 gap-10 2xl:gap-12">
                         <div className="flex justify-end md:pl-[var(--container-padding--md)]">
                             <CopyText className="max-w-[35ch]">
-                                Seit nun fast 10 Jahren fühlt sich die German Hairdressing Award Gewinnerin nicht nur
+                                Seit nun fast 10 Jahren fühlt sich die German Hairdressing Award Gewinnerin nicht nur
                                 hinter dem Friseurstuhl wohl, sondern begleitet erfolgreich Kampagnen und Kunden quer
-                                durch Europa als <b>etablierte Hair & Make-up
-                                Artistin</b>.
+                                durch Europa als etablierte Hair & Make-up Artistin.
                                 <br/><br/>
-                                Auch wenn die Meister Stipendiatin eher zufällig in die Branche stolperte, liebt sie
-                                ihren Beruf. Er ist eins der mächtigsten Tools einem Menschen zu mehr Selbstwert zu
-                                verhelfen. <b>Dafür lebt sie: Menschen glücklich zu sehen.</b>
-
+                                Nicht nur, dass sie als Friseurgesellin mit 1,0 abschloss und darauf hin ihr
+                                Meisterstipendium bekam, sie ist auch seit einigen Jahren ein aktives Mitglied des
+                                Zentralverband der Friseure und Jurorin der deutschen Friseurmeisterschaften.
+                                <br/><br/>
+                                Auch wenn Sarah eher zufällig in die Branche stolperte, liebt sie ihren Beruf. Er ist
+                                eines der mächtigsten Werkzeuge jemandem zu mehr Selbstwert zu verhelfen. <br/>
+                                <b>Denn letztendlich brennt sie genau dafür: Menschen glücklich zu sehen.</b>
                             </CopyText>
                         </div>
                         <div>

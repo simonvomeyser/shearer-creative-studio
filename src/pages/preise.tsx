@@ -40,12 +40,13 @@ const Preise = () => {
                         </SmoothScrollPageAnchor>
                     </div>
                     <CopyText className="sm:ml-[20%] md:ml-[40%]">
-                        Wir berechnen unsere Preise anders, als du es vielleicht gewohnt bist! Jede Dienstleistung wird
-                        nach der benötigten Zeit und dem Materialaufwand eingeschätzt und ist somit für dich komplett
-                        transparent! <br/><br/>
+                        Wir berechnen unsere Preise etwas anders, als du es vielleicht gewohnt bist! <br/>
+                        Jede Dienstleistung wird nach der benötigten Zeit und dem Materialaufwand individuell eingeschätzt und ist somit für dich komplett transparent!
+                        <br/><br/>
+                        <b>Wir wollen einen inklusivieren Weg gehen als der veraltete “Herrenschnitt”/ “Damenschnitt” Blödsinn.</b>
+                        <br/><br/>
+                        Wenn du dir nicht sicher bist, welcher Tarif zu dir passt, melde dich bei uns bevor du buchst, damit wir dir die benötigte Zeit auch garantieren können
 
-                        Wir möchten keine klassische Unterscheidung in der Bepreisung nach “Frau/Mann” und hoffen so
-                        einen kleinen Beitrag für mehr Gleichberechtigung leisten zu können.
                     </CopyText>
                 </Container>
             </Section>
