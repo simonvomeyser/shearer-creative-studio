@@ -6,7 +6,7 @@ title: 'GHDA Nominierte Kollektion 2019 "Maniac"'
 featured: 2
 date: 'Juni 2019'
 category: 'Award'
-excerpt: 'Die für den German Hair Dressing Award nominierte Strecke "Maniac"'
+excerpt: 'Erneut wurde Sarah für den German Hairdressing Award als Newcomerin nominiert'
 listImageUrl: '_DSC9373_A4.jpg'
 titleImageUrl: 'title.jpg'
 imageUrls: [
@@ -16,6 +16,6 @@ imageUrls: [
     '_DSC9328_A4.jpg',
 ]
 ---
-Lectus pellentesque vitae dapibus urna nibh cubilia quisque sodales nullam gravida, porta a turpis placerat aliquam mus montes donec laoreet. Fermentum porttitor nulla efficitur aenean luctus himenaeos inceptos, dui elit taciti viverra pellentesque. Primis cursus mollis ante at dapibus blandit commodo praesent, morbi volutpat vivamus parturient cubilia quis
+Hamburg im Mai 2019. In der geschichtsträchtigen Fischauktionshalle ging für Sarah der German Hairdressing Award in die zweite Runde. Wieder eine Nominierung als Newcomerin. Der Wahnsinn. 
 
-Feugiat curae phasellus penatibus ultrices porta vestibulum pretium semper, aliquet aliquam pharetra ornare congue massa id tincidunt purus, in at taciti scelerisque ut conubia posuere.
+Auch wenn es diesmal nicht für die Trophäe reichte, brannte sich dieser wunderschöne Abend ein. Der Hairdressing Award steht für Austausch mit Kolleg*innen in Sachen Kreativität und dem Wunsch etwas Künstlerisches zu erschaffen.

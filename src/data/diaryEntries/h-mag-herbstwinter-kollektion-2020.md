@@ -17,7 +17,8 @@ imageUrls: [
     '5.jpg',
 ]
 ---
+Das H|MAG – HAIR MAGAZIN präsentiert die aktuellen Trendkollektionen des **Zentralverbandes des Deutschen Friseurhandwerk**.
 
-Das H|MAG – HAIR MAGAZINE präsentiert die aktuellen Trendkollektionen des <strong>Zentralverbandes des Deutschen Friseurhandwerks</strong>. <br> <br> Die Trendkollektionen erscheinen zweimal jährlich und 2020 durfte Sarah gemeinsam mit dem Modeteam des ZV Friseurhandwerks die aktuellen Trends für die deutsche Friseurbranche erarbeiten. 
+Die Trendkollektionen erscheinen zweimal jährlich und 2020 durfte Sarah gemeinsam mit dem Modeteam des ZV Friseurhandwerks die aktuellen Trends für die deutsche Friseurbranche erarbeiten.
 
-Die tollen Ergebnisse siehst du hier oder auf der <a href="https://www.friseurhandwerk.de/hmag/das-team.html" target="_blank">Webseite des Magazins</a>',
+Die Ergebnisse siehst du hier oder auf der <a href="https://www.friseurhandwerk.de/hmag/das-team.html" target="_blank">Webseite des Magazins</a>',
