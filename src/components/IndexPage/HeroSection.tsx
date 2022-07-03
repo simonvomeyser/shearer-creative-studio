@@ -69,6 +69,7 @@ export const HeroSection: React.FC = () => {
             {/* BG-Video */}
             <video muted loop ref={bgVideo}
                    preload="none"
+                   playsInline
                    className={clsx('w-full h-full object-cover absolute inset-0 transition duration-1000', {
                        'opacity-0': !videoStarted,
                        'opacity-60 md:opacity-70': videoStarted,
