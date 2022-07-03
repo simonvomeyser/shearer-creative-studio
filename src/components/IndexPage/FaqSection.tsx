@@ -23,7 +23,7 @@ export const FaqSection: React.FC = ({}) => {
             />
             <Container className="mt-[-220px] sm:mt-[-300px] md:mt-[-450px]">
 
-                <FaqHeading className="w-[80%] text-secondary"
+                <FaqHeading className="w-[80%] md:w-[60%] text-secondary"
                             style={{
                                 transform: viewportPosition === -1 ? `translateX(${(percentageInView - 100) * -0.5}px)` : '',
                             }}
