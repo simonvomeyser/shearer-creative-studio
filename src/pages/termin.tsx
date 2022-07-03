@@ -57,7 +57,7 @@ const Termin = () => {
                 <Container fluid className="h-full">
 
                 <div className="w-full sm:w-[488px] h-full mx-auto relative">
-                    <iframe src="https://widget.salonized.com/widget/?color=%23EB9100&language=de&company=zsd8WUUuiWFbDvnx73NH1LLT"
+                    <iframe src="https://shearer-creative-studio.salonized.com/widget_bookings/new"
                              className="w-full h-[calc(100vh-2rem)] max-h-[700px] rounded-2xl overflow-hidden bg-white"/>
                 </div>
                 </Container>
