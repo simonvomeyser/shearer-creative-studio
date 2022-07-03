@@ -222,6 +222,10 @@ Waschen und Föhnen der Haare mit Rundbürsten - inkl. Kopfmassage, passender Pf
                 "price": "29 €",
                 "description": "Ein offenes Haarstyling deiner Wahl. Egal ob Beachwaves, Sleek, Curly oder Hollywood Waves für deinen perfekten Auftritt. (Dienstleistung exkl. Haarwäsche). Dauer ca. 30 Min."
             },
+            {
+                "title": "Hochstecken",
+                "price": "ab 47 €",
+            },
         ]
     },
     {
