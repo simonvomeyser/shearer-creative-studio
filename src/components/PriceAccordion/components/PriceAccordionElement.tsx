@@ -128,7 +128,7 @@ export const PriceAccordionElement: React.FC<PriceAccordionElementProps> = (
                         >
 
                             <div className="w-full xs:w-auto" dangerouslySetInnerHTML={{__html: price.title}}/>
-                            <div className="w-full xs:w-auto text-right opacity-75">{price.price}</div>
+                                <div className="w-full xs:w-auto text-right opacity-75 break-inside-avoid whitespace-nowrap pl-2">{price.price}</div>
                         </motion.div>
                     ))}
                     <motion.div variants={readMoreMotionVariant} className="flex w-full justify-end pt-4">
