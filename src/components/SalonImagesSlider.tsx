@@ -7,7 +7,7 @@ export const SalonImagesSlider: React.FC = () => {
             <Container fluid>
 
                 <div className="pl-[1rem] xs:pl-[2rem] md:pl-[3rem] 2xl:pl-0 2xl:ml-[8.3333%] flex gap-4 overflow-x-auto  no-scrollbar">
-                    <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden ">
+                    <div className=" relative flex-shrink-0 w-[75%] md:w-[45%] xl:w-[30%] overflow-hidden order-1 md:-order-1">
                         <div className="pt-[75%] relative">
                             <StaticImage
                                 className="absolute inset-0 w-full h-full"
