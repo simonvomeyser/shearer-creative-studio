@@ -16,7 +16,7 @@ Haare sind nicht an ein Geschlechtsmerkmal gebunden. Unisex impliziert für uns 
         question: 'Wie setzten sich die Preise zusammen?',
         answer: `
 Wir berechnen unsere Dienstleistungen ausschließlich nach Zeit, Komplexität und Materialaufwand. Wir besprechen mit dir im Vorfeld, wie sich die Preise individuell zusammensetzen. 
-<br>Eine genauere Beschreibung findest du auch  <a href="/preise"> auf unserer Preise-Seite</a>.
+<br><br>Eine genauere Beschreibung findest du auch  <a href="/preise" class="decoration-primary underline"> auf unserer Preise-Seite</a>.
         `
     },
     {
