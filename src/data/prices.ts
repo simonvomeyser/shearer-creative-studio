@@ -24,22 +24,22 @@ export const priceCategories: PriceCategoryType[] = [
             {
                 "title": "Haarschnitt XS: Just the little things in life",
                 "price": "24 €",
-                "description": "Mini Haarschnitt bis 25 Min. Zeitaufwand (Beispiel: Pony schneiden / Konturenschnitt / Maschinenschnitt ohne Waschen"
+                "description": `Mini Haarschnitt bis 25 Min. Zeitaufwand <br> (Beispiel: Pony schneiden / Konturenschnitt / Maschinenschnitt ohne Waschen)`
             },
             {
                 "title": "Haarschnitt S: Keep it simple",
                 "price": "43 €",
-                "description": "Haarschnitt bis 45 Min. Zeitaufwand (Beispiel: Waschen, Schneiden, Pflegen, Stylen von einfachen Kurzhaarschnitten /  Trockenschnitt / Spitzenschnitt / Feine Haare o. Ä.)"
+                "description": `Haarschnitt bis 45 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von einfachen Kurzhaarschnitten /  Trockenschnitt / Spitzenschnitt / Feine Haare o. Ä.)`
             },
             {
                 "title": "Haarschnitt M: Golden Hour",
                 "price": "57 €",
-                "description": "Der Klassiker, Haarschnitt bis 60 Min. Zeitaufwand (Beispiel: Waschen, Schneiden, Pflegen, Stylen von komplexen Haarschnitten wie Bobs /Stufenhaarschnitten / Mullets / Shags /  o. Ä.)"
+                "description": `Der Klassiker, Haarschnitt bis 60 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von komplexen Haarschnitten wie Bobs /Stufenhaarschnitten / Mullets / Shags /  o. Ä.)`
             },
             {
                 "title": "Haarschnitt L: I want it all. I want it now",
                 "price": "72 €",
-                "description": "Haarschnitt bis 75 Min. Zeitaufwand (Beispiel: Waschen, Schneiden, Pflegen, Stylen von Neuhaarschnitten bzw.Typveränderungen / Haarschnitt + Aufwendigen Styling)"
+                "description": `Haarschnitt bis 75 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von Neuhaarschnitten bzw.Typveränderungen / Haarschnitt + Aufwendigen Styling)`
             }
         ]
     },
