@@ -9,6 +9,7 @@ export type PriceCategoryType = {
     anchor: string,
     description?: string,
     prices: PriceTypeType[],
+    hideBookNowLink?: Boolean,
 }
 
 export const priceCategories: PriceCategoryType[] = [
@@ -257,9 +258,19 @@ Typgerecht gefärbte Brauen um deinem Gesicht mehr Kontur und Ausdruck verleihen
         "anchor": "more",
         "detailPageSorting": 0,
         'description': `
-Darüber hinaus bieten wir weitere umfangreiche Leistungen wie Extentions und Gutscheinen an und sind buchbar für Einsätze bei Hochzeiten, Events, Workshops, Seminaren oder Fotoshootings.
+Darüber hinaus bieten wir weitere umfangreiche Leistungen wie <b>Extentions</b> und <b>Gutscheinen</b> an und sind buchbar für <b>Einsätze bei Hochzeiten, Events, Workshops, Seminaren</b> oder <b>Fotoshootings</b>.
         `,
-        "prices": []
+        hideBookNowLink: true,
+        "prices": [
+
+            {
+                "title": "Auf Anfrage",
+                "price": "",
+                "description": `
+    Wir besprechen dein Anliegen! <a href="/salon#kontakt" class="underline decoration-primary hover:text-primary transition duration-500">Melde dich einfach bei uns</a> 
+                `
+            },
+        ]
     }
 
 ]

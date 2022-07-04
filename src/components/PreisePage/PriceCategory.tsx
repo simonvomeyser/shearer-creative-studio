@@ -11,12 +11,12 @@ export type PriceCategoryProps = {
     isFirst: boolean,
 };
 
-export const PriceCategory: React.FC<PriceCategoryProps> = ({category , isFirst}) => {
+export const PriceCategory: React.FC<PriceCategoryProps> = ({category, isFirst}) => {
 
     const categoryRef = useRef<HTMLDivElement>(null);
     return (
         <div className={clsx('flex gap-4 md:gap-8 lg:gap-14 flex-wrap lg:flex-nowrap relative', {
-            'pt-16 md:pt-24' : !isFirst
+            'pt-16 md:pt-24': !isFirst
         })}
              id={category.anchor}
 
@@ -31,13 +31,15 @@ export const PriceCategory: React.FC<PriceCategoryProps> = ({category , isFirst}
                     <div className="md:text-lg max-w-"
                          dangerouslySetInnerHTML={{__html: category.description}}/>
                     : null}
-                <div className="transition duration-500">
-                    <Link to="/termin">
-                        <ArrowLinkStyles size="sm">
-                            Termin buchen
-                        </ArrowLinkStyles>
-                    </Link>
-                </div>
+                {!category.hideBookNowLink ?
+                    <div className="transition duration-500">
+                        <Link to="/termin">
+                            <ArrowLinkStyles size="sm">
+                                Termin buchen
+                            </ArrowLinkStyles>
+                        </Link>
+                    </div>
+                    : null}
 
             </div>
             <div
