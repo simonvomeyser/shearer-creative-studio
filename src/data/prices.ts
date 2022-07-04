@@ -82,7 +82,7 @@ export const priceCategories: PriceCategoryType[] = [
             {
                 "title": "Faceframe",
                 "price": "66 €",
-                "description": `Beim Face Fra Ming, auch "Money Piece” genannt, werden statt des kompletten Haares nur die beiden vorderen Strähnen und Kontur aufgehellt. <br> Also jeweils eine Strähne rechts und links vom Scheitel. Die blonden Strähnen vorne rahmen das Gesicht ein und geben dem ganzen Look eine frische Note`
+                "description": `Beim Face Framing, auch "Money Piece” genannt, werden statt des kompletten Haares nur die beiden vorderen Strähnen und Kontur aufgehellt. <br> Also jeweils eine Strähne rechts und links vom Scheitel. Die blonden Strähnen vorne rahmen das Gesicht ein und geben dem ganzen Look eine frische Note`
             },
             {
                 "title": "Fashion Color",
@@ -110,9 +110,9 @@ Fashion Color setzt ein Beratungsgespräch voraus und wird nach Stundensatz bere
                 "title": "Farbkorrekturen",
                 "price": "89 € / Std",
                 "description": `
-Die SOS Farbrettung! Du hast dir Zuhause die Haare gefärbt oder kommst unglücklich aus einem anderen Salon? Wir versuchen alles um das wieder grade zu biegen. 
+Die SOS Farbrettung! Du hast dir Zuhause die Haare gefärbt oder kommst unglücklich aus einem anderen Salon? Wir versuchen alles, um das wieder grade zu biegen. 
 <br><br>
-Eine Farbkorrektur setzt eine Beratung voraus um dem Dienstleistungsaufwand einzuschätzen. 
+Eine Farbkorrektur setzt eine Beratung voraus, um dem Dienstleistungsaufwand einzuschätzen. 
 Zudem werden Farbkorrekturen nach Stundensatz abgerechnet. Alle Materialien sind dort inkludiert. 
 
                 `
