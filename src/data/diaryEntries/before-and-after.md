@@ -13,7 +13,6 @@ imageUrls: [
     'kiki.jpg',
     'frauke.jpg',
     'skylar.jpg',
-    'tamara.jpg',
 ]
 ---
 
