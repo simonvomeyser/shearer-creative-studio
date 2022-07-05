@@ -33,7 +33,6 @@ export const MetaTags: React.FC<MetaTitleProps> = (
     const title = createTitle(pageName);
     const image =  trimSlash(globalData.url) + '/' + (seo.image ?  trimSlash(seo.image) : trimSlash(metaData.defaultOgImage))
     const description = seo.description || metaData.defaultDescription;
-    console.log(hideFromSearchEngines)
     return (
         <Helmet title={title}  htmlAttributes={{lang: 'de'}}>
             <meta name="description" content={description} />
