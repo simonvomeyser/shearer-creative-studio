@@ -1,6 +1,16 @@
 import type {GatsbyConfig} from "gatsby";
 import path from "path";
 
+const generateFavicons = (sizes: number[]) => {
+    return sizes.map(size => {
+        return {
+            src: `favicons/icon-${size}x${size}.png`,
+            sizes: `${size}x${size}`,
+            type: "image/png",
+        };
+    });
+};
+
 require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
 });
@@ -13,7 +23,12 @@ const config: GatsbyConfig = {
     plugins: [{
         resolve: 'gatsby-plugin-manifest',
         options: {
-            "icon": "src/images/icon.png"
+            icon: "src/images/icon.png",
+            start_url: `/`,
+            background_color: `#000000`,
+            theme_color: `#FFFFFF`,
+            display: `minimal-ui`,
+            icons: generateFavicons([48, 72, 96, 144, 192, 256, 384, 512]),
         }
     }, {
         resolve: 'gatsby-source-filesystem',
