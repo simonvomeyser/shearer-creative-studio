@@ -19,7 +19,7 @@ const Salon = () => {
 
     return (
         <>
-            <MetaTags pageName="Salon"/>
+            <MetaTags pageName="Salon" seo={{description: "Ein Ort, wo es nur um dich geht. Ein Safe Space, wo du die Person sein darfst, die du sein möchtest"}}/>
             <Section headerPaddingTop>
                 <Watercolor
                     color="green"

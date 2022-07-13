@@ -59,7 +59,7 @@ const Diary = (props: DiaryPagePropsType) => {
 
     return (
         <>
-            <MetaTags pageName="Diary" seo={{description: 'Egal ob Awards oder tolle Kundengeschichte, im unserem Dairy bist du absolut richtig.'}}/>
+            <MetaTags pageName="Diary" seo={{description: 'Egal ob Preise, Kundengeschichte oder Hilfe bei Haarnotfall, im unserem Dairy bist du absolut richtig.'}}/>
             <Section headerPaddingTop>
                 <Container>
 

@@ -14,7 +14,7 @@ const Termin = () => {
 
     return (
         <>
-            <MetaTags pageName="Termin buchen"/>
+            <MetaTags pageName="Termin buchen" seo={{description: "Wenn du nicht gerne anrufst, bieten wir dir Online-Buchung an. Sonst kontaktiere uns einfach wie gewohnt!"}}/>
             <Section headerPaddingTop className="pb-8 xs:pb-14 md:pb-20">
                 <Watercolor
                     color="green"

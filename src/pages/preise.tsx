@@ -23,7 +23,7 @@ const Preise = () => {
 
     return (
         <>
-            <MetaTags pageName="Preise"/>
+            <MetaTags pageName="Preise" seo={{description: "Wir wollen mit unseren Preisen einen inklusivieren Weg gehen als der veraltete “Herrenschnitt”/ “Damenschnitt” Blödsinn."}}/>
             <Section headerPaddingTop headerMarginTop={false}>
                 <Watercolor
                     color="green"
