@@ -10,7 +10,9 @@ import {SocialBubble} from "./SocialBubble";
 export const Footer: React.FC = () => {
 
     return (
-        <footer className="py-16 md:py-24">
+        <footer className="py-16 md:py-24" itemScope itemType="https://schema.org/LocalBusiness">
+            <meta itemProp="image" content="/logo.png" />
+            <meta itemProp="name" content="SHEARER Creative Studio" />
             <Container className="flex items-start w-full justify-between gap-4 flex-wrap md:flex-nowrap">
                 <div className="flex justify-center w-full md:w-auto mb-8 md:mb-0">
 
@@ -31,10 +33,9 @@ export const Footer: React.FC = () => {
                             <Pinterest className="w-5 h-5"/>
                         </SocialBubble>
                     </div>
-                    <div className="w-full sm:w-auto space-y-2 mb-4 md:space-y-0 md:mb-0" itemScope
-                         itemType="https://schema.org/LocalBusiness">
+                    <div className="w-full sm:w-auto space-y-2 mb-4 md:space-y-0 md:mb-0" >
                         <span className="inline-block text-primary md:text-white font-bold md:font-normal">
-                            <a href="https://shearer.studio" itemProp="url">Shearer Creative Studio</a>
+                            <a href="https://shearer.studio" itemProp="url">SHEARER Creative Studio</a>
                         </span> <br/>
 
                         <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
