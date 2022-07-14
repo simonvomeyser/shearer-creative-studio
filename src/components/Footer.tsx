@@ -13,6 +13,8 @@ export const Footer: React.FC = () => {
         <footer className="py-16 md:py-24" itemScope itemType="https://schema.org/LocalBusiness">
             <meta itemProp="image" content="/logo.png" />
             <meta itemProp="name" content="SHEARER Creative Studio" />
+            <meta itemProp="telephone" content={globalData.phoneLink} />
+            <meta itemProp="priceRange" content="$$" />
             <Container className="flex items-start w-full justify-between gap-4 flex-wrap md:flex-nowrap">
                 <div className="flex justify-center w-full md:w-auto mb-8 md:mb-0">
 
@@ -53,7 +55,7 @@ export const Footer: React.FC = () => {
                             <a className="inline-block transition hover:text-secondary" target="_blank"
                                rel="noopener noreferrer"
                                href={globalData.phoneLinkWhatsAppHref}>WhatsApp</a><br/>
-                            <a itemProp="telephone" className="inline-block transition hover:text-secondary"
+                            <a className="inline-block transition hover:text-secondary"
                                href={"tel:" + globalData.phoneLink}>{globalData.phoneDisplay}</a> <br/>
                         </span>
                     </div>
