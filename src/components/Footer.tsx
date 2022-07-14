@@ -31,18 +31,30 @@ export const Footer: React.FC = () => {
                             <Pinterest className="w-5 h-5"/>
                         </SocialBubble>
                     </div>
-                    <div className="w-full sm:w-auto space-y-2 mb-4 md:space-y-0 md:mb-0">
-                        <span className="inline-block text-primary md:text-white font-bold md:font-normal">Shearer
-                            Creative Studio</span> <br/>
-                        <a className="inline-block transition hover:text-secondary" href={globalData.googleMapsLink}
-                           target="_blank" rel="noopener noreferrer">Nordwall 60 <br/> 47798 Krefeld </a><br/><br/>
-                        <a className="inline-block transition hover:text-secondary"
-                           href={"mailto:" + globalData.email}>{globalData.email}</a> <br/>
-                        <a className="inline-block transition hover:text-secondary" target="_blank"
-                           rel="noopener noreferrer"
-                           href={globalData.phoneLinkWhatsAppHref}>WhatsApp</a><br/>
-                        <a className="inline-block transition hover:text-secondary"
-                           href={"tel:" + globalData.phoneLink}>{globalData.phoneDisplay}</a> <br/>
+                    <div className="w-full sm:w-auto space-y-2 mb-4 md:space-y-0 md:mb-0" itemScope
+                         itemType="https://schema.org/LocalBusiness">
+                        <span className="inline-block text-primary md:text-white font-bold md:font-normal">
+                            <a href="https://shearer.studio" itemProp="url">Shearer Creative Studio</a>
+                        </span> <br/>
+
+                        <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+
+                            <a className="inline-block transition hover:text-secondary" href={globalData.googleMapsLink}
+                               target="_blank" rel="noopener noreferrer">
+                                <span itemProp="streetAddress">Nordwall 60 </span><br/> <span
+                                itemProp="postalCode">47798</span>
+                                <span itemProp="addressLocality">Krefeld</span>
+                            </a><br/><br/>
+                        </span>
+                        <span itemScope itemType="https://schema.org/Organization">
+                            <a itemProp="email" className="inline-block transition hover:text-secondary"
+                               href={"mailto:" + globalData.email}>{globalData.email}</a> <br/>
+                            <a className="inline-block transition hover:text-secondary" target="_blank"
+                               rel="noopener noreferrer"
+                               href={globalData.phoneLinkWhatsAppHref}>WhatsApp</a><br/>
+                            <a itemProp="telephone" className="inline-block transition hover:text-secondary"
+                               href={"tel:" + globalData.phoneLink}>{globalData.phoneDisplay}</a> <br/>
+                        </span>
                     </div>
                     <div className="w-full sm:w-auto">
                         <ul className="space-y-2 md:space-y-0">
