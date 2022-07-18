@@ -1,5 +1,0 @@
-Disallow: /static/*black.png
-Disallow: /static/*white.png
-Disallow: /static/*green.png
-Disallow: /static/*gray.png
-Disallow: /watercolor.png

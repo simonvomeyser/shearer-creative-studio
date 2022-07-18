@@ -1,0 +1,12 @@
+User-agent: Googlebot
+Disallow: /static/*black.png$
+Disallow: /static/*white.png$
+Disallow: /static/*green.png$
+Disallow: /static/*gray.png$
+Disallow: /watercolor.png$
+
+Disallow: /static/*black.webp$
+Disallow: /static/*white.webp$
+Disallow: /static/*green.webp$
+Disallow: /static/*gray.webp$
+Disallow: /watercolor.webp$
