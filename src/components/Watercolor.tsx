@@ -17,6 +17,7 @@ export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
             objectFit="contain"
             alt=''
             role='presentation'
+            aria-hidden='true'
             className={clsx(defaultClasses, className)}
         />
     }
@@ -27,6 +28,7 @@ export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
             objectFit="contain"
             alt=''
             role='presentation'
+            aria-hidden='true'
             className={clsx(defaultClasses, className)}
         />
     }
@@ -37,6 +39,7 @@ export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
             objectFit="contain"
             alt=''
             role='presentation'
+            aria-hidden='true'
             className={clsx(defaultClasses, className)}
         />
     }
@@ -47,6 +50,7 @@ export const Watercolor: React.FC<WatercolorProps> = ({color, className,}) => {
             objectFit="contain"
             alt=''
             role='presentation'
+            aria-hidden='true'
             className={clsx(defaultClasses, className)}
         />
     }
