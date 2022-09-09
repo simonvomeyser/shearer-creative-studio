@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://shearer.studio">
-    <img alt="Screenshot of the website" src="https://github.com/shearer-creative-studio/de/blob/main/screenshot.png?raw=true" />
+    <img alt="Screenshot of the website" src="https://github.com/simonvomeyser/shearer-creative-studio/blob/main/screenshot.png?raw=true" />
   </a>
 </p>
 
