@@ -22,7 +22,7 @@ imageUrls: [
 
 Am 16. September 2022 wurden die Leistungen junger Handwerksmeisterinnen und Handwerksmeister gewürdigt.
 
-Ein wichtiges Highlight der Veranstaltung stellte der Austausch zwischen Gründerinnen und Gründern mit Ministerin Mona Neubaur dar, zu dem Sarah gebeten wurde, auf der Bühne ihre Erfahrungen und Verbesserungsvorschläge zu teilen, und das vor über 400 Gästen.
+Ein wichtiges Highlight der Veranstaltung stellte der Austausch zwischen Gründerinnen und Gründern mit Ministerin Mona Neubaur dar, zu dem Sarah gebeten wurde, auf der Bühne ihre Erfahrungen und Verbesserungsvorschläge zu teilen, und das vor über 400 Gästen. Gesprochen wurde unter anderem über den Stellenwert des Berufs "Friseur" und die Gleichsetzung von Meister und Bachelor.
 
-Im Anschluss fand und die Übergabe der Bewilligungsbescheide zur Meistergründungsprämie statt, und das alles in der wunderschönen Schauburg Iserlohn.
+Im Anschluss fand und die Übergabe der Bewilligungsbescheide zur Meistergründungsprämie statt, und das alles in der wunderschönen Schauburg Iserlohn. 
 
