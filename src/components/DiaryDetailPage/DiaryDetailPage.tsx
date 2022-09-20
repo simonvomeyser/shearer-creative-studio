@@ -64,7 +64,8 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
             <MetaTags pageName={diaryEntry.title}
                       seo={{
                           description: diaryEntry.excerpt,
-                          image: getImageMetaData(diaryEntry.titleImageUrl).full.original.src,
+                          image: getImageMetaData(diaryEntry.titleImageUrl).half.gatsbyImageData.images.fallback?.src,
+                          article: true
                       }}
             />
             <Section headerPaddingTop={true} headerMarginTop={false} className="md:mt-4">
@@ -135,7 +136,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                     </h2>
                 </Container>
                 <Container fluid>
-                    <DiaryTeaserSlider exceptId={diaryEntry.id} maxElements={4} />
+                    <DiaryTeaserSlider exceptId={diaryEntry.id} maxElements={4}/>
                 </Container>
             </Section>
         </>
@@ -155,6 +156,7 @@ export const query = graphql`
         folder
         title
         titleImageUrl
+        excerpt
         date
         category
         listImageUrl

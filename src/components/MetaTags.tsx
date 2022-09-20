@@ -29,22 +29,26 @@ export function createTitle(pageName?: string) {
 }
 
 export const MetaTags: React.FC<MetaTitleProps> = (
-    {pageName, seo={}, hideFromSearchEngines}) => {
+    {pageName, seo = {}, hideFromSearchEngines}) => {
     const title = createTitle(pageName);
-    const image =  trimSlash(globalData.url) + '/' + (seo.image ?  trimSlash(seo.image) : trimSlash(metaData.defaultOgImage))
-    const description = seo.description || metaData.defaultDescription;
+    const image = trimSlash(globalData.url) + '/' + (seo.image ? trimSlash(seo.image) : trimSlash(metaData.defaultOgImage))
+    const description = seo.description ? seo.description : metaData.defaultDescription;
     return (
-        <Helmet title={title}  htmlAttributes={{lang: 'de'}}>
-            <meta name="description" content={description} />
+        <Helmet title={title} htmlAttributes={{lang: 'de'}}>
+            <meta name="og:title" content={title}/>
+            <meta name="description" content={description}/>
+            <meta name="og:description" content={description}/>
+            <meta property="og:site_name" content="SHEARER Creative Studio"/>
 
-            {image && <meta property="image" content={image} />}
-            {image && <meta property="og:image" content={image} />}
+            {image && <meta property="image" itemProp="image" content={image}/>}
+            {image && <meta property="og:image" itemProp="image" content={image}/>}
 
-            {(seo.article ? <meta property="og:type" content="article" /> : null) }
+            {(seo.article ? <meta property="og:type" content="article"/> :
+                <meta property="og:type" content="website"/>)}
 
-            {(hideFromSearchEngines ? <meta name="robots" content="noindex" /> : null)  }
+            {(hideFromSearchEngines ? <meta name="robots" content="noindex"/> : null)}
 
-            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:card" content="summary_large_image"/>
         </Helmet>
     );
 };
