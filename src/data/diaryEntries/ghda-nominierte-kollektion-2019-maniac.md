@@ -8,7 +8,7 @@ date: 'Juni 2019'
 category: 'Award'
 excerpt: 'Erneut wurde Sarah für den German Hairdressing Award als Newcomerin nominiert'
 listImageUrl: '_DSC9373_A4.jpg'
-titleImageUrl: 'title.jpg'
+titleImageUrl: 'title-maniac.jpg'
 imageUrls: [
     '_DSC9233_A4.jpg',
     '_DSC9152_A4.jpg',
