@@ -85,7 +85,7 @@ const DiaryEntryPage: React.FC<DataPropsType> = ({data}) => {
                             &lt; Zurück
                         </Link>
                     </div>
-                    <h1 className='text-2xl xs:text-4xl md:text-6xl font-bold uppercase mb-4'
+                    <h1 className='text-2xl sm:text-4xl md:text-6xl font-bold uppercase mb-4 hyphens-auto'
                         dangerouslySetInnerHTML={{__html: diaryEntry.title}}/>
                     <div className='text-lg text-s-gray-500'> {diaryEntry.category} | by Sarah Scherer</div>
                     <hr className='border-s-gray-500 mt-8 xs:mt-10 md:mt-20 mb-4'/>
