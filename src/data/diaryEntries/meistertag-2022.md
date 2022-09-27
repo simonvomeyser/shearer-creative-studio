@@ -7,16 +7,18 @@ excerpt: 'Sarah wurde hier nicht nur Meistergründungsprämie überreicht, sie d
 date: 'September 2022'
 featured: 5
 category: 'Events'
-listImageUrl: 'sarah-2.jpg'
+listImageUrl: 'sarah-edit.jpg'
 titleImageUrl: 'title-meistertag-2022.jpg'
 imageUrls: [
     'neubaur.jpg',
-    'sarah.jpg',
+    'sarah-edit.jpg',
+    'room.jpeg',
     'stage-top.jpg',
     'stage.jpg',
     'stage-2.jpg',
     'sarah-full.jpeg',
     'detail.jpg',
+    'group.jpg',
 ]
 ---
 
