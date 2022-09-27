@@ -8,7 +8,7 @@ date: 'September 2022'
 featured: 5
 category: 'Events'
 listImageUrl: 'sarah-edit.jpg'
-titleImageUrl: 'title-meistertag-2022.jpg'
+titleImageUrl: 'title-meistertag-2022-edit.jpg'
 imageUrls: [
     'neubaur.jpg',
     'sarah-edit.jpg',
