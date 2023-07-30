@@ -55,8 +55,6 @@ export const Footer: React.FC = () => {
                             <a className="inline-block transition hover:text-secondary" target="_blank"
                                rel="noopener noreferrer"
                                href={globalData.phoneLinkWhatsAppHref}>WhatsApp</a><br/>
-                            <a className="inline-block transition hover:text-secondary"
-                               href={"tel:" + globalData.phoneLink}>{globalData.phoneDisplay}</a> <br/>
                         </span>
                     </div>
                     <div className="w-full sm:w-auto">

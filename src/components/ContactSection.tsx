@@ -4,7 +4,6 @@ import {BraveText} from "./BraveText";
 import {Container} from "./Container";
 import {House} from "./icons/House";
 import {Mail} from "./icons/Mail";
-import {Phone} from "./icons/phone";
 import {WhatsApp} from "./icons/WhatsApp";
 import {IconBubbleLink} from "./SalonPage/IconBubbleLink";
 import {MapWithConsent} from "./MapWithConsent";
@@ -46,15 +45,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({className}) => {
                                         href={'mailto:' + globalData.email}
                                         icon={<Mail className="w-7 h-7"/>}
                         />
-                        <IconBubbleLink title={globalData.phoneDisplay}
-                                        superTitle="Telefon"
-                                        href={'tel:' + globalData.phoneLink}
-                                        icon={<Phone className="w-7 h-7"/>}
-                        />
                         <IconBubbleLink title={
                             globalData.address.street + ' ' +
                             globalData.address.number + "<br/>" +
-                            globalData.address.zip + ' ' +
+                            globalData.address.zip + '&nbsp;' +
                             globalData.address.city
                         }
                                         superTitle="Adresse"
