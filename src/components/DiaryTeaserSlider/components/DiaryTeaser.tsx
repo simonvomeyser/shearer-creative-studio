@@ -28,7 +28,7 @@ export const DiaryTeaser: React.FC<DiaryTeaserProps> = ({diaryEntry, className, 
                         <GatsbyImage alt={'Titelbild für ' + diaryEntry.title} image={gatsbyImage}
                                      className="w-full h-full"
                                      objectFit="cover"
-                                     objectPosition="top"
+                                     objectPosition="center"
                         />
                     </Link>
                 </div>
