@@ -10,6 +10,8 @@ import {MapWithConsent} from "./MapWithConsent";
 import {Section} from "./Section";
 import {Watercolor} from "./Watercolor";
 import {globalData} from "../data/global";
+import {CopyText} from "./CopyText";
+import {Heart} from "./icons/Heart";
 
 
 export type ContactSectionProps = {
@@ -30,11 +32,21 @@ export const ContactSection: React.FC<ContactSectionProps> = ({className}) => {
             />
             <Container size="xl">
                 <h2 className="sr-only">Kontakt</h2>
-                <BraveText className="mb-8 xs:mb-14 md:mb-20 text-center lg:text-left">
+                <BraveText className="mb-4 xs:mb-8 md:mb-12 text-center lg:text-left">
                     Say Hello!
                 </BraveText>
+                <CopyText className="mb-8 xs:mb-14 md:mb-20 !max-w-[80ch]">
+                    <strong>Wir bieten unsere Termine ausschließlich nach Vereinbarung an.</strong> <br/>
+                    Am besten erreichst du uns per WhatsApp oder E-Mail, da wir während eines Termins oder
+                    Auswärtseinsätzen nicht telefonisch erreichbar sind.
+                </CopyText>
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-8">
                     <div className="space-y-14 lg:space-y-8 flex flex-col justify-center lg:pb-4">
+                        <IconBubbleLink title="Online"
+                                        superTitle="Bequem online buchen"
+                                        href="/termin"
+                                        icon={<Heart className="w-8 h-8"/>}
+                        />
                         <IconBubbleLink title={globalData.phoneDisplay}
                                         superTitle="WhatsApp Business"
                                         href={globalData.phoneLinkWhatsAppHref}
@@ -57,7 +69,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({className}) => {
                         />
                     </div>
                     <div>
-                        <div className="mx-auto sm:max-w-[600px] sm:max-h-[600px] lg:max-w-[none] lg:max-h-[none] " style={{boxShadow: '0 0 20px 3px rgba(255,255,255,0.1)'}}>
+                        <div className="mx-auto sm:max-w-[600px] sm:max-h-[600px] lg:max-w-[none] lg:max-h-[none] "
+                             style={{boxShadow: '0 0 20px 3px rgba(255,255,255,0.1)'}}>
                             <MapWithConsent/>
                         </div>
                     </div>
