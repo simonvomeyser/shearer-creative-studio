@@ -14,6 +14,7 @@ module.exports = {
         },
         extend: {
             zIndex: {
+                'modal': 300,
                 'header': 200,
                 'container': 100,
                 'watercolor': 50,
