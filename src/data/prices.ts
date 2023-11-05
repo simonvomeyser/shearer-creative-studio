@@ -77,7 +77,7 @@ export const priceCategories: PriceCategoryType[] = [
             {
                 "title": "Gloss",
                 "price": "36 €",
-                "description": "Ein Glossing schenkt dem Haar Glanz und veredelt die bereits bestehende Haarfarbe. Von Natürlichen Blondtönen, bis hin zu Pastell oder oder satten Farben.  Das Haar wird in seiner Struktur nicht angegriffen und je nach Haarwaschverhalten hält es mehrere Wochen."
+                "description": "Ein Glossing schenkt dem Haar Glanz und veredelt die bereits bestehende Haarfarbe. Von Natürlichen Blondtönen, bis hin zu Pastell oder satten Farben. Das Haar wird in seiner Struktur nicht angegriffen und je nach Haarwaschverhalten hält es mehrere Wochen."
             },
             {
                 "title": "Faceframe",
