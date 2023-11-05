@@ -5,7 +5,6 @@ folder: '9-trendvorstellung-h-mag'
 title: 'H|MAG Trendkollektion Frühjahr/Sommer 2023'
 excerpt: 'Am 26.02.2023 wurden im Rahmen des Obermeister-Auftaktseminars in Hamburg von Sarah die neusten Make-up Trends vorgestellt'
 date: 'February 2023'
-featured: 7
 category: 'Events'
 listImageUrl: 'image00011.jpeg'
 titleImageUrl: 'title-hmag.jpg'

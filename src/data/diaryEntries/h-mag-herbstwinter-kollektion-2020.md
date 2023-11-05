@@ -5,7 +5,6 @@ slug: 'h-mag-herbstwinter-kollektion-2020'
 folder: '3-h-mag-herbstwinter-kollektion-2020'
 date: 'Oktober 2020'
 category: 'Produktion'
-featured: 3
 excerpt: 'Mitarbeit an der Trendkollektionen des Zentralverbandes des Deutschen Friseurhandwerks'
 listImageUrl: '1.jpg'
 titleImageUrl: 'title.jpg'
