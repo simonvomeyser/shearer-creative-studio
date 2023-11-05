@@ -33,12 +33,12 @@ const Modal: FC<ModalProps> = ({ children }) => {
 
   return (
     <div className={
-      clsx("fixed inset-0 z-modal flex items-center justify-center bg-black bg-opacity-90 duration-300 ease-in-out w-full h-full",
+      clsx("fixed inset-0 z-modal flex items-center justify-center bg-black bg-opacity-[0.95] md:bg-opacity-90 duration-300 ease-in-out w-full h-full",
         {
           "opacity-0 pointer-events-none": !isModalOpen
         })
     }>
-      <NewsHeading className="text-white opacity-25 md:hidden pointer-events-none absolute -right-20 -top-0 w-full h-auto " />
+      <NewsHeading className="text-white opacity-30 md:hidden pointer-events-none absolute -right-20 -top-0 w-full h-auto " />
       <dialog
         ref={dialogRef}
         className="w-full h-full overflow-hidden bg-transparent flex items-center justify-center"
