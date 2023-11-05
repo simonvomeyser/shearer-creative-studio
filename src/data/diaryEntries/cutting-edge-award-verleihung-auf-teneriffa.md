@@ -3,7 +3,7 @@ id: 11
 slug: 'cutting-edge-award-verleihung-auf-teneriffa'
 folder: '11-cutting-edge-award-verleihung-auf-teneriffa'
 title: 'Cutting Edge Award Verleihung auf Teneriffa'
-excerpt: 'Sarah wurde für den Cutting Edge Award 2023 unter tausenden Einsendung aus in zwei Kategorien nominiert.'
+excerpt: 'Sarah wurde für den Cutting Edge Award 2023 unter tausenden Einsendung in zwei Kategorien nominiert.'
 featured: 9
 date: 'September 2023'
 category: 'Events'
