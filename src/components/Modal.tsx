@@ -14,7 +14,10 @@ const Modal: FC<ModalProps> = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    if (dialogRef.current && !sessionStorage.getItem("modalShown")) {
+    if (dialogRef.current ) {
+      if (sessionStorage.getItem("modalShown") === "true") {
+        return;
+      }
       scrollLock.enable();
       dialogRef.current.showModal();
       setIsModalOpen(true);
@@ -30,6 +33,19 @@ const Modal: FC<ModalProps> = ({ children }) => {
       setIsModalOpen(false);
     }
   };
+
+  // close modal on escape^
+  useEffect(() => {
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => {
+      window.removeEventListener("keydown", handleEsc);
+    };
+  });
 
   return (
     <div className={
