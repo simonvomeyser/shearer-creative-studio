@@ -9,6 +9,7 @@ import {SmoothScrollPageAnchor} from "../components/Header/components/SmoothScro
 import {MetaTags} from "../components/MetaTags";
 import {Section} from "../components/Section";
 import {Watercolor} from "../components/Watercolor";
+import Modal from "../components/Modal";
 
 const Termin = () => {
 
@@ -62,6 +63,7 @@ const Termin = () => {
                 </Container>
             </Section>
             <ContactSection />
+            <Modal/>
         </>
     )
 };

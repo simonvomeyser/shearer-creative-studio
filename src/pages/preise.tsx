@@ -12,6 +12,7 @@ import {QuestionMark} from "../components/QuestionMark";
 import {Section} from "../components/Section";
 import {Watercolor} from "../components/Watercolor";
 import {priceCategories, PriceCategoryType} from "../data/prices";
+import Modal from "../components/Modal";
 
 const Preise = () => {
 
@@ -113,6 +114,7 @@ const Preise = () => {
 
                 </Container>
             </Section>
+            <Modal/>
         </>
     )
 };

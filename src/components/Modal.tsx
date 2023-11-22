@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { NewsHeading } from "./NewsHeading";
 import { ButtonStyles } from "./ButtonStyles";
 import { Watercolor } from "./Watercolor";
+import { Link } from "gatsby";
 
 interface ModalProps {
   children?: ReactNode;
@@ -14,7 +15,7 @@ const Modal: FC<ModalProps> = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    if (dialogRef.current ) {
+    if (dialogRef.current) {
       if (sessionStorage.getItem("modalShown") === "true") {
         return;
       }
@@ -54,7 +55,8 @@ const Modal: FC<ModalProps> = ({ children }) => {
           "opacity-0 pointer-events-none": !isModalOpen
         })
     }>
-      <NewsHeading className="text-white opacity-30 md:hidden pointer-events-none absolute -right-20 -top-0 w-full h-auto " />
+      <NewsHeading
+        className="text-white opacity-30 md:hidden pointer-events-none absolute -right-20 -top-0 w-full h-auto " />
       <dialog
         ref={dialogRef}
         className="w-full h-full overflow-hidden bg-transparent flex items-center justify-center"
@@ -67,7 +69,8 @@ const Modal: FC<ModalProps> = ({ children }) => {
             }
           )}
         >
-          <NewsHeading className="hidden md:block text-white pointer-events-none absolute -right-20 -top-16 w-full h-auto " />
+          <NewsHeading
+            className="hidden md:block text-white pointer-events-none absolute -right-20 -top-16 w-full h-auto " />
           <Watercolor color="black"
                       className="z-0 opacity-[0.05] transform rotate-[270deg] w-[500px] absolute -left-10 top-[-520px] " />
           <Watercolor color="black"
@@ -80,14 +83,20 @@ const Modal: FC<ModalProps> = ({ children }) => {
               <div className="font-semibold  leading-none mb-4 text-lg md:text-2xl"> Neue Preise ab 2024</div>
               <div className="rich-text md:text-lg">
                 <p>
-                  Hallo Peeps, ab 2024 ist es leider auch bei uns soweit. Wir müssen unsere Preise anpassen.
+                  Liebe Kund*innen
+                </p>
+
+                <p>
+                  Ab dem 1. Januar 2023 erhöhen wir unsere Preise um ca. 10%.
+                  Hmpf! Nervig, wissen wir. Aber auch unumgänglich.
+                  Genauere Infos und die neue Preise findet ihr <Link onClick={closeModal} to={'/diary/unsere-preise-2024'}>im Diary</Link>.
+                </p>
+
+                <p>
+                  Seid lieb zueinander, alles Gute und auf bald!<br />
                 </p>
                 <p>
-                  Damit du nicht verwundert bist, wenn du einen Termin für das neue Jahr buchst, und es dann auf einmal
-                  kostet als angezeigt, haben wir <a href="#">hier</a> eine kleine Übersicht für dich.
-                </p>
-                <p>
-                  Wir freuen uns auch 2024 auf dich, deinen Mut und deine Haare!
+                  Euer Shearer Creative Studio ❤️
                 </p>
               </div>
               <div className="flex mt-6 md:mt-5 justify-center md:justify-end">
