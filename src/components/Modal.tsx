@@ -63,7 +63,7 @@ const Modal: FC<ModalProps> = () => {
       >
         <div
           className={clsx(
-            "md:w-[480px] bg-white px-6 pt-10 pb-6 rounded-xl shadow-md transform scale-0 transition-transform duration-300 ease-in-out",
+            "md:w-[480px] bg-white px-6 pt-10 pb-6 rounded-xl shadow-md transform scale-0 transition-transform duration-300 ease-in-out ",
             {
               "scale-100": isModalOpen
             }
@@ -76,7 +76,7 @@ const Modal: FC<ModalProps> = () => {
           <Watercolor color="black"
                       className="z-0 opacity-10 transform rotate-[260deg] w-[500px] absolute -left-10 bottom-[-555px]" />
           <button
-            className="absolute top-2 left-2 -translate-y-full text-5xl md:text-4xl text-white font-bold p-2"
+            className="absolute top-2 left-2 -translate-y-full text-5xl md:text-4xl text-white font-bold p-2 focus:outline-none md:focus:outline-primary"
             onClick={closeModal}>&times;</button>
           <div className="overflow-hidden relative">
             <div>
