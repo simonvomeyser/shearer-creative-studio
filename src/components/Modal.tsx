@@ -81,7 +81,7 @@ const Modal: FC<ModalProps> = () => {
           <div className="overflow-hidden relative">
             <div>
               <div className="font-semibold  leading-none mb-4 text-lg md:text-2xl"> Neue Preise ab 2024</div>
-              <div className="rich-text md:text-lg">
+              <div className="rich-text xs:text-lg">
                 <p>
                   Liebe Kund*innen
                 </p>
@@ -91,7 +91,6 @@ const Modal: FC<ModalProps> = () => {
                   Hmpf! Nervig, wissen wir. Aber auch unumgänglich.
                   Genauere Infos und die neue Preise findet ihr <Link onClick={closeModal} to={'/diary/unsere-preise-2024'}>im Diary</Link>.
                 </p>
-
                 <p>
                   Seid lieb zueinander, alles Gute und auf bald!<br />
                 </p>
