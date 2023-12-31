@@ -23,22 +23,22 @@ export const priceCategories: PriceCategoryType[] = [
     "prices": [
       {
         "title": "Haarschnitt XS: Just the little things in life",
-        "price": "24 €",
+        "price": "27 €",
         "description": `Mini Haarschnitt bis 25 Min. Zeitaufwand <br> (Beispiel: Pony schneiden / Konturenschnitt / Maschinenschnitt ohne Waschen)`
       },
       {
         "title": "Haarschnitt S: Keep it simple",
-        "price": "43 €",
+        "price": "47 €",
         "description": `Haarschnitt bis 45 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von einfachen Kurzhaarschnitten /  Trockenschnitt / Spitzenschnitt / Feine Haare o. Ä.)`
       },
       {
         "title": "Haarschnitt M: Golden Hour",
-        "price": "57 €",
+        "price": "61 €",
         "description": `Der Klassiker, Haarschnitt bis 60 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von komplexen Haarschnitten wie Bobs /Stufenhaarschnitten / Mullets / Shags /  o. Ä.)`
       },
       {
         "title": "Haarschnitt L: I want it all. I want it now",
-        "price": "72 €",
+        "price": "79 €",
         "description": `Haarschnitt bis 75 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von Neuhaarschnitten bzw.Typveränderungen / Haarschnitt + Aufwendigen Styling)`
       }
     ]
@@ -51,37 +51,37 @@ export const priceCategories: PriceCategoryType[] = [
     "prices": [
       {
         "title": "Ansatzfärbung bis 2 cm",
-        "price": "59 €",
+        "price": "65 €",
         "description": "Du bekommst deinen Naturansatz gefärbt, der nicht älter als 8 Wochen oder 2 cm rausgewachsen ist."
       },
       {
         "title": "Ansatzfärbung ab 2 cm",
-        "price": "64 €",
+        "price": "69 €",
         "description": "Du bekommst deinen Naturansatz gefärbt, der älter als 8 Wochen oder mehr als 2 cm rausgewachsen ist."
       },
       {
         "title": "Längenausgleich",
-        "price": "29 € - 63 €",
+        "price": "33 € - 69 €",
         "description": "Auffrischung von verblassten Längen und Spitzen mit oxidativer Haarfarbe. 29 € - 63 € Je nach Materialverbrauch."
       },
       {
         "title": "Ansatz Blondierung bis 8 Wochen",
-        "price": "98 €",
+        "price": "119 €",
         "description": "Du bekommst deinen Naturansatz blondiert, der nicht älter als 8 Wochen oder 2 cm rausgewachsen ist. (inkl. Gloss)"
       },
       {
         "title": "Neublondierung",
-        "price": "ab 129 €",
+        "price": "ab 149 €",
         "description": "Du bekommst dein naturbelassenes Haar komplett blondiert oder dein Naturansatz ist größer als 2 cm. (inkl. Gloss)"
       },
       {
         "title": "Gloss",
-        "price": "36 €",
+        "price": "39 €",
         "description": "Ein Glossing schenkt dem Haar Glanz und veredelt die bereits bestehende Haarfarbe. Von Natürlichen Blondtönen, bis hin zu Pastell oder satten Farben. Das Haar wird in seiner Struktur nicht angegriffen und je nach Haarwaschverhalten hält es mehrere Wochen."
       },
       {
         "title": "Faceframe",
-        "price": "66 €",
+        "price": "74 €",
         "description": `Beim Face Framing, auch "Money Piece” genannt, werden statt des kompletten Haares nur die beiden vorderen Strähnen und Kontur aufgehellt. <br> Also jeweils eine Strähne rechts und links vom Scheitel. Die blonden Strähnen vorne rahmen das Gesicht ein und geben dem ganzen Look eine frische Note`
       },
       {
@@ -93,18 +93,18 @@ Fashion Color setzt ein Beratungsgespräch voraus und wird nach Stundensatz bere
 
       {
         "title": "Highlights 1/3",
-        "price": "69 €",
-        "description": "Highlights / Strähnen über den Scheitel und der Kontur, inkl. Gloss/Rootshadow "
+        "price": "89 €",
+        "description": "Highlights / Strähnen über den Scheitel und der Kontur, inkl. Gloss/Rootshadow & Olaplex"
       },
       {
         "title": "Highlights 2/3",
-        "price": "89 €",
-        "description": "Highlights / Strähnen am halben Kopf und Kontur. Inkl. Gloss/Rootshadow"
+        "price": "109 €",
+        "description": "Highlights / Strähnen am halben Kopf und Kontur. Inkl. Gloss/Rootshadow & Olaplex"
       },
       {
         "title": "Highlights 3/3",
-        "price": "129 € ",
-        "description": "Highlights / Strähnen am gesamten Kopf. Inkl. Gloss/Rootshadow"
+        "price": "149 € ",
+        "description": "Highlights / Strähnen am gesamten Kopf. Inkl. Gloss/Rootshadow & Olaplex"
       },
       {
         "title": "Farbkorrekturen",
@@ -116,11 +116,6 @@ Eine Farbkorrektur setzt eine Beratung voraus, um dem Dienstleistungsaufwand ein
 Zudem werden Farbkorrekturen nach Stundensatz abgerechnet. Alle Materialien sind dort inkludiert. 
 
                 `
-      },
-      {
-        "title": "Grauhaarkaschierung",
-        "price": "22 €",
-        "description": "Natürliches Abdecken der grauen Haare ohne dass es gefärbt aussieht."
       }
 
     ]
@@ -134,13 +129,18 @@ Zudem werden Farbkorrekturen nach Stundensatz abgerechnet. Alle Materialien sind
     "prices": [
       {
         "title": "Natural Balayage",
-        "price": "ab 140€",
+        "price": "ab 170€",
         "description": "Dauer ca. 150 Min. Du siehst aus, wie von der Sonne geküsst mit natürlicher Helligkeit im Haar. Du hast einen schönen weichen Farbverlauf ohne, das dir ein Ansatz rauswächst."
       },
       {
+        "title": "Blonde Balayage",
+        "price": "ab 220€",
+        "description": "Dauer ca. 180 Min. Du hast möchtest deutlich Blonder werden und wünscht trotzdem einen natürlich weichen Rauswuchs. Dann ist die Blonde Balayage genau dein Ding!"
+      },
+      {
         "title": "Fashion Balayage",
-        "price": "ab 190€",
-        "description": "Dauer ca. 180 Min. Du hast möchtest deutlich Blonder werden oder hast Lust auf einen bunten / pastelligen Farbverlauf ohne das sich ein starker Ansatz bildet."
+        "price": "ab 240€",
+        "description": "Dauer ca. 210 Min. Du hast Lust auf einen bunten / knalligen / pastelligen Farbverlauf ohne das sich ein starker Ansatz bildet."
       }
     ]
   },
@@ -159,7 +159,7 @@ Zudem werden Farbkorrekturen nach Stundensatz abgerechnet. Alle Materialien sind
                     Komm vorbei und lass dich persönlich beraten! <br/>
                     Im Falle einer Folgebuchung wird die Beratung mit der nächsten Dienstleistung verrechnet. <br>
                 `,
-        "price": "19€ / 20 Min"
+        "price": "22€ / 20 Min"
       }
     ]
   },
@@ -197,7 +197,7 @@ Zudem werden Farbkorrekturen nach Stundensatz abgerechnet. Alle Materialien sind
       },
       {
         "title": "Detox",
-        "price": "16 €",
+        "price": "18 €",
         "description": `
 Silikon und Mineralablagerungen im Haar entstehen durch den täglichen Gebrauch von handelsüblichen Shampoos und zu hartem Wasser in der Dusche und verhindern die optimale Wirkung von Treatments und Pflegeprodukten sowie die gleichmäßige Färbung der Haare. 
                 <br><br>
@@ -213,19 +213,19 @@ Metallablagerungen, die durch alte Wasserrohre und Chlorrückstände verursacht 
     "prices": [
       {
         "title": "Blow Dry",
-        "price": "38 €",
+        "price": "42 €",
         "description": `
 Waschen und Föhnen der Haare mit Rundbürsten - inkl. Kopfmassage, passender Pflegeanwendung und perfektem Finish. Dauer ca. 40 Min.
                 `
       },
       {
         "title": "Fashion Styling",
-        "price": "29 €",
+        "price": "32 €",
         "description": "Ein offenes Haarstyling deiner Wahl. Egal ob Beachwaves, Sleek, Curly oder Hollywood Waves für deinen perfekten Auftritt. (Dienstleistung exkl. Haarwäsche). Dauer ca. 30 Min."
       },
       {
         "title": "Hochstecken",
-        "price": "ab 47 €"
+        "price": "ab 52 €"
       }
     ]
   },
@@ -236,20 +236,20 @@ Waschen und Föhnen der Haare mit Rundbürsten - inkl. Kopfmassage, passender Pf
     "prices": [
       {
         "title": "Brow",
-        "price": "15 €",
+        "price": "17 €",
         "description": `
 Typgerecht gefärbte Brauen um deinem Gesicht mehr Kontur und Ausdruck verleihen.
                 `
       },
       {
         "title": "Lashes",
-        "price": "15 €",
+        "price": "17 €",
         "description": "Typgerecht gefärbte Wimpern für einen perfekten Augenaufschlag verleihen dem Gesicht mehr Kontur, der Blick wirkt wacher, die Augen größer."
       },
       {
         "title": "Make-up",
-        "price": "38/56 €",
-        "description": "Natural Make-up 38 € Glamour Make-up 56 €"
+        "price": "42/75 €",
+        "description": "Natural Make-up 42 € Glamour Make-up 75 €"
       }
     ]
   },
@@ -272,5 +272,4 @@ Darüber hinaus bieten wir weitere umfangreiche Leistungen wie <b>Extentions</b
       }
     ]
   }
-
 ];
