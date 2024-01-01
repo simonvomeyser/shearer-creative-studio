@@ -114,6 +114,7 @@ const Preise = () => {
 
                 </Container>
             </Section>
+            <Modal/>
         </>
     )
 };

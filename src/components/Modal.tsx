@@ -87,7 +87,7 @@ const Modal: FC<ModalProps> = () => {
                 </p>
 
                 <p>
-                  Ab dem 1. Januar 2023 erhöhen wir unsere Preise um ca. 10%.
+                  Ab dem 1. Januar 2024 erhöhen wir unsere Preise um ca. 10%.
                   Hmpf! Nervig, wissen wir. Aber auch unumgänglich.
                   Genauere Infos und die neue Preise findet ihr <Link onClick={closeModal} to={'/diary/unsere-preise-2024'}>im Diary</Link>.
                 </p>
