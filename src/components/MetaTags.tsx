@@ -2,6 +2,7 @@ import React from 'react';
 import {Helmet} from 'react-helmet'
 import {globalData} from "../data/global";
 import {trimSlash} from "../lib/trimSlash";
+import { useLocation } from '@reach/router';
 
 export type SeoDataType = {
     description?: string;
@@ -33,6 +34,8 @@ export const MetaTags: React.FC<MetaTitleProps> = (
     const title = createTitle(pageName);
     const image = trimSlash(globalData.url) + '/' + (seo.image ? trimSlash(seo.image) : trimSlash(metaData.defaultOgImage))
     const description = seo.description ? seo.description : metaData.defaultDescription;
+    const location = useLocation();
+
     return (
         <Helmet title={title} htmlAttributes={{lang: 'de'}}>
             <meta name="og:title" content={title}/>
@@ -46,7 +49,7 @@ export const MetaTags: React.FC<MetaTitleProps> = (
             {(seo.article ? <meta property="og:type" content="article"/> :
                 <meta property="og:type" content="website"/>)}
 
-            <link rel="canonical" href={trimSlash(window.location.href)}/>
+            <link rel="canonical" href={trimSlash(location.href)}/>
 
             {(hideFromSearchEngines ? <meta name="robots" content="noindex"/> : null)}
 
