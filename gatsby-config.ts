@@ -86,7 +86,7 @@ const config: GatsbyConfig = {
             resolve: `gatsby-plugin-react-helmet-canonical-urls`,
             options: {
                 siteUrl: `https://shearer.studio`,
-                noTrailingSlash: false,
+                noTrailingSlash: true,
             },
         },
         "gatsby-plugin-sitemap",
