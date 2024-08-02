@@ -82,6 +82,13 @@ const config: GatsbyConfig = {
         "gatsby-transformer-sharp",
         "gatsby-plugin-image",
         "gatsby-plugin-react-helmet",
+        {
+            resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+            options: {
+                siteUrl: `https://shearer.studio`,
+                noTrailingSlash: false,
+            },
+        },
         "gatsby-plugin-sitemap",
         'gatsby-plugin-postcss',
     ]
