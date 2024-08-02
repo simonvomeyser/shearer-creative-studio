@@ -34,7 +34,6 @@ export const MetaTags: React.FC<MetaTitleProps> = (
     const title = createTitle(pageName);
     const image = trimSlash(globalData.url) + '/' + (seo.image ? trimSlash(seo.image) : trimSlash(metaData.defaultOgImage))
     const description = seo.description ? seo.description : metaData.defaultDescription;
-    const location = useLocation();
 
     return (
         <Helmet title={title} htmlAttributes={{lang: 'de'}}>
@@ -48,8 +47,6 @@ export const MetaTags: React.FC<MetaTitleProps> = (
 
             {(seo.article ? <meta property="og:type" content="article"/> :
                 <meta property="og:type" content="website"/>)}
-
-            <link rel="canonical" href={trimSlash(location.href)}/>
 
             {(hideFromSearchEngines ? <meta name="robots" content="noindex"/> : null)}
 
