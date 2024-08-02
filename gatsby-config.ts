@@ -16,7 +16,7 @@ require("dotenv").config({
 });
 
 const config: GatsbyConfig = {
-    trailingSlash: 'ignore',
+    trailingSlash: 'never',
     siteMetadata: {
         title: `Shearer Creative Studio`,
         siteUrl: `https://shearer.studio`

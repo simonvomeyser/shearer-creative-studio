@@ -46,6 +46,8 @@ export const MetaTags: React.FC<MetaTitleProps> = (
             {(seo.article ? <meta property="og:type" content="article"/> :
                 <meta property="og:type" content="website"/>)}
 
+            <link rel="canonical" href={trimSlash(window.location.href)}/>
+
             {(hideFromSearchEngines ? <meta name="robots" content="noindex"/> : null)}
 
             <meta name="twitter:card" content="summary_large_image"/>
