@@ -74,22 +74,22 @@ const Modal: FC<ModalProps> = () => {
           <Watercolor color="black"
                       className="z-0 opacity-[0.05] transform rotate-[270deg] w-[500px] absolute -left-10 top-[-520px] " />
           <Watercolor color="black"
-                      className="z-0 opacity-10 transform rotate-[260deg] w-[500px] absolute -left-10 bottom-[-555px]" />
+                      className="z-0 opacity-5 transform rotate-[260deg] w-[500px] absolute -left-10 bottom-[-555px]" />
           <button
             className="absolute top-2 left-2 -translate-y-full text-5xl md:text-4xl text-white font-bold p-2 focus:outline-none md:focus:outline-primary"
             onClick={closeModal}>&times;</button>
-          <div className="overflow-hidden relative">
+          <div className="overflow-hidden relative py-6">
             <div>
-              <div className="font-semibold  leading-none mb-4 text-lg md:text-2xl"> Neue Preise ab 2024</div>
+              <div className="font-semibold  leading-none mb-4 text-lg md:text-2xl">Neue Preise ab August 2025</div>
               <div className="rich-text xs:text-lg">
                 <p>
                   Liebe Kund*innen
                 </p>
 
                 <p>
-                  Ab dem 1. Januar 2024 erhöhen wir unsere Preise um ca. 10%.
+                  Ab dem 1. August 2025 erhöhen wir unsere Preise um ca. 10%.
                   Hmpf! Nervig, wissen wir. Aber auch unumgänglich.
-                  Genauere Infos und die neue Preise findet ihr <Link onClick={closeModal} to={'/diary/unsere-preise-2024'}>im Diary</Link>.
+                  Genauere Infos und die neue Preise findet ihr <Link onClick={closeModal} to={'/diary/unsere-preise-2025'}>im Diary</Link>.
                 </p>
                 <p>
                   Seid lieb zueinander, alles Gute und auf bald!<br />
