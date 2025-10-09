@@ -63,7 +63,6 @@ const Termin = () => {
                 </Container>
             </Section>
             <ContactSection />
-            <Modal/>
         </>
     )
 };

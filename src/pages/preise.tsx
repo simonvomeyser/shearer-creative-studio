@@ -113,7 +113,6 @@ const Preise = () => {
                     </div>
 
                 </Container>
-                <Modal/>
             </Section>
         </>
     )
