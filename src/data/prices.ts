@@ -23,23 +23,23 @@ export const priceCategories: PriceCategoryType[] = [
     "prices": [
       {
         "title": "Haarschnitt XS: Just the little things in life",
-        "price": "27 €",
-        "description": `Mini Haarschnitt bis 25 Min. Zeitaufwand <br> (Beispiel: Pony schneiden / Konturenschnitt / Maschinenschnitt ohne Waschen)`
+        "price": "32 €",
+        "description": `Bis 30 Min. - Bsp.: Pony nachschneiden, Konturenschnitt, Maschinenschnitt, o.Ä.`
       },
       {
         "title": "Haarschnitt S: Keep it simple",
-        "price": "47 €",
-        "description": `Haarschnitt bis 45 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von einfachen Kurzhaarschnitten /  Trockenschnitt / Spitzenschnitt / Feine Haare o. Ä.)`
+        "price": "54 €",
+        "description": `Bis 50 Min. - Bsp.: Schneiden und Stylen von einfachen Haarschnitten wie Kurzhaarschnitte, Spitzenschnitt/Trockenschnitt, o.Ä.`
       },
       {
         "title": "Haarschnitt M: Golden Hour",
-        "price": "61 €",
-        "description": `Der Klassiker, Haarschnitt bis 60 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von komplexen Haarschnitten wie Bobs /Stufenhaarschnitten / Mullets / Shags /  o. Ä.)`
+        "price": "70 €",
+        "description": `Bis 70 Min. - Bsp.: Waschen, Schneiden, Pflegen, Styling von komplexen Haarschnitten wie Bobs, Stufenhaarschnitte, Mullets/Shags, o.Ä.`
       },
       {
         "title": "Haarschnitt L: I want it all. I want it now",
-        "price": "79 €",
-        "description": `Haarschnitt bis 75 Min. Zeitaufwand  <br> (Beispiel: Waschen, Schneiden, Pflegen, Stylen von Neuhaarschnitten bzw.Typveränderungen / Haarschnitt + Aufwendigen Styling)`
+        "price": "90 €",
+        "description": `Bis 85 Min. - Bsp.: Waschen, Schneiden, Pflegen, Stylen von Neuhaarschnitten bzw Typveränderungen`
       }
     ]
   },
@@ -47,7 +47,7 @@ export const priceCategories: PriceCategoryType[] = [
     "title": "Color",
     "anchor": "color",
     "detailPageSorting": 0,
-    "description": `Alle Farbdienstleistungen verstehen sich inkl. passender Pflegeanwendung. <br> <br> Bei Farbterminen, die keinen Haarschnitt beinhalten, behalten wir uns vor 14 € als Föhnpauschale zu berechnen`,
+    "description": `Alle Farbdienstleistungen verstehen sich inkl. passender Pflegeanwendung. <br> <br> Bei Farbterminen, die keinen Haarschnitt beinhalten, wird eine Föhnpauschale von 16 € berechnet.`, 
     "prices": [
       {
         "title": "Ansatzfärbung bis 2 cm",
@@ -61,54 +61,54 @@ export const priceCategories: PriceCategoryType[] = [
       },
       {
         "title": "Längenausgleich",
-        "price": "33 € - 69 €",
-        "description": "Auffrischung von verblassten Längen und Spitzen mit oxidativer Haarfarbe. 29 € - 63 € Je nach Materialverbrauch."
+        "price": "ab 33 €",
+        "description": "Auffrischung von verblassten Längen und Spitzen."
       },
       {
-        "title": "Ansatz Blondierung bis 8 Wochen",
+        "title": "Ansatz Blondierung bis 2 cm inkl. Gloss",
         "price": "119 €",
-        "description": "Du bekommst deinen Naturansatz blondiert, der nicht älter als 8 Wochen oder 2 cm rausgewachsen ist. (inkl. Gloss)"
+        "description": "Du bekommst deinen Naturansatz blondiert, der bis 2 cm rausgewachsen ist."
       },
       {
-        "title": "Neublondierung",
+        "title": "Neublondierung inkl. Gloss",
         "price": "ab 149 €",
-        "description": "Du bekommst dein naturbelassenes Haar komplett blondiert oder dein Naturansatz ist größer als 2 cm. (inkl. Gloss)"
+        "description": "Du bekommst dein naturbelassenes Haar komplett blondiert oder dein Naturansatz ist größer als 2 cm."
       },
       {
         "title": "Gloss",
-        "price": "39 €",
-        "description": "Ein Glossing schenkt dem Haar Glanz und veredelt die bereits bestehende Haarfarbe. Von Natürlichen Blondtönen, bis hin zu Pastell oder satten Farben. Das Haar wird in seiner Struktur nicht angegriffen und je nach Haarwaschverhalten hält es mehrere Wochen."
+        "price": "ab 39 €",
+        "description": "Ein Glossing schenkt dem Haar Glanz und veredelt die bereits bestehende Haarfarbe. Von natürlichen Blondtönen bis hin zu Pastell oder satten Farben."
       },
       {
-        "title": "Faceframe",
+        "title": "Faceframe inkl. Gloss",
         "price": "74 €",
-        "description": `Beim Face Framing, auch "Money Piece” genannt, werden statt des kompletten Haares nur die beiden vorderen Strähnen und Kontur aufgehellt. <br> Also jeweils eine Strähne rechts und links vom Scheitel. Die blonden Strähnen vorne rahmen das Gesicht ein und geben dem ganzen Look eine frische Note`
+        "description": `Beim Face Framing, auch "Money Piece” genannt, werden statt des kompletten Haares nur die beiden vorderen Strähnen und Kontur aufgehellt.`
       },
       {
         "title": "Fashion Color",
-        "price": "ab 79 € / h",
+        "price": "79 € / h",
         "description": `Die neuesten Trends und Färbetechniken von Bunt bis Pastell. Oder doch lieber Split-hair? Rainbow? Say no more! Hier sind der Kreativität keine Grenzen gesetzt.<br>
 Fashion Color setzt ein Beratungsgespräch voraus und wird nach Stundensatz berechnet. Alle Materialien sind inklusive. `
       },
 
       {
-        "title": "Highlights 1/3",
-        "price": "89 €",
-        "description": "Highlights / Strähnen über den Scheitel und der Kontur, inkl. Gloss/Rootshadow & Olaplex"
+        "title": "Highlights 1/3 inkl. Gloss",
+        "price": "99 €",
+        "description": "Highlights / Strähnen über den Scheitel und der Kontur."
       },
       {
-        "title": "Highlights 2/3",
-        "price": "109 €",
-        "description": "Highlights / Strähnen am halben Kopf und Kontur. Inkl. Gloss/Rootshadow & Olaplex"
+        "title": "Highlights 2/3 inkl. Gloss",
+        "price": "119 €",
+        "description": "Highlights / Strähnen am halben Kopf und Kontur."
       },
       {
-        "title": "Highlights 3/3",
-        "price": "149 € ",
-        "description": "Highlights / Strähnen am gesamten Kopf. Inkl. Gloss/Rootshadow & Olaplex"
+        "title": "Highlights 3/3 inkl. Gloss",
+        "price": "159 €",
+        "description": "Highlights / Strähnen am gesamten Kopf."
       },
       {
         "title": "Farbkorrekturen",
-        "price": "89 € / Std",
+        "price": "89 € / h",
         "description": `
 Die SOS Farbrettung! Du hast dir Zuhause die Haare gefärbt oder kommst unglücklich aus einem anderen Salon? Wir versuchen alles, um das wieder grade zu biegen. 
 <br><br>
@@ -129,17 +129,17 @@ Zudem werden Farbkorrekturen nach Stundensatz abgerechnet. Alle Materialien sind
     "prices": [
       {
         "title": "Natural Balayage",
-        "price": "ab 170€",
+        "price": "ab 170 €",
         "description": "Dauer ca. 150 Min. Du siehst aus, wie von der Sonne geküsst mit natürlicher Helligkeit im Haar. Du hast einen schönen weichen Farbverlauf ohne, das dir ein Ansatz rauswächst."
       },
       {
         "title": "Blonde Balayage",
-        "price": "ab 220€",
+        "price": "ab 220 €",
         "description": "Dauer ca. 180 Min. Du hast möchtest deutlich Blonder werden und wünscht trotzdem einen natürlich weichen Rauswuchs. Dann ist die Blonde Balayage genau dein Ding!"
       },
       {
         "title": "Fashion Balayage",
-        "price": "ab 240€",
+        "price": "ab 240 €",
         "description": "Dauer ca. 210 Min. Du hast Lust auf einen bunten / knalligen / pastelligen Farbverlauf ohne das sich ein starker Ansatz bildet."
       }
     ]
@@ -154,12 +154,12 @@ Zudem werden Farbkorrekturen nach Stundensatz abgerechnet. Alle Materialien sind
          `,
     "prices": [
       {
-        "title": "Typgerechte Beratung",
+        "title": "Beratung",
         "description": `
-                    Komm vorbei und lass dich persönlich beraten! <br/>
-                    Im Falle einer Folgebuchung wird die Beratung mit der nächsten Dienstleistung verrechnet. <br>
+                    Komm vorbei und lass dich beraten! <br/>
+                    Im Falle einer Folgebuchung wird die Beratung mit der nächsten Dienstleisung verrechnet.
                 `,
-        "price": "22€ / 20 Min"
+        "price": "22 € (20 Min.)"
       }
     ]
   },
@@ -170,20 +170,16 @@ Zudem werden Farbkorrekturen nach Stundensatz abgerechnet. Alle Materialien sind
     "prices": [
       {
         "title": "Olaplex Rebuild Treatment",
-        "price": "ab 28/39/55 €",
+        "price": "ab 28 €",
         "description": `
-                Olaplex ist der erste Wirkstoff, der geschädigtes Haar im Inneren aufbaut. Anders als Pflegeprodukte wirkt Olaplex nicht an der Haaroberfläche, sondern repariert gebrochene Disulfidbrücken im Haar dauerhaft und ohne sich auszuwaschen. 
-                <br><br>
-                Für drastisch reduzierten Haarbruch bei chemischen Friseur-Anwendungen aller Art und stärkeres, gesünderes und glänzenderes Haar als jemals zuvor.
-                <br><br>
-                28€ bis Kinnlänge / 39€ bis Schlüsselbeinlänge / 55€ ab Brustlänge 
+                Tiefenaufbau-Behandlung zum Reparieren von gebrochenen Disulfidbrücken im Haar.
                 `
       },
       {
-        "title": "Olaplex Shot Color Addon",
+        "title": "Olaplex Color Addon",
         "price": "14 €",
         "description": `
-                Es werden 3,75ml Olaplex No1 als "repair booster" in die Farb- oder Blondiercreme gegeben um das Haar von Anfang an so wenig wie uns möglich zu beschädigen.  
+                Olaplex als Addon zur Farbe – für zusätzlichen Schutz der Haarstruktur.
                 `
       },
       {
@@ -213,43 +209,20 @@ Metallablagerungen, die durch alte Wasserrohre und Chlorrückstände verursacht 
     "prices": [
       {
         "title": "Blow Dry",
-        "price": "42 €",
+        "price": "ab 42 €",
         "description": `
-Waschen und Föhnen der Haare mit Rundbürsten - inkl. Kopfmassage, passender Pflegeanwendung und perfektem Finish. Dauer ca. 40 Min.
+ca. 40 Min. - Waschen und Föhnen der Haare mit Rundbürsten - inkl. Kopfmassage, passender Pflegeanwendung und perfektem Finish.
                 `
       },
       {
         "title": "Fashion Styling",
-        "price": "32 €",
-        "description": "Ein offenes Haarstyling deiner Wahl. Egal ob Beachwaves, Sleek, Curly oder Hollywood Waves für deinen perfekten Auftritt. (Dienstleistung exkl. Haarwäsche). Dauer ca. 30 Min."
+        "price": "ab 32 €",
+        "description": "ca. 30 Min. - Ein offenes Haarstyling deiner Wahl. Egal ob Beachwaves, Sleek, Curly oder Hollywood Waves (exkl. Haarwäsche)."
       },
       {
         "title": "Hochstecken",
-        "price": "ab 52 €"
-      }
-    ]
-  },
-  {
-    "title": "Beauty",
-    "anchor": "beauty",
-    "detailPageSorting": 0,
-    "prices": [
-      {
-        "title": "Brow",
-        "price": "17 €",
-        "description": `
-Typgerecht gefärbte Brauen um deinem Gesicht mehr Kontur und Ausdruck verleihen.
-                `
-      },
-      {
-        "title": "Lashes",
-        "price": "17 €",
-        "description": "Typgerecht gefärbte Wimpern für einen perfekten Augenaufschlag verleihen dem Gesicht mehr Kontur, der Blick wirkt wacher, die Augen größer."
-      },
-      {
-        "title": "Make-up",
-        "price": "42/75 €",
-        "description": "Natural Make-up 42 € Glamour Make-up 75 €"
+        "price": "ab 60 €",
+        "description": "ca. 60 Min. - Hochsteckfrisur."
       }
     ]
   },
@@ -258,7 +231,7 @@ Typgerecht gefärbte Brauen um deinem Gesicht mehr Kontur und Ausdruck verleihen
     "anchor": "more",
     "detailPageSorting": 0,
     "description": `
-Darüber hinaus bieten wir weitere umfangreiche Leistungen wie <b>Extentions</b> und <b>Gutscheinen</b> an und sind buchbar für <b>Einsätze bei Hochzeiten, Events, Workshops, Seminaren</b> oder <b>Fotoshootings</b>.
+Darüber hinaus bieten wir weitere umfangreiche Leistungen wie <b>Extentions</b> an und sind buchbar für <b>Einsätze bei Hochzeiten, Events, Workshops, Seminaren</b> oder <b>Fotoshootings</b>.
         `,
     hideBookNowLink: true,
     "prices": [
